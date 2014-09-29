@@ -15,7 +15,6 @@
 ##########
 # BIBTEX #
 ##########
-bibtex/
 *.bbl
 *.blg
 *.bcf
