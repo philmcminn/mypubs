@@ -1,0 +1,22 @@
+\documentclass{article}
+
+\usepackage[backend=biber, sorting=nty, style=numeric, defernumbers=true]{biblatex}
+\addbibresource{../bibtex/mcminn.min.bib}
+
+% if the above bib file does not work, try test.bib (in the same directory as this file)
+
+\begin{document}
+
+
+\section{Introduction}
+
+Here I will attempt to cite a paper \cite{McMinn2013}.
+
+
+\section{Publications}
+
+\nocite{*}
+\printbibliography[title={Journal Articles}, type=article]
+\printbibliography[title={Conference Proceedings}, type=inproceedings]
+
+\end{document}

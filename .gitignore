@@ -1,0 +1,34 @@
+##############
+# FILESYSTEM #
+##############
+.DS_Store
+
+##################################
+# LATEX TEMPORARY FILES AND LOGS #
+##################################
+*.aux
+*.fdb_latex
+*.fdb_latexmk
+*.log
+*.synctex.gz
+
+###############
+# BUILD FILES #
+###############
+
+# ... to add ...
+
+##########
+# BIBTEX #
+##########
+bibtex/
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+
+#################
+# PROJ-SPECIFIC #
+#################
+
+# ... to add ...
