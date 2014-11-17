@@ -2,7 +2,7 @@ require 'bibtex'
 
 pubs = BibTeX.open('../bibtex/mcminn.bib')
 
-fields_in_order = [
+fields = [
   'author', 
   'title',
   'booktitle',
@@ -38,26 +38,19 @@ def format_field_value(value, wrap_at, indent_width)
   value.gsub(/\n/, "\n".ljust(indent_width))
 end
 
+max_field_len = 0
+fields.each do |field|
+  max_field_len = field.length if field.length > max_field_len
+end
+
+num_entries = 0
 pubs.each do |pub|
-
-  fields = pub.field_names
-
-  max_len = 0
-  fields.each do |field|
-  	max_len = field.length if field.length > max_len
-  	unless fields_in_order.include?(field.to_s)  		
-  		puts "For #{pub.id} -- unknown field '#{field}'" 
-  		abort
-  	end
-  end
-
   entry = "@#{pub.type}{#{pub.id},"
   
   first_field = true
-  break_indent = max_len + 7
+  break_indent = max_field_len + 7
 
-  fields_in_order.each do |field| 
-
+  fields.each do |field| 
   	next unless pub.field?(field)
 
   	if first_field
@@ -66,15 +59,15 @@ pubs.each do |pub|
   		entry += ","
   	end
 
-  	formatted_field = field.to_s.ljust(max_len, ' ')
-
+  	formatted_field = field.to_s.ljust(max_field_len, ' ')
   	entry += "\n  #{formatted_field} = \""	
-
-  	entry += format_field_value(pub[field], 60, break_indent)
-  	
+  	entry += format_field_value(pub[field], 60, break_indent)  	
   	entry += "\""
   end
 
   entry += "\n}\n\n"
+  num_entries += 1
   puts entry
 end
+
+puts "Wrote #{num_entries} entries."
