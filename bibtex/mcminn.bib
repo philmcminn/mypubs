@@ -4,6 +4,23 @@
   journal   = "IEEE Transactions on Software Engineering",  
   year      = "To Appear",
   url       = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2015-tse.pdf",
+  abstract  = "The generation of unit-level test cases for structural code coverage is a task
+               well-suited to Genetic Algorithms. Method call sequences must be created that
+               construct objects, put them into the right state and then execute uncovered
+               code. However, the generation of primitive values, such as integers and doubles,
+               characters that appear in strings, and arrays of primitive values, are not so
+               straightforward. Often, small local changes are required to drive the value
+               towards the one needed to execute some target structure. However, global
+               searches like Genetic Algorithms tend to make larger changes that are not
+               concentrated on any particular aspect of a test case. In this paper, we extend the
+               Genetic Algorithm behind the EvoSuite test generation tool into a Memetic
+               Algorithm, by equipping it with several local search operators. These operators
+               are designed to efficiently optimize primitive values and other aspects of a
+               test suite that allow the search for test cases to function more effectively. We
+               evaluate our operators using a rigorous experimental methodology on over 12,000
+               Java classes, comprising open source classes of various different kinds, including
+               numerical applications and text processors. Our study shows that increases in
+               branch coverage of up to 53% are possible for an individual class in practice."
 }
 
 @article{Fraser2015,
@@ -13,6 +30,21 @@
   editors   = "Mark Harman and Mauro Pezz\`{e}",
   year      = "To Appear",
   url       = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2015-tosem.pdf",
+  abstract  = "Work on automated test generation has produced several tools capable of generating test 
+               data which achieves high structural coverage over a program. In the absence of a specification, 
+               developers are expected to manually construct or verify the test oracle for each test input. 
+               Nevertheless, it is assumed that these generated tests ease the task of testing for the developer, 
+               as testing is reduced to checking the results of tests. While this assumption has persisted for 
+               decades, there has been no conclusive evidence to date confirming it. However, the limited 
+               adoption in industry indicates this assumption may not be correct, and calls into question the
+               practical value of test generation tools. To investigate this issue, we performed two controlled 
+               experiments comparing a total of 97 subjects split between writing tests manually and writing tests 
+               with the aid of an automated unit test generation tool, EVOSUITE. We found that, on one hand, 
+               tool support leads to clear improvements in commonly applied quality metrics such as code 
+               coverage (up to 300% increase). However, on the other hand, there was no measurable improvement 
+               in the number of bugs actually found by developers. Our results not only cast some doubt on how 
+               the research community evaluates test generation tools, but also point to improvements and future 
+               work necessary before automated test generation tools will be widely adopted by practitioners."
 }
 
 @article{Fraser2015b,
@@ -23,6 +55,20 @@
   doi       = "10.1016/j.jss.2014.05.032",
   gsid      = "6535049122850899903",
   url       = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2015-jss.pdf",  
+  abstract  = "Testing involves examining the behaviour of a system in order to discover potential faults. 
+               Given an input for a system, the challenge of distinguishing the corresponding desired, 
+               correct behaviour from potentially incorrect behavior is called the “test oracle problem”. 
+               Test oracle automation is important to remove a current bottleneck that inhibits greater 
+               overall test automation. Without test oracle automation, the human has to determine whether 
+               observed behaviour is correct. The literature on test oracles has introduced techniques for
+               oracle automation, including modelling, specifications, contract-driven development and 
+               metamorphic testing. When none of these is completely adequate, the final source of test 
+               oracle information remains the human, who may be aware of informal specifications, 
+               expectations, norms and domain specific information that provide informal oracle guidance. 
+               All forms of test oracles, even the humble human, involve challenges of reducing cost and 
+               increasing benefit. This paper provides a comprehensive survey of current approaches to 
+               the test oracle problem and an analysis of trends in this important area of software testing 
+               research and practice."
 }
 
 @article{Shahbaz2015,
@@ -424,7 +470,7 @@
            
               Conclusion: It is concluded crossover plays an increasingly important role 
               for programs with large, multi-dimensional input spaces, where the target 
-              structure’s input condition breaks down into independent sub-problems for 
+              structure's input condition breaks down into independent sub-problems for 
               which solutions may be sought in parallel. Furthermore, it is found that 
               crossover can be inhibited when the program under test is unstructured or 
               involves nested conditional statements; and when intermediate variables are 
