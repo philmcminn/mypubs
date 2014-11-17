@@ -20,11 +20,47 @@
   year      = "To Appear"
 }
 
+@article{Shahbaz2015,
+  author    = "Muzammil Shahbaz and Phil McMinn and Mark Stevenson",
+  title     = "Automatic generation of valid and invalid test data for string validation routines 
+               using web searches and regular expressions",
+  journal   = "Science of Computer Programming",
+  volume    = "97",
+  number    = "4",
+  pages     = "405--425",  
+  year      = "2015",  
+  doi       = "10.1016/j.scico.2014.04.008",
+  url       = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2015-scp.pdf",
+  abstract  = "Classic approaches to automatic input data generation are usually driven by the goal of  
+               obtaining program coverage and the need to solve or find solutions to path constraints 
+               to achieve this. As inputs are generated with respect to the structure of the code, 
+               they can be ineffective, difficult for humans to read, and unsuitable for testing missing 
+               implementation. Furthermore, these approaches have known limitations when handling constraints 
+               that involve operations with string data types.
+
+               This paper presents a novel approach for generating string test data for string validation 
+               routines, by harnessing the Internet. The technique uses program identifiers to construct 
+               web search queries for regular expressions that validate the format of a string type (such 
+               as an email address). It then performs further web searches for strings that match the regular 
+               expressions, producing examples of test cases that are both valid and realistic. Following this, 
+               our technique mutates the regular expressions to drive the search for invalid strings, and the 
+               production of test inputs that should be rejected by the validation routine.
+
+               The paper presents the results of an empirical study evaluating our approach. The study was 
+               conducted on 24 string input validation routines collected from 10 open source projects. 
+               While dynamic symbolic execution and search-based testing approaches were only able to generate 
+               a very low number of values successfully, our approach generated values with an accuracy of 34% 
+               on average for the case of valid strings, and 99% on average for the case of invalid strings. 
+               Furthermore, whereas dynamic symbolic execution and search-based testing approaches were only 
+               capable of detecting faults in 8 routines, our approach detected faults in 17 out of the 19 
+               validation routines known to contain implementation errors."
+}
+
 @inproceedings{Wright2014,
   author    = "Chris J. Wright and Gregory M. Kapfhammer and Phil McMinn",
   title     = "The Impact Of Equivalent, Redundant And Quasi Mutants On Database Schema Mutation Analysis",
   booktitle = "International Conference on Quality Software (QSIC 2014)",
-  year      = "2014, To Appear",
+  year      = "2014",
   publisher = "IEEE Computer Society",
   url       = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2014-qsic.pdf",
   abstract  = "Since the relational database is an important component of real-world software 
@@ -125,6 +161,7 @@
   title     = "A Theoretical Runtime and Empirical Analysis of Different 
                Alternating Variable Searches for Search-Based Testing",
   booktitle = "Genetic and Evolutionary Computation Conference (GECCO 2013)", 
+  pages     = "1445--1452",
   year      = "2013",
   publisher = "ACM",
   doi       = "10.1145/2463372.2463549",
@@ -144,6 +181,7 @@
   author    = "Gordon Fraser and Phil McMinn and Andrea Arcuri",
   title     = "Test Suite Generation with Memetic Algorithms",
   booktitle = "Genetic and Evolutionary Computation Conference (GECCO 2013)", 
+  pages     = "1437--1444",
   year      = "2013",
   publisher = "ACM",
   doi       = "10.1145/2463372.2463548",
