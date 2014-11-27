@@ -1,7 +1,7 @@
 require './my_bibtex'
 
 IN_FILE = '../bibtex/mcminn.bib'
-OUT_FILE = IN_FILE
+OUT_FILE = '../bibtex/mcminn.pretty.bib'
 
 fields = %w(
   author
@@ -20,12 +20,13 @@ fields = %w(
   institution
   doi
   gsid
+  gscites
   url
   journalversion
   abstract
   comment
 )
 
-pretify(IN_FILE, OUT_FILE, fields)
+prettify(IN_FILE, OUT_FILE, fields)
 
 
