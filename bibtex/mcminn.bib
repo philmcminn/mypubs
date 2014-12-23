@@ -1,3 +1,24 @@
+@article{Kempka2015,
+  author    = "Joseph Kempka and Phil McMinn and Dirk Sudholt", 
+  title     = "Design and Analysis of Different Alternating Variable Searches for Search-Based Software Testing",
+  journal   = "Theory of Computer Science",
+  year      = "To appear",
+  url       = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2015-tcs.pdf",
+  abstract  = "Manual software testing is a notoriously expensive part of the software 
+              development process, and its automation is of high concern.  One aspect 
+              of the testing process is the automatic generation of test inputs.  This 
+              paper studies the Alternating Variable Method (AVM) approach to search-based 
+              test input generation.  The AVM has been shown to be an effective and efficient 
+              means of generating branch-covering inputs for procedural programs.  However, 
+              there has been little work that has sought to analyse the technique and further 
+              improve its performance.  This paper proposes two different local searches that 
+              may be used in conjunction with the AVM, Geometric and Lattice Search.  A 
+              theoretical runtime analysis proves that under certain conditions, the use of 
+              these searches results in better performance compared to the original AVM.  
+              These theoretical results are confirmed by an empirical study with five programs, 
+              which shows that increases of speed of over 50% are possible in practice."
+}
+
 @article{Barr2015,
   author    = "Earl T. Barr and Mark Harman and Phil McMinn and Muzammil Shahbaz and Shin Yoo",
   title     = "The Oracle Problem in Software Testing: A Survey",
@@ -5,23 +26,20 @@
   year      = "To Appear",
   doi       = "10.1109/TSE.2014.2372785",
   url       = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2015-tse.pdf",
-  abstract  = "The generation of unit-level test cases for structural code coverage is a task
-               well-suited to Genetic Algorithms. Method call sequences must be created that
-               construct objects, put them into the right state and then execute uncovered
-               code. However, the generation of primitive values, such as integers and doubles,
-               characters that appear in strings, and arrays of primitive values, are not so
-               straightforward. Often, small local changes are required to drive the value
-               towards the one needed to execute some target structure. However, global
-               searches like Genetic Algorithms tend to make larger changes that are not
-               concentrated on any particular aspect of a test case. In this paper, we extend the
-               Genetic Algorithm behind the EvoSuite test generation tool into a Memetic
-               Algorithm, by equipping it with several local search operators. These operators
-               are designed to efficiently optimize primitive values and other aspects of a
-               test suite that allow the search for test cases to function more effectively. We
-               evaluate our operators using a rigorous experimental methodology on over 12,000
-               Java classes, comprising open source classes of various different kinds, including
-               numerical applications and text processors. Our study shows that increases in
-               branch coverage of up to 53% are possible for an individual class in practice."
+  abstract  = "Testing involves examining the behaviour of a system in order to discover potential faults. 
+               Given an input for a system, the challenge of distinguishing the corresponding desired, 
+               correct behaviour from potentially incorrect behavior is called the “test oracle problem”. 
+               Test oracle automation is important to remove a current bottleneck that inhibits greater 
+               overall test automation. Without test oracle automation, the human has to determine whether 
+               observed behaviour is correct. The literature on test oracles has introduced techniques for
+               oracle automation, including modelling, specifications, contract-driven development and 
+               metamorphic testing. When none of these is completely adequate, the final source of test 
+               oracle information remains the human, who may be aware of informal specifications, 
+               expectations, norms and domain specific information that provide informal oracle guidance. 
+               All forms of test oracles, even the humble human, involve challenges of reducing cost and 
+               increasing benefit. This paper provides a comprehensive survey of current approaches to 
+               the test oracle problem and an analysis of trends in this important area of software testing 
+               research and practice."              
 }
 
 @article{Fraser2015,
@@ -56,20 +74,23 @@
   doi       = "10.1016/j.jss.2014.05.032",
   gsid      = "6535049122850899903",
   url       = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2015-jss.pdf",  
-  abstract  = "Testing involves examining the behaviour of a system in order to discover potential faults. 
-               Given an input for a system, the challenge of distinguishing the corresponding desired, 
-               correct behaviour from potentially incorrect behavior is called the “test oracle problem”. 
-               Test oracle automation is important to remove a current bottleneck that inhibits greater 
-               overall test automation. Without test oracle automation, the human has to determine whether 
-               observed behaviour is correct. The literature on test oracles has introduced techniques for
-               oracle automation, including modelling, specifications, contract-driven development and 
-               metamorphic testing. When none of these is completely adequate, the final source of test 
-               oracle information remains the human, who may be aware of informal specifications, 
-               expectations, norms and domain specific information that provide informal oracle guidance. 
-               All forms of test oracles, even the humble human, involve challenges of reducing cost and 
-               increasing benefit. This paper provides a comprehensive survey of current approaches to 
-               the test oracle problem and an analysis of trends in this important area of software testing 
-               research and practice."
+  abstract  = "The generation of unit-level test cases for structural code coverage is a task
+               well-suited to Genetic Algorithms. Method call sequences must be created that
+               construct objects, put them into the right state and then execute uncovered
+               code. However, the generation of primitive values, such as integers and doubles,
+               characters that appear in strings, and arrays of primitive values, are not so
+               straightforward. Often, small local changes are required to drive the value
+               towards the one needed to execute some target structure. However, global
+               searches like Genetic Algorithms tend to make larger changes that are not
+               concentrated on any particular aspect of a test case. In this paper, we extend the
+               Genetic Algorithm behind the EvoSuite test generation tool into a Memetic
+               Algorithm, by equipping it with several local search operators. These operators
+               are designed to efficiently optimize primitive values and other aspects of a
+               test suite that allow the search for test cases to function more effectively. We
+               evaluate our operators using a rigorous experimental methodology on over 12,000
+               Java classes, comprising open source classes of various different kinds, including
+               numerical applications and text processors. Our study shows that increases in
+               branch coverage of up to 53% are possible for an individual class in practice."
 }
 
 @article{Shahbaz2015,

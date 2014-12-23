@@ -10,6 +10,7 @@ def get_google_scholar_info(paper_title)
   Net::HTTP.start('scholar.google.com') do |http|
     req = Net::HTTP::Get.new(enc_uri)
     s = http.request(req).body
+    puts s
     pos1 = s.index('Cited by ')
     if pos1
       pos2 = s.index('</a>', pos1+9)
