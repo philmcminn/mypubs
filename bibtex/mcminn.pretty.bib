@@ -1,0 +1,1951 @@
+@article{Barr2015,
+  author         = "Barr, Earl T. and Harman, Mark and McMinn, Phil and Shahbaz,
+                    Muzammil and Yoo, Shin",
+  title          = "The Oracle Problem in Software Testing: A Survey",
+  journal        = "IEEE Transactions on Software Engineering",
+  year           = "To Appear",
+  doi            = "10.1109/TSE.2014.2372785",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2015-tse.pdf",
+  abstract       = "The generation of unit-level test cases for structural code
+                    coverage is a task well-suited to Genetic Algorithms. Method
+                    call sequences must be created that construct objects, put
+                    them into the right state and then execute uncovered code.
+                    However, the generation of primitive values, such as
+                    integers and doubles, characters that appear in strings, and
+                    arrays of primitive values, are not so straightforward.
+                    Often, small local changes are required to drive the value
+                    towards the one needed to execute some target structure.
+                    However, global searches like Genetic Algorithms tend to
+                    make larger changes that are not concentrated on any
+                    particular aspect of a test case. In this paper, we extend
+                    the Genetic Algorithm behind the EvoSuite test generation
+                    tool into a Memetic Algorithm, by equipping it with several
+                    local search operators. These operators are designed to
+                    efficiently optimize primitive values and other aspects of a
+                    test suite that allow the search for test cases to function
+                    more effectively. We evaluate our operators using a rigorous
+                    experimental methodology on over 12,000 Java classes,
+                    comprising open source classes of various different kinds,
+                    including numerical applications and text processors. Our
+                    study shows that increases in branch coverage of up to 53%
+                    are possible for an individual class in practice."
+}
+
+@article{Fraser2015,
+  author         = "Fraser, Gordon and Staats, Matt and McMinn, Phil and Arcuri,
+                    Andrea and Padberg, Frank",
+  title          = "Does Automated Unit Test Generation Really Help Software
+                    Testers? A Controlled Empirical Study",
+  editor         = "Harman, Mark and Pezz\`{e}, Mauro",
+  journal        = "ACM Transactions on Software Engineering Methodology",
+  year           = "To Appear",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2015-tosem.pdf",
+  abstract       = "Work on automated test generation has produced several tools
+                    capable of generating test data which achieves high
+                    structural coverage over a program. In the absence of a
+                    specification, developers are expected to manually construct
+                    or verify the test oracle for each test input. Nevertheless,
+                    it is assumed that these generated tests ease the task of
+                    testing for the developer, as testing is reduced to checking
+                    the results of tests. While this assumption has persisted
+                    for decades, there has been no conclusive evidence to date
+                    confirming it. However, the limited adoption in industry
+                    indicates this assumption may not be correct, and calls into
+                    question the practical value of test generation tools. To
+                    investigate this issue, we performed two controlled
+                    experiments comparing a total of 97 subjects split between
+                    writing tests manually and writing tests with the aid of an
+                    automated unit test generation tool, EVOSUITE. We found
+                    that, on one hand, tool support leads to clear improvements
+                    in commonly applied quality metrics such as code coverage
+                    (up to 300% increase). However, on the other hand, there was
+                    no measurable improvement in the number of bugs actually
+                    found by developers. Our results not only cast some doubt on
+                    how the research community evaluates test generation tools,
+                    but also point to improvements and future work necessary
+                    before automated test generation tools will be widely
+                    adopted by practitioners."
+}
+
+@article{Fraser2015b,
+  author         = "Fraser, Gordon and Arcuri, Andrea and McMinn, Phil",
+  title          = "A Memetic Algorithm for Whole Test Suite Generation",
+  journal        = "Journal of Systems and Software",
+  year           = "To Appear",
+  doi            = "10.1016/j.jss.2014.05.032",
+  gsid           = "6535049122850899903",
+  gscites        = "1",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2015-jss.pdf",
+  abstract       = "Testing involves examining the behaviour of a system in
+                    order to discover potential faults. Given an input for a
+                    system, the challenge of distinguishing the corresponding
+                    desired, correct behaviour from potentially incorrect
+                    behavior is called the “test oracle problem”. Test oracle
+                    automation is important to remove a current bottleneck that
+                    inhibits greater overall test automation. Without test
+                    oracle automation, the human has to determine whether
+                    observed behaviour is correct. The literature on test
+                    oracles has introduced techniques for oracle automation,
+                    including modelling, specifications, contract-driven
+                    development and metamorphic testing. When none of these is
+                    completely adequate, the final source of test oracle
+                    information remains the human, who may be aware of informal
+                    specifications, expectations, norms and domain specific
+                    information that provide informal oracle guidance. All forms
+                    of test oracles, even the humble human, involve challenges
+                    of reducing cost and increasing benefit. This paper provides
+                    a comprehensive survey of current approaches to the test
+                    oracle problem and an analysis of trends in this important
+                    area of software testing research and practice."
+}
+
+@article{Shahbaz2015,
+  author         = "Shahbaz, Muzammil and McMinn, Phil and Stevenson, Mark",
+  title          = "Automatic generation of valid and invalid test data for
+                    string validation routines using web searches and regular
+                    expressions",
+  journal        = "Science of Computer Programming",
+  volume         = "97",
+  number         = "4",
+  pages          = "405--425",
+  year           = "2015",
+  doi            = "10.1016/j.scico.2014.04.008",
+  gsid           = "12751904691317958917",
+  gscites        = "2",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2015-scp.pdf",
+  abstract       = "Classic approaches to automatic input data generation are
+                    usually driven by the goal of obtaining program coverage and
+                    the need to solve or find solutions to path constraints to
+                    achieve this. As inputs are generated with respect to the
+                    structure of the code, they can be ineffective, difficult
+                    for humans to read, and unsuitable for testing missing
+                    implementation. Furthermore, these approaches have known
+                    limitations when handling constraints that involve
+                    operations with string data types. This paper presents a
+                    novel approach for generating string test data for string
+                    validation routines, by harnessing the Internet. The
+                    technique uses program identifiers to construct web search
+                    queries for regular expressions that validate the format of
+                    a string type (such as an email address). It then performs
+                    further web searches for strings that match the regular
+                    expressions, producing examples of test cases that are both
+                    valid and realistic. Following this, our technique mutates
+                    the regular expressions to drive the search for invalid
+                    strings, and the production of test inputs that should be
+                    rejected by the validation routine. The paper presents the
+                    results of an empirical study evaluating our approach. The
+                    study was conducted on 24 string input validation routines
+                    collected from 10 open source projects. While dynamic
+                    symbolic execution and search-based testing approaches were
+                    only able to generate a very low number of values
+                    successfully, our approach generated values with an accuracy
+                    of 34% on average for the case of valid strings, and 99% on
+                    average for the case of invalid strings. Furthermore,
+                    whereas dynamic symbolic execution and search-based testing
+                    approaches were only capable of detecting faults in 8
+                    routines, our approach detected faults in 17 out of the 19
+                    validation routines known to contain implementation errors."
+}
+
+@inproceedings{Wright2014,
+  author         = "Wright, Chris J. and Kapfhammer, Gregory M. and McMinn, Phil",
+  title          = "The Impact Of Equivalent, Redundant And Quasi Mutants On
+                    Database Schema Mutation Analysis",
+  booktitle      = "International Conference on Quality Software (QSIC 2014)",
+  year           = "2014",
+  publisher      = "IEEE Computer Society",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2014-qsic.pdf",
+  abstract       = "Since the relational database is an important component of
+                    real-world software and the schema plays a major role in
+                    ensuring the quality of the database, relational schema
+                    testing is essential. This paper presents methods for
+                    improving both the efficiency and accuracy of mutation
+                    analysis, an established method for assessing the quality of
+                    test cases for database schemas. Using a DBMS-independent
+                    abstract representation, the presented techniques
+                    automatically identify and remove mutants that are either
+                    equivalent to the original schema, redundant with respect to
+                    other mutants, or undesirable because they are only valid
+                    for certain database systems. Applying our techniques for
+                    ineffective mutant removal to a variety of schemas, many of
+                    which are from real-world sources like the U.S. Department
+                    of Agriculture and the Stack Overflow website, reveals that
+                    the presented static analysis of the DBMS-independent
+                    representation is multiple orders of magnitude faster than a
+                    DBMS-specific method. The results also show increased
+                    mutation scores in 75% of cases, with 44% of those
+                    uncovering a mutation-adequate test suite. Combining the
+                    presented techniques yields mean efficiency improvements of
+                    up to 33.7%, with averages across schemas of 1.6% and 11.8%
+                    for HyperSQL and PostgreSQL, respectively."
+}
+
+@inproceedings{Hall2014,
+  author         = "Hall, Mathew and Khojaye, Muhammad and Walkinshaw, Neil and
+                    McMinn, Phil",
+  title          = "Establishing the Source Code Disruption Caused by Automated
+                    Remodularisation Tools",
+  booktitle      = "International Conference on Software Maintenance and
+                    Evolution (ICSME 2014)",
+  pages          = "466--470",
+  year           = "2014",
+  publisher      = "IEEE Computer Society",
+  doi            = "10.1109/ICSME.2014.75",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2014-icsme.pdf",
+  abstract       = "Current software remodularisation tools only operate on
+                    abstractions of a software system. In this paper, we inves-
+                    tigate the actual impact of automated remodularisation on
+                    source code using a tool that automatically applies
+                    remodularisations as refactorings. This shows us that a
+                    typical remodularisation (as computed by the Bunch tool)
+                    will require changes to thousands of lines of code, spread
+                    throughout the system (typically no code files remain
+                    untouched). In a typical multi-developer project this
+                    presents a serious integration challenge, and could
+                    contribute to the low uptake of such tools in an industrial
+                    context. We relate these findings with our ongoing research
+                    into techniques that produce iterative commit friendly code
+                    changes to address this problem."
+}
+
+@techreport{Harman2013,
+  author         = "Harman, Mark and McMinn, Phil and Shahbaz, Muzammil and Yoo,
+                    Shin",
+  title          = "A Comprehensive Survey of Trends in Oracles for Software
+                    Testing",
+  number         = "CS-13-01",
+  year           = "2013",
+  institution    = "University of Sheffield, Department of Computer Science",
+  gsid           = "1901883250950186162",
+  gscites        = "22",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2013-techreport.pdf",
+  journalversion = "Barr2015",
+  abstract       = "Testing involves examining the behaviour of a system in
+                    order to discover potential faults. Determining the desired
+                    correct behaviour for a given input is called the ``oracle
+                    problem''. Oracle automation is important to remove a
+                    current bottleneck which inhibits greater overall test
+                    automation; without oracle automation, the human has to
+                    determine whether observed behaviour is correct. The
+                    literature on oracles has introduced techniques for oracle
+                    automation, including modelling, specifications,
+                    contract-driven development and metamorphic testing. When
+                    none of these is completely adequate, the final source of
+                    oracle information remains the human, who may be aware of
+                    informal specifications, expectations, norms and domain
+                    specific information that provide informal oracle guidance.
+                    All forms of oracle, even the humble human, involve
+                    challenges of reducing cost and increasing benefit. This
+                    paper provides a comprehensive survey of current approaches
+                    to the oracle problem and an analysis of trends in this
+                    important area of software testing research and practice."
+}
+
+@inproceedings{Fraser2013b,
+  author         = "Fraser, Gordon and Staats, Matt and McMinn, Phil and Arcuri,
+                    Andrea and Padberg, Frank",
+  title          = "Does Automated White-Box Test Generation Really Help
+                    Software Testers?",
+  booktitle      = "International Symposium on Software Testing and Analysis
+                    (ISSTA 2013)",
+  pages          = "291--301",
+  year           = "2013",
+  publisher      = "ACM",
+  doi            = "10.1145/2483760.2483774",
+  gsid           = "4146562079611253526",
+  gscites        = "11",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2013-issta.pdf",
+  journalversion = "Fraser2015",
+  abstract       = "Automated test generation techniques can efficiently produce
+                    test data that systematically cover structural aspects of a
+                    program. In the absence of a specification, a common
+                    assumption is that these tests relieve a developer of most
+                    of the work, as the act of testing is reduced to checking
+                    the results of the tests. Although this assumption has
+                    persisted for decades, there has been no conclusive evidence
+                    to date confirming it. However, the fact that the approach
+                    has only seen a limited uptake in industry suggests the
+                    contrary, and calls into question its practical usefulness.
+                    To investigate this issue, we performed a controlled
+                    experiment comparing a total of 49 subjects split between
+                    writing tests manually and writing tests with the aid of an
+                    automated unit test generation tool, EVOSUITE. We found
+                    that, on one hand, tool support leads to clear improvements
+                    in commonly applied quality metrics such as code coverage
+                    (up to 300% increase). However, on the other hand, there was
+                    no measurable improvement in the number of bugs actually
+                    found by developers. Our results not only cast some doubt on
+                    how the research community evaluates test generation tools,
+                    but also point to improvements and future work necessary
+                    before automated test generation tools will be widely
+                    adopted by practitioners."
+}
+
+@inproceedings{Kempka2013,
+  author         = "Kempka, Joseph and McMinn, Phil and Sudholt, Dirk",
+  title          = "A Theoretical Runtime and Empirical Analysis of Different
+                    Alternating Variable Searches for Search-Based Testing",
+  booktitle      = "Genetic and Evolutionary Computation Conference (GECCO 2013)",
+  pages          = "1445--1452",
+  year           = "2013",
+  publisher      = "ACM",
+  doi            = "10.1145/2463372.2463549",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2013-gecco.pdf",
+  abstract       = "The Alternating Variable Method (AVM) has been shown to be a
+                    surprisingly effective and efficient means of generating
+                    branch- covering inputs for procedural programs. However,
+                    there has been little work that has sought to analyse the
+                    technique and further improve its performance. This paper
+                    proposes two new local searches that may be used in
+                    conjunction with the AVM, Geometric and Lattice Search. A
+                    theoretical runtime analysis shows that under certain
+                    conditions, the use of these searches is proven to
+                    outperform the original AVM. These theoretical results are
+                    confirmed by an empirical study with four programs, which
+                    shows that increases of speed of over 50% are possible in
+                    practice."
+}
+
+@inproceedings{Fraser2013,
+  author         = "Fraser, Gordon and McMinn, Phil and Arcuri, Andrea",
+  title          = "Test Suite Generation with Memetic Algorithms",
+  booktitle      = "Genetic and Evolutionary Computation Conference (GECCO 2013)",
+  pages          = "1437--1444",
+  year           = "2013",
+  publisher      = "ACM",
+  doi            = "10.1145/2463372.2463548",
+  gsid           = "4397680857604283833",
+  gscites        = "7",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2013-gecco2.pdf",
+  journalversion = "Fraser2015b",
+  abstract       = "Genetic Algorithms have been successfully applied to the
+                    generation of unit tests for classes, and are well suited to
+                    create complex objects through sequences of method calls.
+                    However, because the neighborhood in the search space for
+                    method sequences is huge, even supposedly simple
+                    optimizations on primitive variables (e.g., numbers and
+                    strings) can be ineffective or unsuccessful. To overcome
+                    this problem, we extend the global search applied in the
+                    EvoSuite test generation tool with local search on the
+                    individual statements of method sequences. In contrast to
+                    previous work on local search, we also consider complex
+                    datatypes including strings and arrays. A rigorous
+                    experimental methodology has been applied to properly
+                    evaluate these new local search operators. In our
+                    experiments on a set of open source classes of different
+                    kinds (e.g., numerical applications and text processing),
+                    the resulting test data generation technique increased
+                    branch coverage by up to 32% on average over the normal
+                    Genetic Algorithm."
+}
+
+@inproceedings{Wright2013b,
+  author         = "Wright, Chris J. and McMinn, Phil and Gallardo, Julio",
+  title          = "Towards the Automatic Identification of Faulty Multi-Agent
+                    Based Simulation Runs Using MASTER",
+  booktitle      = "Multi-Agent-Based Simulation XIII -- International Workshop
+                    on Multi-Agent Simulation (MABS 2012)",
+  series         = "Lecture Notes in Artificial Intelligence",
+  volume         = "7838",
+  pages          = "153--172",
+  year           = "2013",
+  publisher      = "Springer",
+  doi            = "10.1007/978-3-642-38859-0_11",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2013-mabspostproc.pdf",
+  abstract       = "Testing a multi-agent based model is a tedious process that
+                    involves generating very many simulation runs, for example
+                    as a result of a parameter sweep. In practice, each
+                    simulation run must be inspected manually to gain complete
+                    confidence that the agent-based model has been implemented
+                    correctly and is operating according to expectations. We
+                    present MASTER, a tool which aims to semi-automatically
+                    detect when a simulation run has deviated from “normal”
+                    behaviour. A sim- ulation run is flagged as “suspicious”
+                    when certain parameters traverse normal bounds determined by
+                    the modeller. These bounds are defined in reference to a
+                    small series of actual executions of the model deemed to be
+                    correct. The operation of MASTER is presented with two case
+                    studies, the first with the well-known “flockers” model
+                    supplied with the popular MASON agent-based modelling
+                    toolkit, and the second a skin tissue model written using
+                    another toolkit---FLAME."
+}
+
+@inproceedings{Shamshiri2013,
+  author         = "Shamshiri, Sina and Fraser, Gordon and McMinn, Phil and
+                    Orso, Alex",
+  title          = "Search-Based Propagation of Regression Faults in Automated
+                    Regression Testing",
+  booktitle      = "International Workshop on Regression Testing (Regression
+                    2013)",
+  pages          = "396--399",
+  month          = "mar",
+  year           = "2013",
+  location       = "Luxembourg",
+  publisher      = "IEEE",
+  doi            = "10.1109/ICSTW.2013.51",
+  gsid           = "17662666305881917950",
+  gscites        = "1",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2013-regression.pdf",
+  abstract       = "Over the lifetime of software programs, developers make
+                    changes by adding, removing, enhancing functionality or by
+                    refactoring code. These changes can sometimes result in
+                    undesired side effects in the original functionality of the
+                    software, better known as regression faults. To detect
+                    these, developers either have to rely on an existing set of
+                    test cases, or have to create new tests that exercise the
+                    changes. However, simply executing the changed code does not
+                    guarantee that a regression fault manifests in a state
+                    change, or that this state change propagates to an
+                    observable output where it could be detected by a test case.
+                    To address this propagation aspect, we present EVOSUITER, an
+                    extension of the EVOSUITE unit test generation tool. Our
+                    approach generates tests that propagate regression faults to
+                    an observable difference using a search- based approach, and
+                    captures this observable difference with test assertions. We
+                    illustrate on an example program that EVOSUITER can be
+                    effective in revealing regression errors in cases where
+                    alternative approaches may fail, and motivate further
+                    research in this direction."
+}
+
+@article{Anand2013,
+  author         = "Anand, Saswat and Burke, Edmund and Chen, Tsong Yueh and
+                    Clark, John and Cohen, Myra B. and Grieskamp, Wolfgang and
+                    Harman, Mark and Harrold, Mary Jean and McMinn, Phil",
+  title          = "An Orchestrated Survey on Automated Software Test Case
+                    Generation",
+  editor         = "Bertolino, Antonia and Li, J. Jenny and Zhu, Hong",
+  journal        = "Journal of Systems and Software",
+  volume         = "86",
+  number         = "8",
+  pages          = "1978--2001",
+  month          = "aug",
+  year           = "2013",
+  doi            = "10.1016/j.jss.2013.02.061",
+  gsid           = "3511904947539311742",
+  gscites        = "10",
+  abstract       = "Test case generation is among the most labour-intensive
+                    tasks in software testing. It also has a strong impact on
+                    the effectiveness and efficiency of software testing. For
+                    these reasons, it has been one of the most active research
+                    topics in software testing for several decades, resulting in
+                    many different approaches and tools. This paper presents an
+                    orchestrated survey of the most prominent techniques for
+                    automatic generation of software test cases, reviewed in
+                    self-standing sections. The techniques presented include:
+                    (a) structural testing using symbolic execution, (b)
+                    model-based testing, (c) combinatorial testing, (d) random
+                    testing and its variant of adaptive random testing, and (e)
+                    search-based testing. Each section is contributed by
+                    world-renowned active researchers on the technique, and
+                    briefly covers the basic ideas underlying the method, the
+                    current state of the art, a discussion of the open research
+                    problems, and a perspective of the future development of the
+                    approach. As a whole, the paper aims at giving an
+                    introductory, up-to-date and (relatively) short overview of
+                    research in automatic test case generation, while ensuring a
+                    comprehensive and authoritative treatment."
+}
+
+@inproceedings{Wright2013,
+  author         = "Wright, Chris J. and Kapfhammer, Gregory M. and McMinn, Phil",
+  title          = "Efficient Mutation Analysis of Relational Database Structure
+                    Using Mutant Schemata and Parallelisation",
+  booktitle      = "International Workshop on Mutation Analysis (Mutation 2013)",
+  pages          = "63--72",
+  month          = "mar",
+  year           = "2013",
+  location       = "Luxembourg",
+  publisher      = "IEEE",
+  doi            = "10.1109/ICSTW.2013.15",
+  gsid           = "11511976546368721292",
+  gscites        = "3",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2013-mutation.pdf",
+  abstract       = "Mutation analysis is an effective way to assess the quality
+                    of input values and test oracles. Yet, since this technique
+                    requires the generation and execution of many mutants, it
+                    often incurs a substantial computational cost. In the
+                    context of program mutation, the use of mutant schemata and
+                    parallelisation can reduce the costs of mutation analysis.
+                    This paper is the first to apply these approaches to the
+                    mutation analysis of a relational database schema, arguably
+                    one of the most important artefacts in a database
+                    application. Using a representative set of case studies that
+                    vary in both their purpose and structure, this paper
+                    empirically compares an unoptimised method to four database
+                    structure mutation techniques that intelligently employ both
+                    mutant schemata and parallelisation. The results of the
+                    experimental study highlight the performance trade-offs that
+                    depend on the type of database management system (DBMS),
+                    underscoring the fact that every DBMS does not support all
+                    types of efficient mutation analysis. However, the
+                    experiments also identify a method that yields a one to ten
+                    times reduction in the cost of mutation analysis for
+                    relational schemas hosted by both the Postgres and SQLite
+                    DBMSs."
+}
+
+@inproceedings{Afshan2013,
+  author         = "Afshan, Sheeva and McMinn, Phil and Stevenson, Mark",
+  title          = "Evolving Readable String Test Inputs Using a Natural
+                    Language Model to Reduce Human Oracle Cost",
+  booktitle      = "International Conference on Software Testing, Verification
+                    and Validation (ICST 2013)",
+  pages          = "352--361",
+  month          = "mar",
+  year           = "2013",
+  location       = "Luxembourg",
+  publisher      = "IEEE",
+  doi            = "10.1109/ICST.2013.11",
+  gsid           = "17101202194362039024",
+  gscites        = "9",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2013-icst.pdf",
+  abstract       = "The frequent non-availability of an automated oracle means
+                    that, in practice, checking software behaviour is frequently
+                    a painstakingly manual task. Despite the high cost of human
+                    oracle involvement, there has been little research
+                    investigating how to make the role easier and less time-
+                    consuming. One source of human oracle cost is the inherent
+                    unreadability of machine-generated test inputs. In
+                    particular, automatically generated string inputs tend to be
+                    arbitrary sequences of characters that are awkward to read.
+                    This makes test cases hard to comprehend and time-consuming
+                    to check. In this paper we present an approach in which a
+                    natural language model is incorporated into a search-based
+                    input data generation process with the aim of improving the
+                    human readability of generated strings. We further present a
+                    human study of test inputs generated using the technique on
+                    17 open source Java case studies. For 10 of the case
+                    studies, the participants recorded significantly faster
+                    times when evaluating inputs produced using the language
+                    model, with medium to large effect sizes 60% of the time. In
+                    addition, the study found that accuracy of test input
+                    evaluation was also significantly improved for 3 of the case
+                    studies."
+}
+
+@inproceedings{Kapfhammer2013,
+  author         = "Kapfhammer, Gregory M. and McMinn, Phil and Wright, Chris J.",
+  title          = "Search-Based Testing of Relational Schema Integrity
+                    Constraints Across Multiple Database Management Systems",
+  booktitle      = "International Conference on Software Testing, Verification
+                    and Validation (ICST 2013)",
+  pages          = "31--40",
+  month          = "mar",
+  year           = "2013",
+  location       = "Luxembourg",
+  publisher      = "IEEE",
+  doi            = "10.1109/ICST.2013.47",
+  gsid           = "14714555778184478486",
+  gscites        = "9",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2013-icst2.pdf",
+  abstract       = "There has been much attention to testing applications that
+                    interact with database management systems, and the testing
+                    of individual database management systems themselves.
+                    However, there has been very little work devoted to testing
+                    arguably the most important artefact involving an
+                    application supported by a relational database -- the
+                    underlying schema. This paper introduces a search-based
+                    technique for generating database table data with the
+                    intention of exercising the integrity constraints placed on
+                    table columns. The development of a schema is a process open
+                    to flaws like any stage of application development. Its
+                    cornerstone nature to an application means that defects need
+                    to be found early in order to prevent knock-on effects to
+                    other parts of a project and the spiralling bug-fixing costs
+                    that may be incurred. Examples of such flaws include
+                    incomplete primary keys, incorrect foreign keys, and
+                    omissions of NOTNULL declarations. Using mutation analysis,
+                    this paper presents an empirical study evaluating the
+                    effectiveness of our proposed technique and comparing it
+                    against a popular tool for generating table data, DBMonster.
+                    With competitive or faster data generation times, our method
+                    outperforms DBMonster in terms of both constraint coverage
+                    and mutation score."
+}
+
+@article{McMinn2013,
+  author         = "McMinn, Phil",
+  title          = "An Identification of Program Factors that Impact Crossover
+                    Performance in Evolutionary Test Input Generation for the
+                    Branch Coverage of {C} Programs",
+  journal        = "Information and Software Technology",
+  volume         = "55",
+  number         = "1",
+  pages          = "153--172",
+  month          = "jan",
+  year           = "2013",
+  doi            = "10.1016/j.infsof.2012.03.010",
+  gsid           = "5850151503098737647",
+  gscites        = "7",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2013-ist.pdf",
+  abstract       = "Context: Genetic Algorithms are a popular search-based
+                    optimisation technique for automatically generating test
+                    inputs for structural coverage of a program, but there has
+                    been little work investigating the class of programs for
+                    which they will perform well. Objective: This paper presents
+                    and evaluates a series of program factors that are
+                    hypothesised to affect the performance of crossover, a key
+                    search operator in Genetic Algorithms, when searching for
+                    inputs that cover the branching structure of a C function.
+                    Method: Each program factor is evaluated with example
+                    programs using Genetic Algorithms with and without
+                    crossover. Experiments are also performed to test whether
+                    crossover is acting as macro-mutation operator rather than
+                    usefully recombining the component parts of input vectors
+                    when searching for test data. Results: The results show that
+                    crossover has an impact for each of the program factors
+                    studied. Conclusion: It is concluded crossover plays an
+                    increasingly important role for programs with large,
+                    multi-dimensional input spaces, where the target structure's
+                    input condition breaks down into independent sub-problems
+                    for which solutions may be sought in parallel. Furthermore,
+                    it is found that crossover can be inhibited when the program
+                    under test is unstructured or involves nested conditional
+                    statements; and when intermediate variables are used in
+                    branching conditions, as opposed to direct input values."
+}
+
+@inproceedings{Hall2012,
+  author         = "Hall, Mathew and Walkinshaw, Neil and McMinn, Phil",
+  title          = "Supervised Software Modularisation",
+  booktitle      = "International Conference on Software Maintenance (ICSM 2012)",
+  pages          = "472--481",
+  month          = "sep",
+  year           = "2012",
+  location       = "Riva del Garda, Trento, Italy",
+  publisher      = "IEEE",
+  doi            = "10.1109/ICSM.2012.6405309",
+  gsid           = "14591210584263094600",
+  gscites        = "10",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2012-icsm.pdf",
+  abstract       = "This paper is concerned with the challenge of reorganising a
+                    software system into modules that both obey sound design
+                    principles and are sensible to domain experts. The problem
+                    has given rise to several unsupervised automated approaches
+                    that use techniques such as clustering and Formal Concept
+                    Analysis. Although results are often partially correct, they
+                    usually require refinement to enable the developer to
+                    integrate domain knowledge. This paper presents the SUMO
+                    algorithm, an approach that is complementary to existing
+                    techniques and enables the maintainer to refine their
+                    results. The algorithm is guaranteed to eventually yield a
+                    result that is satisfactory to the maintainer, and the
+                    evaluation on a diverse range of systems shows that this
+                    occurs with a reasonably low amount of effort."
+}
+
+@article{Holcombe2012,
+  author         = "Holcombe, Mike and Adra, Salem and Bicak, Mesude and Chin,
+                    Shawn and Coakley, Simon and Graham, Alison I. and Green,
+                    Jeffrey and Greenough, Chris and Jackson, Duncan and Kiran,
+                    Mariam and MacNeil, Sheila and Maleki-Dizaji, Afsaneh and
+                    McMinn, Phil and Pogson, Mark and Poole, Robert and
+                    Qwarnstrom, Eva and Ratnieks, Francis and Rolfe, Matthew D.
+                    and Smallwood, Rod and Sun, Tao and Worth, David",
+  title          = "Modelling complex biological systems using an agent-based
+                    approach",
+  journal        = "Integrative Biology",
+  volume         = "4",
+  number         = "1",
+  pages          = "53--64",
+  year           = "2012",
+  doi            = "10.1039/C1IB00042J",
+  gsid           = "781513648088795830",
+  gscites        = "25",
+  abstract       = "Many of the complex systems found in biology are comprised
+                    of numerous components, where interactions between
+                    individual agents result in the emergence of structures and
+                    function, typically in a highly dynamic manner. Often these
+                    entities have limited lifetimes but their interactions both
+                    with each other and their environment can have profound
+                    biological consequences. We will demonstrate how modelling
+                    these entities, and their interactions, can lead to a new
+                    approach to experimental biology bringing new insights and a
+                    deeper understanding of biological systems."
+}
+
+@article{McMinn2012a,
+  author         = "McMinn, Phil and Harman, Mark and Hassoun, Youssef and
+                    Lakhotia, Kiran and Wegener, Joachim",
+  title          = "Input Domain Reduction through Irrelevant Variable Removal
+                    and its Effect on Local, Global and Hybrid Search-Based
+                    Structural Test Data Generation",
+  journal        = "IEEE Transactions on Software Engineering",
+  volume         = "38",
+  number         = "2",
+  pages          = "453--477",
+  month          = "mar",
+  year           = "2012",
+  doi            = "10.1109/TSE.2011.18",
+  gsid           = "11406913725908588103",
+  gscites        = "26",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2012-tse.pdf",
+  abstract       = "Search-Based Test Data Generation reformulates testing goals
+                    as fitness functions so that test input generation can be
+                    automated by some chosen search-based optimization
+                    algorithm. The optimization algorithm searches the space of
+                    potential inputs, seeking those that are ``fit for
+                    purpose'', guided by the fitness function. The search space
+                    of potential inputs can be very large, even for very small
+                    systems under test. Its size is, of course, a key
+                    determining factor affecting the performance of any
+                    search-based approach. However, despite the large volume of
+                    work on Search-Based Software Testing, the literature
+                    contains little that concerns the performance impact of
+                    search space reduction. This paper proposes a static
+                    dependence analysis derived from program slicing that can be
+                    used to support search space reduction. The paper presents
+                    both a theoretical and empirical analysis of the application
+                    of this approach to open source and industrial production
+                    code. The results provide evidence to support the claim that
+                    input domain reduction has a significant effect on the
+                    performance of local, global, and hybrid search, while a
+                    purely random search is unaffected."
+}
+
+@inproceedings{McMinn2012b,
+  author         = "McMinn, Phil and Shahbaz, Muzammil and Stevenson, Mark",
+  title          = "Search-Based Test Input Generation for String Data Types
+                    Using the Results of Web Queries",
+  booktitle      = "International Conference on Software Testing, Verification
+                    and Validation (ICST 2012)",
+  pages          = "141--150",
+  month          = "apr",
+  year           = "2012",
+  location       = "Montreal",
+  publisher      = "IEEE",
+  doi            = "10.1109/ICST.2012.94",
+  gsid           = "4998143129042647329",
+  gscites        = "26",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2012-icst.pdf",
+  abstract       = "Generating realistic, branch-covering string inputs is a
+                    challenging problem, due to the diverse and complex types of
+                    real-world data that are naturally encodable as strings, for
+                    example resource locators, dates of different localised
+                    formats, international banking codes, and national identity
+                    numbers. This paper presents an approach in which examples
+                    of inputs are sought from the Internet by reformulating
+                    program identifiers into web queries. The resultant URLs are
+                    downloaded, split into tokens, and used to augment and seed
+                    a search-based test data generation technique. The use of
+                    the Internet as part of test input generation has two key
+                    advantages. Firstly, web pages are a rich source of valid
+                    inputs for various types of string data that may be used to
+                    improve test coverage. Secondly, the web pages tend to
+                    contain realistic, human-readable values, which are
+                    invaluable when test cases need manual confirmation due to
+                    the lack of an automated oracle. An empirical evaluation of
+                    the approach is presented, involving string input validation
+                    code from 10 open source projects. Well-formed, valid string
+                    inputs were retrieved from the web for 96% of the different
+                    string types analysed. Using the approach, coverage was
+                    improved for 75% of the Java classes studied by an average
+                    increase of 14%."
+}
+
+@inproceedings{Shahbaz2012,
+  author         = "Shahbaz, Muzammil and McMinn, Phil and Stevenson, Mark",
+  title          = "Automated Discovery of Valid Test Strings from the Web using
+                    Dynamic Regular Expressions Collation and Natural Language
+                    Processing",
+  booktitle      = "International Conference on Quality Software (QSIC 2012)",
+  pages          = "79--88",
+  month          = "aug",
+  year           = "2012",
+  location       = "Xi'an, China",
+  publisher      = "IEEE",
+  doi            = "10.1109/QSIC.2012.15",
+  gsid           = "11910624869729036732",
+  gscites        = "5",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2012-qsic.pdf",
+  journalversion = "Shahbaz2015",
+  abstract       = "Classic approaches to test input generation -- such as
+                    dynamic symbolic execution and search-based testing -- are
+                    commonly driven by a test adequacy criterion such as branch
+                    coverage. However, there is no guarantee that these
+                    techniques will generate meaningful and realistic inputs,
+                    particularly in the case of string test data. Also, these
+                    techniques have trouble handling path conditions involving
+                    string operations that are inherently complex in nature.
+                    This paper presents a novel approach of finding valid values
+                    by collating suitable regular expressions dynamically that
+                    validate the format of the string values, such as an email
+                    address. The regular expressions are found using web
+                    searches that are driven by the identifiers appearing in the
+                    program, for example a string parameter called email
+                    Address. The identifier names are processed through natural
+                    language processing techniques to tailor the web queries.
+                    Once a regular expression has been found, a secondary web
+                    search is performed for strings matching the regular
+                    expression. An empirical study is performed on case studies
+                    involving String input validation code from 10 open source
+                    projects. Compared to other approaches, the precision of
+                    generating valid strings is significantly improved by
+                    employing regular expressions and natural language
+                    processing techniques."
+}
+
+@inproceedings{Adra2011,
+  author         = "Adra, Salem and Kiran, Mariam and McMinn, Phil and
+                    Walkinshaw, Neil",
+  title          = "A Multiobjective Optimisation Approach for Dynamic Inference
+                    and Refinement of Agent-Based Model Specifications",
+  booktitle      = "Congress on Evolutionary Computation (CEC 2011)",
+  pages          = "2237--2244",
+  month          = "5--8 June",
+  year           = "2011",
+  location       = "New Orleans, USA",
+  publisher      = "IEEE",
+  doi            = "10.1109/CEC.2011.5949892",
+  gsid           = "12330481805481206305",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2011-cec.pdf",
+  abstract       = "Despite their increasing popularity, agent-based models are
+                    hard to test, and so far no established testing technique
+                    has been devised for this kind of software applications.
+                    Reverse engineering an agent-based model specification from
+                    model simulations can help establish a confidence level
+                    about the implemented model and in some cases reveal
+                    discrepancies between observed and normal or expected
+                    behaviour. In this study, a multiobjective optimisation
+                    technique based on a simple random search algorithm is
+                    deployed to dynamically infer and refine the specification
+                    of three agent-based models from their simulations. The
+                    multiobjective optimisation technique also incorporates a
+                    dynamic invariant detection technique which serves to guide
+                    the search towards uncovering new model behaviour that
+                    better captures the model specification. The Non-dominated
+                    Sorting Genetic Algorithm (NSGA-II) was also deployed to
+                    replace the random search algorithm, and the results from
+                    both approaches were compared. While both algorithms
+                    revealed good potential in capturing the model
+                    specifications, the pure exploratory nature of random search
+                    was found more suitable for the application at hand,
+                    compared to the balanced exploitation/exploration nature of
+                    genetic algorithms in general."
+}
+
+@inproceedings{Afshan2011,
+  author         = "Afshan, Sheeva and McMinn, Phil",
+  title          = "An Investigation into Qualitative Human Oracle Costs",
+  booktitle      = "Psychology of Programming Interest Group Annual Workshop
+                    (PPIG 2011)",
+  month          = "6--8 September",
+  year           = "2011",
+  location       = "York, UK",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2011-ppig.pdf",
+  abstract       = "The test data produced by automatic test data generators are
+                    often `unnatural' particularly for the programs that make
+                    use of human-recognisable variables such as `country',
+                    `name', `date', `time', `age' and so on. The test data
+                    generated for these variables are usually arbitrary-looking
+                    values that are complex for human testers to comprehend and
+                    evaluate. This is due to the fact that automatic test data
+                    generators have no domain knowledge about the program under
+                    test and thus the test data they produce are hardly
+                    recognised by human testers. As a result, the tester is
+                    likely to spend additional time in order to understand such
+                    data. This paper demonstrates how the incorporation of some
+                    domain knowledge into an automatic test data generator can
+                    significantly improve the quality of the generated test
+                    data. Empirical studies are proposed to investigate how this
+                    incorporation of knowledge can reduce the overall testing
+                    costs."
+}
+
+@inproceedings{Baars2011,
+  author         = "Baars, Arthur and Harman, Mark and Hassoun, Youssef and
+                    Lakhotia, Kiran and McMinn, Phil and Tonella, Paolo and Vos,
+                    Tanja",
+  title          = "Symbolic Search-Based Testing",
+  booktitle      = "International Conference on Automated Software Engineering
+                    (ASE 2011)",
+  pages          = "53--62",
+  month          = "6--10 November",
+  year           = "2011",
+  location       = "Lawrence, Kansas, USA",
+  publisher      = "IEEE",
+  doi            = "10.1109/ASE.2011.6100119",
+  gsid           = "7467923558459545772",
+  gscites        = "27",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2011-ase.pdf",
+  abstract       = "We present an algorithm for constructing fitness functions
+                    that improve the efficiency of search-based testing when
+                    trying to generate branch adequate test data. The algorithm
+                    combines symbolic information with dynamic analysis and has
+                    two key advantages: It does not require any change in the
+                    underlying test data generation technique and it avoids many
+                    problems traditionally associated with symbolic execution,
+                    in particular the presence of loops. We have evaluated the
+                    algorithm on industrial closed source and open source
+                    systems using both local and global search-based testing
+                    techniques, demonstrating that both are statistically
+                    significantly more efficient using our approach. The test
+                    for significance was done using a one-sided, paired Wilcoxon
+                    signed rank test. On average, the local search requires
+                    23.41% and the global search 7.78% fewer fitness evaluations
+                    when using a symbolic execution based fitness function
+                    generated by the algorithm."
+}
+
+@incollection{Harman2011,
+  author         = "Harman, Mark and McMinn, Phil and de Souza, Jerffeson
+                    Teixeira and Yoo, Shin",
+  title          = "Search-Based Software Engineering: Techniques, Taxonomy,
+                    Tutorial",
+  booktitle      = "Empirical Software Engineering and Verification",
+  editor         = "Meyer, Bertrand and Nordio, Martin",
+  series         = "Lecture Notes in Computer Science",
+  volume         = "7007",
+  pages          = "1--59",
+  year           = "2011",
+  publisher      = "Springer",
+  doi            = "10.1007/978-3-642-25231-0_1",
+  gsid           = "17797710725715639546",
+  gscites        = "59",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2011-lncs.pdf",
+  abstract       = "The aim of Search Based Software Engineering (SBSE) research
+                    is to move software engineering problems from human-based
+                    search to machine-based search, using a variety of
+                    techniques from the metaheuristic search, operations
+                    research and evolutionary computation paradigms. The idea is
+                    to exploit humans’ creativity and machines’ tenacity and
+                    reliability, rather than requiring humans to perform the
+                    more tedious, error prone and thereby costly aspects of the
+                    engineering process. SBSE can also provide insights and
+                    decision support. This tutorial will present the reader with
+                    a step-by-step guide to the application of SBSE techniques
+                    to Software Engineering. It assumes neither previous
+                    knowledge nor experience with Search Based Optimisation. The
+                    intention is that the tutorial will cover sufficient
+                    material to allow the reader to become productive in
+                    successfully applying search based optimisation to a chosen
+                    Software Engineering problem of interest."
+}
+
+@inproceedings{McMinn2011,
+  author         = "McMinn, Phil",
+  title          = "Search-Based Software Testing: Past, Present and Future",
+  booktitle      = "International Workshop on Search-Based Software Testing
+                    (SBST 2011)",
+  pages          = "153--163",
+  month          = "mar",
+  year           = "2011",
+  location       = "Berlin, Germany",
+  publisher      = "IEEE",
+  doi            = "10.1109/ICSTW.2011.100",
+  gsid           = "18354841911838065773",
+  gscites        = "61",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2011-sbst.pdf",
+  abstract       = "Search-Based Software Testing is the use of a meta-heuristic
+                    optimizing search technique, such as a Genetic Algorithm, to
+                    automate or partially automate a testing task; for example
+                    the automatic generation of test data. Key to the
+                    optimization process is a problem-specific fitness function.
+                    The role of the fitness function is to guide the search to
+                    good solutions from a potentially infinite search space,
+                    within a practical time limit. Work on Search-Based Software
+                    Testing dates back to 1976, with interest in the area
+                    beginning to gather pace in the 1990s. More recently there
+                    has been an explosion of the amount of work. This paper
+                    reviews past work and the current state of the art, and
+                    discusses potential future research areas and open problems
+                    that remain in the field.",
+  comment        = "Keynote paper"
+}
+
+@inproceedings{Adra2010,
+  author         = "Adra, Salem and McMinn, Phil",
+  title          = "Mutation Operators for Agent-Based Models",
+  booktitle      = "International Workshop on Mutation Analysis (Mutation 2010)",
+  pages          = "151--156",
+  month          = "6 April",
+  year           = "2010",
+  location       = "Paris, France",
+  publisher      = "IEEE",
+  doi            = "10.1109/ICSTW.2010.9",
+  gsid           = "10732357679451550129",
+  gscites        = "7",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2010-mutation.pdf",
+  abstract       = "This short paper argues that agent-based models are an
+                    independent class of software application with their own
+                    unique properties, with the consequential need for the
+                    definition of suitable, tailored mutation operators. Testing
+                    agent-based models can be very challenging, and no
+                    established testing technique has yet been introduced for
+                    such systems. This paper discusses the application of
+                    mutation testing techniques, and mutation operators are
+                    proposed that can imitate potential programmer errors and
+                    result in faulty simulation runs of a model."
+}
+
+@techreport{Afshan2010,
+  author         = "Afshan, Sheeva and McMinn, Phil and Walkinshaw, Neil",
+  title          = "Using Dictionary Compression Algorithms to Identify Phases
+                    in Program Traces",
+  number         = "CS-10-01",
+  year           = "2010",
+  institution    = "University of Sheffield, Department of Computer Science",
+  gsid           = "9692798076030307368",
+  gscites        = "2",
+  url            = "http://www.dcs.shef.ac.uk/intranet/research/public/resmes/CS1001.pdf",
+  abstract       = "Program execution traces record the sequences of events or
+                    functions that are encountered during a program execution.
+                    They can provide valuable insights into the run-time
+                    behaviour of software systems and form the basis for dynamic
+                    analysis techniques. Execution traces of large software
+                    systems can be huge, incorporating hundreds of thousands of
+                    elements, rendering them difficult to interpret and
+                    understand. One recognised problem is the phase-detection
+                    problem where the challenge is to identify repeating phases
+                    within a trace that may correspond to the execution of
+                    particular features within the software system. This paper
+                    proposes an abstraction technique that uses the well-known
+                    LZW dictionary compression algorithm to systematically
+                    identify such phases. The feasibility of this approach is
+                    demonstrated with respect to a small case study on a Java
+                    program."
+}
+
+@inproceedings{Hall2010,
+  author         = "Hall, Mathew and McMinn, Phil and Walkinshaw, Neil",
+  title          = "Superstate Identification for State Machines Using
+                    Search-Based Clustering",
+  booktitle      = "Genetic and Evolutionary Computation Conference (GECCO 2010)",
+  pages          = "1381--1388",
+  month          = "7--11 July",
+  year           = "2010",
+  location       = "Portland, Oregon, USA",
+  publisher      = "ACM",
+  doi            = "10.1145/1830483.1830736",
+  gsid           = "6886466573900417768",
+  gscites        = "2",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2010-gecco.pdf",
+  abstract       = "State machines are a popular method of representing a system
+                    at a high level of abstraction that enables developers to
+                    gain an overview of the system they represent and quickly
+                    understand it. Several techniques have been developed to
+                    reverse engineer state machines from software, so as to
+                    produce a concise and up-to-date document of how a system
+                    works. However, the machines that are recovered are usually
+                    flat and contain a large number of states. This means that
+                    the abstract picture they are supposed to provide is often
+                    itself very complex, requiring effort to understand. This
+                    paper proposes the use of search-based clustering as a means
+                    of overcoming this problem. Clustering state machines opens
+                    up the possibility of recovering the structural hierarchy of
+                    a state machine, such that superstates may be identified. An
+                    evaluation study is performed using the Bunch search-based
+                    clustering tool, which demonstrates the usefulness of the
+                    approach."
+}
+
+@article{Harman2010a,
+  author         = "Harman, Mark and McMinn, Phil",
+  title          = "A Theoretical and Empirical Study of Search Based Testing:
+                    Local, Global and Hybrid Search",
+  journal        = "IEEE Transactions on Software Engineering",
+  volume         = "36",
+  number         = "2",
+  pages          = "226--247",
+  month          = "mar",
+  year           = "2010",
+  doi            = "10.1109/TSE.2009.71",
+  gsid           = "16678916924423704440",
+  gscites        = "154",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2010-tse.pdf",
+  abstract       = "Search-based optimization techniques have been applied to
+                    structural software test data generation since 1992, with a
+                    recent upsurge in interest and activity within this area.
+                    However, despite the large number of recent studies on the
+                    applicability of different search-based optimization
+                    approaches, there has been very little theoretical analysis
+                    of the types of testing problem for which these techniques
+                    are well suited. There are also few empirical studies that
+                    present results for larger programs. This paper presents a
+                    theoretical exploration of the most widely studied approach,
+                    the global search technique embodied by Genetic Algorithms.
+                    It also presents results from a large empirical study that
+                    compares the behavior of both global and local search-based
+                    optimization on real-world programs. The results of this
+                    study reveal that cases exist of test data generation
+                    problem that suit each algorithm, thereby suggesting that a
+                    hybrid global-local search (a Memetic Algorithm) may be
+                    appropriate. The paper presents a Memetic Algorithm along
+                    with further empirical results studying its performance."
+}
+
+@inproceedings{Harman2010b,
+  author         = "Harman, Mark and Kim, Sung Gon and Lakhotia, Kiran and
+                    McMinn, Phil and Yoo, Shin",
+  title          = "Optimizing for the Number of Tests Generated in Search Based
+                    Test Data Generation with an Application to the Oracle Cost
+                    Problem",
+  booktitle      = "International Workshop on Search-Based Software Testing
+                    (SBST 2010)",
+  pages          = "182--191",
+  month          = "6 April",
+  year           = "2010",
+  location       = "Paris, France",
+  publisher      = "IEEE",
+  doi            = "10.1109/ICSTW.2010.31",
+  gsid           = "3841656042734218621",
+  gscites        = "41",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2010-sbst.pdf",
+  abstract       = "Previous approaches to search based test data generation
+                    tend to focus on coverage, rather than oracle cost. While
+                    there may be an aspiration that systems should have models,
+                    checkable specifications and/or contract driven development,
+                    this sadly remains an aspiration; in many real cases, system
+                    behaviour must be checked by a human. This painstaking
+                    checking process forms a significant cost, the oracle cost,
+                    which previous work on automated test data generation tends
+                    to overlook. One simple way to reduce oracle cost consists
+                    of reducing the number of tests generated. In this paper we
+                    introduce three algorithms which do this without
+                    compromising coverage achieved. We present the results of an
+                    empirical study of the effectiveness of the three algorithms
+                    on five benchmark programs containing non trivial search
+                    spaces for branch coverage. The results indicate that it is,
+                    indeed, possible to make reductions in the number of test
+                    cases produced by search based testing, without loss of
+                    coverage."
+}
+
+@article{Lakhotia2010,
+  author         = "Lakhotia, Kiran and McMinn, Phil and Harman, Mark",
+  title          = "An Empirical Investigation Into Branch Coverage for {C}
+                    Programs Using {CUTE} and {AUSTIN}",
+  journal        = "Journal of Systems and Software",
+  volume         = "83",
+  number         = "12",
+  pages          = "2379--2391",
+  month          = "dec",
+  year           = "2010",
+  doi            = "10.1016/j.jss.2010.07.026",
+  gsid           = "14257434786005880445",
+  gscites        = "37",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2010-jss.pdf",
+  abstract       = "Automated test data generation has remained a topic of
+                    considerable interest for several decades because it lies at
+                    the heart of attempts to automate the process of Software
+                    Testing. This paper reports the results of an empirical
+                    study using the dynamic symbolic-execution tool, CUTE, and a
+                    search based tool, AUSTIN on five non-trivial open source
+                    applications. The aim is to provide practitioners with an
+                    assessment of what can be achieved by existing techniques
+                    with little or no specialist knowledge and to provide
+                    researchers with baseline data against which to measure
+                    subsequent work. To achieve this, each tool is applied ‘as
+                    is’, with neither additional tuning nor supporting harnesses
+                    and with no adjustments applied to the subject programs
+                    under test. The mere fact that these tools can be applied
+                    ‘out of the box’ in this manner reflects the growing
+                    maturity of Automated test data generation. However, as
+                    might be expected, the study reveals opportunities for
+                    improvement and suggests ways to hybridize these two
+                    approaches that have hitherto been developed entirely
+                    independently."
+}
+
+@inproceedings{McMinn2010a,
+  author         = "McMinn, Phil",
+  title          = "How Does Program Structure Impact the Effectiveness of the
+                    Crossover Operator in Evolutionary Testing?",
+  booktitle      = "International Symposium on Search-Based Software Engineering
+                    (SSBSE 2010)",
+  pages          = "9--18",
+  month          = "7--9 September",
+  year           = "2010",
+  location       = "Benevento, Italy",
+  publisher      = "IEEE",
+  doi            = "10.1109/SSBSE.2010.11",
+  gsid           = "5273647585278581057",
+  gscites        = "4",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2010-ssbse.pdf",
+  journalversion = "McMinn2013",
+  abstract       = "Recent results in Search-Based Testing show that the
+                    relatively simple Alternating Variable hill climbing method
+                    outperforms Evolutionary Testing (ET) for many programs. For
+                    ET to perform well in covering an individual branch, a
+                    program must have a certain structure that gives rise to a
+                    fitness landscape that the crossover operator can exploit.
+                    This paper presents theoretical and empirical investigations
+                    into the types of program structure that result in such
+                    landscapes. The studies show that crossover lends itself to
+                    programs that process large data structures or have an
+                    internal state that is reached over a series of repeated
+                    function or method calls. The empirical study also
+                    investigates the type of crossover which works most
+                    efficiently for different program structures. It further
+                    compares the results obtained by ET with those obtained for
+                    different variants of hill climbing algorithm, which are
+                    found to be effective for many structures considered
+                    favourable to crossover, with the exception of structures
+                    with landscapes containing entrapping local optima.",
+  comment        = "Winner of SSBSE 2010 best paper award"
+}
+
+@inproceedings{McMinn2010b,
+  author         = "McMinn, Phil and Stevenson, Mark and Harman, Mark",
+  title          = "Reducing Qualitative Human Oracle Costs associated with
+                    Automatically Generated Test Data",
+  booktitle      = "International Workshop on Software Test Output Validation
+                    (STOV 2010)",
+  pages          = "1--4",
+  month          = "jul",
+  year           = "2010",
+  location       = "Trento, Italy",
+  publisher      = "ACM",
+  doi            = "10.1145/1868048.1868049",
+  gsid           = "18420770473476660637",
+  gscites        = "20",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2010-stov.pdf",
+  abstract       = "Due to the frequent non-existence of an automated oracle,
+                    test cases are often evaluated manually in practice.
+                    However, this fact is rarely taken into account by automatic
+                    test data generators, which seek to maximise a program's
+                    structural coverage only. The test data produced tends to be
+                    of a poor fit with the program's operational profile. As a
+                    result, each test case takes longer for a human to check,
+                    because the scenarios that arbitrary-looking data represent
+                    require time and effort to understand. This short paper
+                    proposes methods to extracting knowledge from programmers,
+                    source code and documentation and its incorporation into the
+                    automatic test data generation process so as to inject the
+                    realism required to produce test cases that are quick and
+                    easy for a human to comprehend and check. The aim is to
+                    reduce the so-called qualitative human oracle costs
+                    associated with automatic test data generation. The
+                    potential benefits of such an approach are demonstrated with
+                    a simple case study."
+}
+
+@inproceedings{Walkinshaw2010,
+  author         = "Walkinshaw, Neil and Afshan, Sheeva and McMinn, Phil",
+  title          = "Using Compression Algorithms to Support the Comprehension of
+                    Program Traces",
+  booktitle      = "International Workshop on Dynamic Analysis (WODA 2010)",
+  pages          = "8--13",
+  month          = "12 July",
+  year           = "2010",
+  location       = "Trento, Italy",
+  publisher      = "ACM",
+  doi            = "10.1145/1868321.1868323",
+  gsid           = "16160396590292213585",
+  gscites        = "13",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2010-woda.pdf",
+  abstract       = "Several software maintenance tasks such as debugging,
+                    phase-identification, or simply the high-level exploration
+                    of system functionality, rely on the extensive analysis of
+                    program traces. These usually require the developer to
+                    manually discern any repeated patterns that may be of
+                    interest from some visual representation of the trace. This
+                    can be both time-consuming and inaccurate; there is always
+                    the danger that visually similar trace-patterns actually
+                    represent distinct program behaviours. This paper presents
+                    an automated phase-identification technique. It is founded
+                    on the observation that the challenge of identifying
+                    repeated patterns in a trace is analogous to the challenge
+                    faced by data-compression algorithms. This applies an
+                    established data compression algorithm to identify repeated
+                    phases in traces. The SEQUITUR compression algorithm not
+                    only compresses data, but organises the repeated patterns
+                    into a hierarchy, which is especially useful from a
+                    comprehension standpoint, because it enables the analysis of
+                    a trace at at varying levels of abstraction."
+}
+
+@inproceedings{Lakhotia2009,
+  author         = "Lakhotia, Kiran and McMinn, Phil and Harman, Mark",
+  title          = "Automated Test Data Generation for Coverage: Haven't We
+                    Solved This Problem Yet?",
+  booktitle      = "Testing: Academic and Industrial Conference -- Practice And
+                    Research Techniques (TAIC PART 2009)",
+  pages          = "95--104",
+  month          = "4--6 September",
+  year           = "2009",
+  location       = "Windsor, UK",
+  publisher      = "IEEE",
+  doi            = "10.1109/TAICPART.2009.15",
+  gsid           = "6900386515662571285",
+  gscites        = "42",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2009-taicpart.pdf",
+  abstract       = "Whilst there is much evidence that both concolic and search
+                    based testing can outperform random testing, there has been
+                    little work demonstrating the effectiveness of either
+                    technique with complete real world software applications. As
+                    a consequence, many researchers have doubts not only about
+                    the scalability of both approaches but also their
+                    applicability to production code. This paper performs an
+                    empirical study applying a concolic tool, CUTE, and a search
+                    based tool, AUSTIN, to the source code of four large open
+                    source applications. Each tool is applied `out of the box';
+                    that is without writing additional code for special handling
+                    of any of the individual subjects, or by tuning the tools'
+                    parameters. Perhaps surprisingly, the results show that both
+                    tools can only obtain at best a modest level of code
+                    coverage. Several challenges remain for improving automated
+                    test data generators in order to achieve higher levels of
+                    code coverage."
+}
+
+@article{McMinn2009a,
+  author         = "McMinn, Phil and Binkley, David and Harman, Mark",
+  title          = "Empirical Evaluation of a Nesting Testability Transformation
+                    for Evolutionary Testing",
+  journal        = "ACM Transactions on Software Engineering Methodology",
+  volume         = "18",
+  number         = "3",
+  pages          = "11:1--11:27",
+  month          = "may",
+  year           = "2009",
+  doi            = "10.1145/1525880.1525884",
+  gsid           = "6664288051039417389",
+  gscites        = "44",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2009-tosem.pdf",
+  abstract       = "Evolutionary testing is an approach to automating test data
+                    generation that uses an evolutionary algorithm to search a
+                    test object's input domain for test data. Nested predicates
+                    can cause problems for evolutionary testing, because
+                    information needed for guiding the search only becomes
+                    available as each nested conditional is satisfied. This
+                    means that the search process can overfit to early
+                    information, making it harder, and sometimes near
+                    impossible, to satisfy constraints that only become apparent
+                    later in the search. The article presents a testability
+                    transformation that allows the evaluation of all nested
+                    conditionals at once. Two empirical studies are presented.
+                    The first study shows that the form of nesting handled is
+                    prevalent in practice. The second study shows how the
+                    approach improves evolutionary test data generation."
+}
+
+@inproceedings{McMinn2009b,
+  author         = "McMinn, Phil",
+  title          = "Search-Based Failure Discovery using Testability
+                    Transformations to Generate Pseudo-Oracles",
+  booktitle      = "Genetic and Evolutionary Computation Conference (GECCO 2009)",
+  pages          = "1689--1696",
+  month          = "8-12 July",
+  year           = "2009",
+  location       = "Montreal, Canada",
+  publisher      = "ACM Press",
+  doi            = "10.1145/1569901.1570127",
+  gsid           = "11414429136108319501",
+  gscites        = "17",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2009-gecco.pdf",
+  abstract       = "Testability transformations are source-to-source program
+                    transformations that are designed to improve the testability
+                    of a program. This paper introduces a novel approach in
+                    which transformations are used to improve testability of a
+                    program by generating a pseudo-oracle. A pseudo-oracle is an
+                    alternative version of a program under test whose output can
+                    be compared with the original. Differences in output between
+                    the two programs may indicate a fault in the original
+                    program. Two transformations are presented. The first can
+                    highlight numerical inaccuracies in programs and cumulative
+                    roundoff errors, whilst the second may detect the presence
+                    of race conditions in multi-threaded code. Once a
+                    pseudo-oracle is generated, techniques are applied from the
+                    field of search-based testing to automatically find
+                    differences in output between the two versions of the
+                    program. The results of an experimental study presented in
+                    the paper show that both random testing and genetic
+                    algorithms are capable of utilizing the pseudo-oracles to
+                    automatically find program failures. Using genetic
+                    algorithms it is possible to explicitly maximize the
+                    discrepancies between the original programs and their
+                    pseudo-oracles. This allows for the production of test cases
+                    where the observable failure is highly pronounced, enabling
+                    the tester to establish the seriousness of the underlying
+                    fault."
+}
+
+@incollection{Harman2008,
+  author         = "Harman, Mark and Baresel, Andr'{e} and Binkley, David and
+                    Hierons, Rob and Hu, Lin and Korel, Bogdan and McMinn, Phil
+                    and Roper, Marc",
+  title          = "Testability Transformation -- Program Transformation to
+                    Improve Testability",
+  booktitle      = "Formal Methods and Testing",
+  editor         = "Hierons, Robert M. and Bowen, Jonathan P. and Harman, Mark",
+  series         = "Lecture Notes in Computer Science",
+  volume         = "4949",
+  pages          = "320--344",
+  year           = "2008",
+  publisher      = "Springer",
+  doi            = "10.1007/978-3-540-78917-8_11",
+  gsid           = "5951833993935156754",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2008-lncs.pdf",
+  abstract       = "Testability transformation is a new form of program
+                    transformation in which the goal is not to preserve the
+                    standard semantics of the program, but to preserve test sets
+                    that are adequate with respect to some chosen test adequacy
+                    criterion. The goal is to improve the testing process by
+                    transforming a program to one that is more amenable to
+                    testing while remaining within the same equivalence class of
+                    programs defined by the adequacy criterion. The approach to
+                    testing and the adequacy criterion are parameters to the
+                    overall approach. The transformations required are typically
+                    neither more abstract nor are they more concrete than
+                    standard ``meaning preserving transformations''. This leads
+                    to interesting theoretical questions. but also has
+                    interesting practical implications. This chapter provides an
+                    introduction to testability transformation and a brief
+                    survey of existing results."
+}
+
+@article{Kiran2008,
+  author         = "Kiran, Mariam and Coakley, Simon and Walkinshaw, Neil and
+                    McMinn, Phil and Holcombe, Mike",
+  title          = "Validation and Discovery from Computational Biology Models",
+  journal        = "BioSystems",
+  volume         = "93",
+  number         = "1--2",
+  pages          = "141--150",
+  month          = "jul",
+  year           = "2008",
+  doi            = "10.1016/j.biosystems.2008.03.010",
+  gsid           = "5352751653605961777",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2008-biosystems.pdf",
+  abstract       = "Simulation software is often a fundamental component in
+                    systems biology projects and provides a key aspect of the
+                    integration of experimental and analytical techniques in the
+                    search for greater understanding and prediction of biology
+                    at the systems level. It is important that the modelling and
+                    analysis software is reliable and that techniques exist for
+                    automating the analysis of the vast amounts of data which
+                    such simulation environments generate. A rigorous approach
+                    to the development of complex modelling software is needed.
+                    Such a framework is presented here together with techniques
+                    for the automated analysis of such models and a process for
+                    the automatic discovery of biological phenomena from large
+                    simulation data sets. Illustrations are taken from a major
+                    systems biology research project involving the in vitro
+                    investigation, modelling and simulation of epithelial
+                    tissue."
+}
+
+@inproceedings{Lakhotia2008,
+  author         = "Lakhotia, Kiran and Harman, Mark and McMinn, Phil",
+  title          = "Handling Dynamic Data Structures in Search-Based Testing",
+  booktitle      = "Genetic and Evolutionary Computation Conference (GECCO 2008)",
+  pages          = "1759--1766",
+  month          = "12-16 July",
+  year           = "2008",
+  location       = "Atlanta, Georgia, USA",
+  publisher      = "ACM",
+  doi            = "10.1145/1389095.1389435",
+  gsid           = "3083599342333173205",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2008-gecco.pdf",
+  abstract       = "There has been little attention to search based test data
+                    generation in the presence of pointer inputs and dynamic
+                    data structures, an area in which recent concolic methods
+                    have excelled. This paper introduces a search based testing
+                    approach which is able to handle pointers and dynamic data
+                    structures. It combines an alternating variable hill climb
+                    with a set of constraint solving rules for pointer inputs.
+                    The result is a lightweight and efficient method, as shown
+                    in the results from a case study, which compares the method
+                    to CUTE, a concolic unit testing tool."
+}
+
+@article{Sun2008,
+  author         = "Sun, Tao and McMinn, Phil and Holcombe, Mike and Smallwood,
+                    Rod and MacNeil, Sheila",
+  title          = "Agent Based Modelling Helps in Understanding the Rules by
+                    Which Fibroblasts Support Keratinocyte Colony Formation",
+  journal        = "PLoS ONE",
+  volume         = "3",
+  number         = "5",
+  year           = "2008",
+  doi            = "10.1371/journal.pone.0002129",
+  gsid           = "14861044163148502933",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2008-plosone.pdf",
+  abstract       = "Background: Autologous keratincoytes are routinely expanded
+                    using irradiated mouse fibroblasts and bovine serum for
+                    clinical use. With growing concerns about the safety of
+                    these xenobiotic materials, it is desirable to culture
+                    keratinocytes in media without animal derived products. An
+                    improved understanding of epithelial/mesenchymal
+                    interactions could assist in this. Methodology/Principal
+                    Findings: A keratincyte/fibroblast o-culture model was
+                    developed by extending an agent-based keratinocyte colony
+                    formation model to include the response of keratinocytes to
+                    both fibroblasts and serum. The model was validated by
+                    comparison of the in virtuo and in vitro multicellular
+                    behaviour of keratinocytes and fibroblasts in single and
+                    co-culture in Greens medium. To test the robustness of the
+                    model, several properties of the fibroblasts were changed to
+                    investigate their influence on the multicellular
+                    morphogenesis of keratinocyes and fibroblasts. The model was
+                    then used to generate hypotheses to explore the interactions
+                    of both proliferative and growth arrested fibroblasts with
+                    keratinocytes. The key predictions arising from the model
+                    which were confirmed by in vitro experiments were that 1)
+                    the ratio of fibroblasts to keratinocytes would critically
+                    influence keratinocyte colony expansion, 2) this ratio
+                    needed to be optimum at the beginning of the co-culture, 3)
+                    proliferative fibroblasts would be more effective than
+                    irradiated cells in expanding keratinocytes and 4) in the
+                    presence of an adequate number of fibroblasts, keratinocyte
+                    expansion would be independent of serum. Conclusions: A
+                    closely associated computational and biological approach is
+                    a powerful tool for understanding complex biological systems
+                    such as the interactions between keratinocytes and
+                    fibroblasts. The key outcome of this study is the finding
+                    that the early addition of a critical ratio of proliferative
+                    fibroblasts can give rapid keratinocyte expansion without
+                    the use of irradiated mouse fibroblasts and bovine serum."
+}
+
+@inproceedings{Harman2007a,
+  author         = "Harman, Mark and Hassoun, Youssef and Lakhotia, Kiran and
+                    McMinn, Phil and Wegener, Joachim",
+  title          = "The Impact of Input Domain Reduction on Search-Based Test
+                    Data Generation",
+  booktitle      = "Joint meeting of the European Software Engineering
+                    Conference and the ACM SIGSOFT Symposium on the Foundations
+                    of Software Engineering (ESEC/FSE 2007)",
+  pages          = "155--164",
+  month          = "3--7 September",
+  year           = "2007",
+  location       = "Cavtat, Croatia",
+  publisher      = "ACM",
+  doi            = "10.1145/1287624.1287647",
+  gsid           = "2675322745581419890",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2007-fse.pdf",
+  journalversion = "McMinn2012a",
+  abstract       = "There has recently been a great deal of interest in
+                    search-based test data generation, with many local and
+                    global search algorithms being proposed. However, to date,
+                    there has been no investigation of the relationship between
+                    the size of the input domain (the search space) and
+                    performance of search-based algorithms. Static analysis can
+                    be used to remove irrelevant variables for a given test data
+                    generation problem, thereby reducing the search space size.
+                    This paper studies the effect of this domain reduction,
+                    presenting results from the application of local and global
+                    search algorithms to real world examples. This provides
+                    evidence to support the claim that domain reduction has
+                    implications for practical search-based test data
+                    generation."
+}
+
+@inproceedings{Harman2007b,
+  author         = "Harman, Mark and McMinn, Phil",
+  title          = "A Theoretical and Empirical Analysis of Evolutionary Testing
+                    and Hill Climbing for Structural Test Data Generation",
+  booktitle      = "International Symposium on Software Testing and Analysis
+                    (ISSTA 2007)",
+  pages          = "73--83",
+  month          = "9--12 July",
+  year           = "2007",
+  location       = "London, UK",
+  publisher      = "ACM",
+  doi            = "10.1145/1273463.1273475",
+  gsid           = "2800552129492837241",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2007-issta.pdf",
+  journalversion = "Harman2010a",
+  abstract       = "Evolutionary testing has been widely studied as a technique
+                    for automating the process of test case generation. However,
+                    to date, there has been no theoretical examination of when
+                    and why it works. Furthermore, the empirical evidence for
+                    the effectiveness of evolutionary testing consists largely
+                    of small scale laboratory studies. This paper presents a
+                    first theoretical analysis of the scenarios in which
+                    evolutionary algorithms are suitable for structural test
+                    case generation. The theory is backed up by an empirical
+                    study that considers real world programs, the search spaces
+                    of which are several orders of magnitude larger than those
+                    previously considered."
+}
+
+@inproceedings{Harman2007c,
+  author         = "Harman, Mark and Lakhotia, Kiran and McMinn, Phil",
+  title          = "A Multi-Objective Approach to Search-Based Test Data
+                    Generation",
+  booktitle      = "Genetic and Evolutionary Computation Conference (GECCO 2007)",
+  pages          = "1098--1105",
+  month          = "7--11 July",
+  year           = "2007",
+  location       = "London, UK",
+  publisher      = "ACM",
+  doi            = "10.1145/1276958.1277175",
+  gsid           = "5159039809664896776",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2007-gecco.pdf",
+  abstract       = "There has been a considerable body of work on search-based
+                    test data generation for branch coverage. However, hitherto,
+                    there has been no work on multi-objective branch coverage.
+                    In many scenarios a single-objective formulation is
+                    unrealistic; testers will want to find test sets that meet
+                    several objectives simultaneously in order to maximize the
+                    value obtained from the inherently expensive process of
+                    running the test cases and examining the output they
+                    produce. This paper introduces multi-objective branch
+                    coverage.The paper presents results from a case study of the
+                    twin objectives of branch coverage and dynamic memory
+                    consumption for both real and synthetic programs. Several
+                    multi-objective evolutionary algorithms are applied. The
+                    results show that multi-objective evolutionary algorithms
+                    are suitable for this problem, and illustrates the way in
+                    which a Pareto optimal search can yield insights into the
+                    trade-offs between the two simultaneous objectives."
+}
+
+@techreport{McMinn2007,
+  author         = "McMinn, Phil",
+  title          = "{IGUANA:} {I}nput {G}eneration {U}sing {A}utomated {N}ovel
+                    {A}lgorithms. A Plug and Play Research Tool.",
+  number         = "CS-07-14",
+  year           = "2007",
+  institution    = "University of Sheffield",
+  gsid           = "11672218504700574832",
+  url            = "http://www.dcs.shef.ac.uk/intranet/research/public/resmes/CS0714.pdf",
+  abstract       = "IGUANA is a tool for automatically generating software test
+                    data using search-based approaches. Search-based approaches
+                    explore the input domain of a program for test data and are
+                    guided by a fitness function. The fitness function evaluates
+                    input data and measures how suitable it is for a given
+                    purpose, for example the execution of a particular statement
+                    in a program, or the falsification of an assertion
+                    statement. The IGUANA tool is designed so that researchers
+                    can easily compare and contrast different search methods
+                    (e.g. random search, hill climbing and genetic algorithms),
+                    fitness functions (e.g. for obtaining branch coverage of a
+                    program) and program analysis techniques for test data
+                    generation."
+}
+
+@article{Sun2007,
+  author         = "Sun, Tao and McMinn, Phil and Coakley, Simon and Holcombe,
+                    Mike and Smallwood, Rod and MacNeil, Sheila",
+  title          = "An Integrated Systems Biology Approach to Understanding the
+                    Rules of Keratinocyte Colony Formation",
+  journal        = "Journal of the Royal Society Interface",
+  volume         = "4",
+  number         = "17",
+  pages          = "1077--1092",
+  year           = "2007",
+  doi            = "10.1098/rsif.2007.0227",
+  gsid           = "10527276408207809139",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2007-jrsi.pdf",
+  abstract       = "Closely coupled in vitro and in virtuo models have been used
+                    to explore the self-organization of normal human
+                    keratinocytes (NHK). Although it can be observed
+                    experimentally, we lack the tools to explore many biological
+                    rules that govern NHK self-organization. An agent-based
+                    computational model was developed, based on rules derived
+                    from literature, which predicts the dynamic multicellular
+                    morphogenesis of NHK and of a keratinocyte cell line (HaCat
+                    cells) under varying extracellular Ca++ concentrations. The
+                    model enables in virtuo exploration of the relative
+                    importance of biological rules and was used to test
+                    hypotheses in virtuo which were subsequently examined in
+                    vitro. Results indicated that cell–cell and cell–substrate
+                    adhesions were critically important to NHK
+                    self-organization. In contrast, cell cycle length and the
+                    number of divisions that transit-amplifying cells could
+                    undergo proved non-critical to the final organization. Two
+                    further hypotheses, to explain the growth behaviour of HaCat
+                    cells, were explored in virtuo—an inability to differentiate
+                    and a differing sensitivity to extracellular calcium. In
+                    vitro experimentation provided some support for both
+                    hypotheses. For NHKs, the prediction was made that the
+                    position of stem cells would influence the pattern of cell
+                    migration post-wounding. This was then confirmed
+                    experimentally using a scratch wound model."
+}
+
+@article{McMinn2006a,
+  author         = "McMinn, Phil and Holcombe, Mike",
+  title          = "Evolutionary Testing Using an Extended Chaining Approach",
+  journal        = "Evolutionary Computation",
+  volume         = "14",
+  number         = "1",
+  pages          = "41--64",
+  month          = "mar",
+  year           = "2006",
+  doi            = "10.1162/evco.2006.14.1.41",
+  gsid           = "14781785575067026934",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2006-ec.pdf",
+  abstract       = "Fitness functions derived from certain types of white-box
+                    test goals can be inadequate for evolutionary software test
+                    data generation (Evolutionary Testing), due to a lack of
+                    search guidance to the required test data. Often this is
+                    because the fitness function does not take into account data
+                    dependencies within the program under test, and the fact
+                    that certain program statements may need to have been
+                    executed prior to the target structure in order for it to be
+                    feasible. This paper proposes a solution to this problem by
+                    hybridizing Evolutionary Testing with an extended Chaining
+                    Approach. The Chaining Approach is a method which identifies
+                    statements on which the target structure is data dependent,
+                    and incrementally develops chains of dependencies in an
+                    event sequence. By incorporating this facility into
+                    Evolutionary Testing, and by performing a test data search
+                    for each generated event sequence, the search can be
+                    directed into potentially promising, unexplored areas of the
+                    test object's input domain. Results presented in the paper
+                    show that test data can be found for a number of test goals
+                    with this hybrid approach that could not be found by using
+                    the original Evolutionary Testing approach alone. One such
+                    test goal is drawn from code found in the publicly available
+                    libpng library."
+}
+
+@inproceedings{McMinn2006b,
+  author         = "McMinn, Phil and Harman, Mark and Binkley, David and
+                    Tonella, Paolo",
+  title          = "The Species per Path Approach to Search-Based Software Test
+                    Data Generation",
+  booktitle      = "International Symposium on Software Testing and Analysis
+                    (ISSTA 2006)",
+  pages          = "13--24",
+  month          = "jul",
+  year           = "2006",
+  location       = "Portland, Maine, USA",
+  publisher      = "ACM",
+  doi            = "10.1145/1146238.1146241",
+  gsid           = "11906962803444003237",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2006-issta.pdf",
+  abstract       = "This paper introduces the Species per Path approach to
+                    search-based software test data generation. The approach
+                    transforms the program under test into a version in which
+                    multiple paths to the search target are factored out. Test
+                    data are then sought for each individual path by dedicated
+                    'species' operating in parallel. The factoring out of paths
+                    results in several individual search landscapes, with
+                    feasible paths giving rise to landscapes that are
+                    potentially more conducive to test data discovery than the
+                    original overall landscape.The paper presents the results of
+                    two empirical studies that validate and verify the approach.
+                    The validation study supports the claim that the approach is
+                    widely applicable and practical. The verification study
+                    shows that it is possible to generate test data for targets
+                    with the approach that are troublesome for the standard
+                    evolutionary method."
+}
+
+@inproceedings{McMinn2005a,
+  author         = "McMinn, Phil and Binkley, David and Harman, Mark",
+  title          = "Testability Transformation for Efficient Automated Test Data
+                    Search in the Presence of Nesting",
+  booktitle      = "UK Software Testing Workshop (UKTest 2005)",
+  pages          = "165--182",
+  month          = "5--6 September",
+  year           = "2005",
+  location       = "University of Sheffield, UK",
+  gsid           = "3650240465214083226",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2005-uktest.pdf",
+  journalversion = "McMinn2009a",
+  abstract       = "The application of metaheuristic search techniques to the
+                    automatic generation of software test data has been shown to
+                    be an effective approach for a variety of testing criteria.
+                    However, for structural testing, the dependence of a target
+                    structure on nested decision statements can cause efficiency
+                    problems for the search, and failure in severe cases. This
+                    is because all information useful for guiding the search -
+                    in the form of the values of variables at branching
+                    predicates - is only gradually made available as each nested
+                    conditional is satisfied, one after the other. The provision
+                    of guidance is further restricted by the fact that the path
+                    up to that conditional must be maintained by obeying the
+                    constraints imposed by `earlier' conditionals. An empirical
+                    study presented in this paper shows the prevalence of types
+                    of if statement pairs in real-world code, where the second
+                    if statement in the pair is nested within the first. A
+                    testability transformation is proposed in order to
+                    circumvent the problem. The transformation allows all branch
+                    predicate information to be evaluated at the same time,
+                    regardless of whether `earlier' predicates in the sequence
+                    of nested conditionals have been satisfied or not. An
+                    experimental study is then presented, which shows the power
+                    of the approach, comparing evolutionary search with
+                    transformed and untransformed versions of two programs with
+                    nested target structures. In the first case, the
+                    evolutionary search finds test data in half the time for the
+                    transformed program compared to the original version. In the
+                    second case, the evolutionary search can only find test data
+                    with the transformed version of the program."
+}
+
+@inproceedings{McMinn2005b,
+  author         = "McMinn, Phil and Holcombe, Mike",
+  title          = "Evolutionary Testing of State-Based Programs",
+  booktitle      = "Genetic and Evolutionary Computation Conference (GECCO 2005)",
+  pages          = "1013--1020",
+  month          = "jun",
+  year           = "2005",
+  location       = "Washington DC, USA",
+  publisher      = "ACM",
+  doi            = "10.1145/1068009.1068182",
+  gsid           = "839326915810387902",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2005-gecco.pdf",
+  abstract       = "The application of Evolutionary Algorithms to structural
+                    test data generation, known as Evolutionary Testing, has to
+                    date largely focused on programs with input-output behavior.
+                    However, the existence of state behavior in test objects
+                    presents additional challenges for Evolutionary Testing, not
+                    least because certain test goals may require a search for a
+                    sequence of inputs to the test object. Furthermore,
+                    state-based test objects often make use of internal
+                    variables such as boolean flags, enumerations and counters
+                    for managing or querying their internal state. These types
+                    of variables can lead to a loss of information in computing
+                    fitness values, producing coarse or flat fitness landscapes.
+                    This results in the search receiving less guidance, and the
+                    chances of finding required test data are decreased.This
+                    paper proposes an extended approach based on previous works.
+                    Input sequences are generated, and internal variable
+                    problems are addressed through hybridization with an
+                    extended Chaining Approach. The basic idea of the Chaining
+                    Approach is to find a sequence of statements, involving
+                    internal variables, which need to be executed prior to the
+                    test goal. By requiring these statements are executed,
+                    information previously unavailable to the search can be made
+                    use of, possibly guiding it into potentially promising and
+                    unexplored areas of the test object's input domain. A number
+                    of experiments demonstrate the value of the approach."
+}
+
+@phdthesis{McMinn2005c,
+  author         = "McMinn, Phil",
+  title          = "Evolutionary Search for Test Data in the Presence of State
+                    Behaviour",
+  year           = "2005",
+  institution    = "The University of Sheffield",
+  gsid           = "14534196709717096499",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2005-thesis.pdf",
+  abstract       = "The application of metaheuristic search techniques, such as
+                    evolutionary algorithms, to the problem of automatically
+                    generating software test data has been a burgeoning interest
+                    for many researchers in recent years. To date, work in
+                    applying search techniques to structural test data
+                    generation has largely focused on generating inputs for test
+                    objects with input-output behaviour. This thesis aims to
+                    extend the approach for test objects with state behaviour.
+                    This presents several challenges, not least because test
+                    goals with state-based test objects may require input
+                    sequences to be generated. Another problem includes
+                    generating test data in the presence of internal variables
+                    such as flags, enumerations and counters. Such variables are
+                    often responsible for managing the “state” of the test
+                    object. However, their use can lead to information loss with
+                    regards to the original input conditions that lead to the
+                    fulfilment of certain test goals. Consequently the search
+                    receives less guidance, and may fail to find test data. This
+                    thesis proposes an extended evolutionary structural test
+                    data generation approach that allows input sequences to be
+                    generated, and tackles internal variable problems through
+                    hybridization of the method with an extended chaining
+                    approach. The basic idea of the chaining approach is to find
+                    a sequence of statements, involving internal variables,
+                    which need to be executed prior to the test goal. By
+                    requiring that these statements are executed, information
+                    previously unavailable to the search can be made use of,
+                    possibly guiding it into potentially promising and
+                    unexplored areas of the test object’s input domain. A number
+                    of experiments show the value of the approach for both test
+                    objects with states and test objects with input-output
+                    behaviour. For all test objects considered, higher levels of
+                    branch coverage are obtained"
+}
+
+@article{McMinn2004a,
+  author         = "McMinn, Phil",
+  title          = "Search-Based Software Test Data Generation: A Survey",
+  journal        = "Software Testing, Verification and Reliability",
+  volume         = "14",
+  number         = "2",
+  pages          = "105--156",
+  month          = "jun",
+  year           = "2004",
+  doi            = "10.1002/stvr.294",
+  gsid           = "363130255506566968",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2004-stvr.pdf",
+  abstract       = "The use of metaheuristic search techniques for the automatic
+                    generation of test data has been a burgeoning interest for
+                    many researchers in recent years. Previous attempts to
+                    automate the test generation process have been limited,
+                    having been constrained by the size and complexity of
+                    software, and the basic fact that, in general, test data
+                    generation is an undecidable problem. Metaheuristic search
+                    techniques offer much promise in regard to these problems.
+                    Metaheuristic search techniques are high-level frameworks,
+                    which utilize heuristics to seek solutions for combinatorial
+                    problems at a reasonable computational cost. To date,
+                    metaheuristic search techniques have been applied to
+                    automate test data generation for structural and functional
+                    testing; the testing of grey-box properties, for example
+                    safety constraints; and also non-functional properties, such
+                    as worst-case execution time. This paper surveys some of the
+                    work undertaken in this field, discussing possible new
+                    future directions of research for each of its different
+                    individual areas."
+}
+
+@inproceedings{McMinn2004b,
+  author         = "McMinn, Phil and Holcombe, Mike",
+  title          = "Hybridizing Evolutionary Testing with the Chaining Approach",
+  booktitle      = "Genetic and Evolutionary Computation Conference (GECCO 2004)",
+  series         = "Lecture Notes in Computer Science",
+  volume         = "3103",
+  pages          = "1363--1374",
+  month          = "jun",
+  year           = "2004",
+  location       = "Seattle, Washington, USA",
+  publisher      = "Springer",
+  doi            = "10.1007/978-3-540-24855-2_157",
+  gsid           = "14898343249594215944",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2004-gecco.pdf",
+  journalversion = "McMinn2006a",
+  abstract       = "Fitness functions derived for certain white-box test goals
+                    can cause problems for Evolutionary Testing (ET), due to a
+                    lack of sufficient guidance to the required test data. Often
+                    this is because the search does not take into account data
+                    dependencies within the program, and the fact that some
+                    special intermediate statement (or statements) needs to have
+                    been executed in order for the target structure to be
+                    feasible. This paper proposes a solution which combines ET
+                    with the Chaining Approach. The Chaining Approach is a
+                    simple method which probes the data dependencies inherent to
+                    the test goal. By incorporating this facility into ET, the
+                    search can be directed into potentially promising,
+                    unexplored areas of the test objects input domain.
+                    Encouraging results were obtained with the hybrid approach
+                    for seven programs known to originally cause problems for
+                    ET.",
+  comment        = "Winner of best SBSE track paper award"
+}
+
+@inproceedings{McMinn2003,
+  author         = "McMinn, Phil and Holcombe, Mike",
+  title          = "The State Problem for Evolutionary Testing",
+  booktitle      = "Genetic and Evolutionary Computation Conference (GECCO 2003)",
+  series         = "Lecture Notes in Computer Science",
+  volume         = "2724",
+  pages          = "2488--2500",
+  month          = "12--16 July",
+  year           = "2003",
+  location       = "Chicago, Illinois, USA",
+  publisher      = "Springer",
+  doi            = "10.1007/3-540-45110-2_152",
+  gsid           = "2986164779746620558",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2003-gecco.pdf",
+  abstract       = "This paper shows how the presence of states in test objects
+                    can hinder or render impossible the search for test data
+                    using evolutionary testing. Additional guidance is required
+                    to find sequences of inputs that put the test object into
+                    some necessary state for certain test goals to become
+                    feasible. It is shown that data dependency analysis can be
+                    used to identify program statements responsible for state
+                    transitions, and then argued that an additional search is
+                    needed to find required transition sequences. In order to be
+                    able to deal with complex examples, the use of ant colony
+                    optimization is proposed. The results of a simple initial
+                    experiment are reported."
+}
+
