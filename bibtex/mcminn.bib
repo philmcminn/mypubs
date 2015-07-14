@@ -1,31 +1,106 @@
+@inproceedings{Kinneer2015,
+  author    = "Cody Kinneer and Gregory M. Kapfhammer and Chris J. Wright and Phil McMinn",
+  title     = "Automatically Evaluating the Efficiency of Search-Based Test Data Generation 
+               for Relational Database Schemas",
+  booktitle = "International Conference on Software Engineering and Knowledge Engineering (SEKE 2015)",
+  year      = "2015",
+  doi       = "10.18293/SEKE2015-205",
+  gsid      = "17711609864470633758",
+  url       = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2015-seke.pdf",
+  abstract  = "The characterization of an algorithm's worst-case time
+               complexity is useful because it succinctly captures how its
+               runtime will grow as the input size becomes arbitrarily
+               large. However, for certain algorithms---such as those performing
+               search-based test data generation---a theoretical
+               analysis to determine worst-case time complexity is difficult
+               to generalize and thus not often reported in the literature.
+               This paper introduces a framework that empirically
+               determines an algorithm's worst-case time complexity by
+               doubling the size of the input and observing the change in
+               runtime. Since the relational database is a centerpiece of
+               modern software and the database's schema is frequently
+               untested, we apply the doubling technique to the domain
+               of data generation for relational database schemas, a field
+               where worst-case time complexities are often unknown. In
+               addition to demonstrating the feasibility of suggesting the
+               worst-case runtimes of the chosen algorithms and configurations,
+               the results of our study reveal performance tradeoffs
+               in testing strategies for relational database schemas"
+}
+
+@inproceedings{Kinneer2015b,
+  author    = "Cody Kinneer and Gregory M. Kapfhammer and Chris J. Wright and Phil McMinn",
+  title     = "EXPOSE: Inferring Worst-case Time Complexity by Automatic Empirical Study",
+  booktitle = "International Conference on Software Engineering and Knowledge Engineering (SEKE 2015)",
+  year      = "2015",
+  url       = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2015-seke2.pdf"
+}
+
+@inproceedings{Shamshiri2015,
+  author    = "Sina Shamshiri and Jos\'{e} Miguel Rojas and Gordon Fraser and Phil McMinn",
+  title     = "Random or Genetic Algorithm Search for Object-Oriented Test Suite Generation?",
+  booktitle = "Genetic and Evolutionary Computation Conference (GECCO 2015)",
+  pages     = "1367--1374",
+  year      = "2015",
+  publisher = "ACM",
+  doi       = "10.1145/2739480.2754696",
+  url       = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2015-gecco.pdf",
+  abstract  = "Achieving high structural coverage is an important aim
+               in software testing. Several search-based techniques have
+               proved successful at automatically generating tests that
+               achieve high coverage. However, despite the well-established
+               arguments behind using evolutionary search algorithms
+               (e.g., genetic algorithms) in preference to random search,
+               it remains an open question whether the benefits can actually
+               be observed in practice when generating unit test suites
+               for object-oriented classes. In this paper, we report an empirical
+               study on the effects of using a genetic algorithm (GA)
+               to generate test suites over generating test suites incrementally
+               with random search, by applying the EvoSuite unit
+               test suite generator to 1,000 classes randomly selected from
+               the SF110 corpus of open source projects. Surprisingly, the
+               results show little difference between the coverage achieved
+               by test suites generated with evolutionary search compared
+               to those generated using random search. A detailed analysis
+               reveals that the genetic algorithm covers more branches of
+               the type where standard fitness functions provide guidance.
+               In practice, however, we observed that the vast majority of
+               branches in the analyzed projects provide no such guidance."
+}
+
 @article{Kempka2015,
   author    = "Joseph Kempka and Phil McMinn and Dirk Sudholt", 
   title     = "Design and Analysis of Different Alternating Variable Searches for Search-Based Software Testing",
   journal   = "Theory of Computer Science",
-  year      = "To appear",
+  year      = "To Appear",
   doi       = "10.1016/j.tcs.2014.12.009",
+  gsid      = "13874827904077954800",
   url       = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2015-tcs.pdf",
   abstract  = "Manual software testing is a notoriously expensive part of the software 
-              development process, and its automation is of high concern.  One aspect 
-              of the testing process is the automatic generation of test inputs.  This 
-              paper studies the Alternating Variable Method (AVM) approach to search-based 
-              test input generation.  The AVM has been shown to be an effective and efficient 
-              means of generating branch-covering inputs for procedural programs.  However, 
-              there has been little work that has sought to analyse the technique and further 
-              improve its performance.  This paper proposes two different local searches that 
-              may be used in conjunction with the AVM, Geometric and Lattice Search.  A 
-              theoretical runtime analysis proves that under certain conditions, the use of 
-              these searches results in better performance compared to the original AVM.  
-              These theoretical results are confirmed by an empirical study with five programs, 
-              which shows that increases of speed of over 50% are possible in practice."
+               development process, and its automation is of high concern.  One aspect 
+               of the testing process is the automatic generation of test inputs.  This 
+               paper studies the Alternating Variable Method (AVM) approach to search-based 
+               test input generation.  The AVM has been shown to be an effective and efficient 
+               means of generating branch-covering inputs for procedural programs.  However, 
+               there has been little work that has sought to analyse the technique and further 
+               improve its performance.  This paper proposes two different local searches that 
+               may be used in conjunction with the AVM, Geometric and Lattice Search.  A 
+               theoretical runtime analysis proves that under certain conditions, the use of 
+               these searches results in better performance compared to the original AVM.  
+               These theoretical results are confirmed by an empirical study with five programs, 
+               which shows that increases of speed of over 50% are possible in practice."
 }
 
 @article{Barr2015,
   author    = "Earl T. Barr and Mark Harman and Phil McMinn and Muzammil Shahbaz and Shin Yoo",
   title     = "The Oracle Problem in Software Testing: A Survey",
   journal   = "IEEE Transactions on Software Engineering",  
-  year      = "To Appear",
+  volume    = "41",
+  issue     = "5",
+  pages     = "507--525",
+  year      = "2015",
   doi       = "10.1109/TSE.2014.2372785",
+  gsid      = "10167804317265679975",
   url       = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2015-tse.pdf",
   abstract  = "Testing involves examining the behaviour of a system in order to discover potential faults. 
                Given an input for a system, the challenge of distinguishing the corresponding desired, 
@@ -49,6 +124,7 @@
   journal   = "ACM Transactions on Software Engineering Methodology",
   editor    = "Mark Harman and Mauro Pezz\`{e}",
   year      = "To Appear",
+  gsid      = "7268509769181718592",
   url       = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2015-tosem.pdf",
   abstract  = "Work on automated test generation has produced several tools capable of generating test 
                data which achieves high structural coverage over a program. In the absence of a specification, 
@@ -71,7 +147,9 @@
   author    = "Gordon Fraser and Andrea Arcuri and Phil McMinn", 
   title     = "A Memetic Algorithm for Whole Test Suite Generation",
   journal   = "Journal of Systems and Software",
-  year      = "To Appear",
+  volume    = "103",
+  pages     = "311--327",
+  year      = "2015",
   doi       = "10.1016/j.jss.2014.05.032",
   gsid      = "6535049122850899903",
   url       = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2015-jss.pdf",  
@@ -135,7 +213,10 @@
   author    = "Chris J. Wright and Gregory M. Kapfhammer and Phil McMinn",
   title     = "The Impact Of Equivalent, Redundant And Quasi Mutants On Database Schema Mutation Analysis",
   booktitle = "International Conference on Quality Software (QSIC 2014)",
+  pages     = "57--66",
   year      = "2014",
+  doi       = "10.1109/QSIC.2014.26",
+  gsid      = "15389271808089949862",
   publisher = "IEEE Computer Society",
   url       = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2014-qsic.pdf",
   abstract  = "Since the relational database is an important component of real-world software 
@@ -163,7 +244,8 @@
   year      = "2014",
   pages     = "466--470",
   publisher = "IEEE Computer Society",
-  doi       = "10.1109/ICSME.2014.75",  
+  doi       = "10.1109/ICSME.2014.75",
+  gsid      = "14506243461975572712",  
   url       = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2014-icsme.pdf",
   abstract  = "Current software remodularisation tools only operate on abstractions of a 
                software system. In this paper, we inves- tigate the actual impact of automated 
@@ -242,6 +324,7 @@
   year      = "2013",
   publisher = "ACM",
   doi       = "10.1145/2463372.2463549",
+  gsid      = "6274291487760303234",
   url       = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2013-gecco.pdf",
   abstract  = "The Alternating Variable Method (AVM) has been shown to be a surprisingly 
                effective and efficient means of generating branch- covering inputs for procedural 
@@ -291,6 +374,7 @@
   year      = "2013",
   publisher = "Springer",
   doi       = "10.1007/978-3-642-38859-0_11",
+  gsid      = "5750732480349205505",
   url       = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2013-mabspostproc.pdf",
   abstract  = "Testing a multi-agent based model is a tedious process that involves generating 
                very many simulation runs, for example as a result of a parameter sweep. In practice, 
