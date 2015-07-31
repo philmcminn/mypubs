@@ -1,0 +1,17 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    bibtex-ruby (4.0.14)
+      latex-decode (~> 0.0)
+    latex-decode (0.2.2)
+      unicode (~> 0.4)
+    unicode (0.4.4.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bibtex-ruby (~> 4.0.14)
+
+BUNDLED WITH
+   1.10.2
