@@ -16,13 +16,13 @@ def scrape_google_scholar_info(paper_title)
       pos3 = s.rindex('cites', pos1)
       pos4 = s.index('amp', pos3)
       citation_id = s[pos3+6, pos4-pos3-7]
-  
-      {gsid: citation_id, gscites: citation_num}  
+
+      {gsid: citation_id, gscites: citation_num}
     end
   end
 end
 
-def update_google_scholar_info(pub)   
+def update_google_scholar_info(pub)
   info = scrape_google_scholar_info(pub.title)
   unless info.nil?
     pub['gsid'] = info[:gsid]
@@ -30,7 +30,7 @@ def update_google_scholar_info(pub)
   end
 end
 
-def update_google_scholar_info_for_bib(bib, verbose=true) 
+def update_google_scholar_info_for_bib(bib, verbose=true)
   bib.each do |pub|
     print "#{pub.title}... "  if verbose
     info = scrape_google_scholar_info(pub.title)
@@ -49,7 +49,7 @@ def word_wrap(text, line_width)
   end * "\n"
 end
 
-def format_field_value(value, wrap_at, indent_width) 
+def format_field_value(value, wrap_at, indent_width)
   value = value.strip.gsub(/\s+/, " ")
   value = word_wrap(value, wrap_at)
 
@@ -65,33 +65,33 @@ def format_pub(pub, fields=nil, wrap_at=60)
   end
 
   str = "@#{pub.type}{#{pub.id},"
-	  
+
   first_field = true
   break_indent = max_field_len + 7
 
-  fields.each do |field| 
-  	next unless pub.field?(field)
+  fields.each do |field|
+    next unless pub.field?(field)
 
-  	if first_field then first_field = false else str += "," end
+    if first_field then first_field = false else str += "," end
 
-  	key = field.to_s.ljust(max_field_len, ' ')
-  	value = format_field_value(pub[field], wrap_at, break_indent)
+    key = field.to_s.ljust(max_field_len, ' ')
+    value = format_field_value(pub[field], wrap_at, break_indent)
 
-  	str += "\n  #{key} = \"#{value}\""
+    str += "\n  #{key} = \"#{value}\""
   end
 
-  str += "\n}\n\n" 
+  str += "\n}\n\n"
   return str
 end
 
-def prettify(bib_in, bib_out, fields=nil) 
+def prettify(bib_in, bib_out, fields=nil)
   pubs = BibTeX.open(bib_in)
-  
+
   bib_data = ""
   pubs.each do |pub|
     bib_data += format_pub(pub, fields)
   end
-  
+
   File.open(bib_out, "w") {|f| f.write(bib_data) }
 end
 
@@ -103,15 +103,12 @@ def html_tag_wrap(tag, value)
   "<#{tag}>" + to_html(value) + "</#{tag}>"
 end
 
-def format_pub_html(pub) 
+def format_pub_html(pub)
 
-  html = 
-  	html_tag_wrap("h1", pub.title) + "\n" +
-  	html_tag_wrap("h2", pub.authors) + "\n" + 
-  	html_tag_wrap("p", pub.abstract)
-  
+  html =
+    html_tag_wrap("h1", pub.title) + "\n" +
+    html_tag_wrap("h2", pub.authors) + "\n" +
+    html_tag_wrap("p", pub.abstract)
+
   puts html
 end
-
-pubs = BibTeX.open('../bibtex/mcminn.bib')
-update_google_scholar_info_for_bib(pubs)

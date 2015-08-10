@@ -1,34 +1,163 @@
+@inproceedings{Walsh2015,
+  author         = "Walsh, Thomas A. and McMinn, Phil and Kapfhammer, Gregory M.",
+  title          = "Automatic Detection of Potential Layout Faults Following
+                    Changes to Responsive Web Pages",
+  booktitle      = "International Conference on Automated Software Engineering
+                    (ASE 2015)",
+  year           = "2015, To Appear"
+}
+
+@inproceedings{Shamshiri2015b,
+  author         = "Shamshiri, Sina and Just, Rene and Rojas, Jos\'{e} Miguel
+                    and Fraser, Gordon and McMinn, Phil and Arcuri, Andrea",
+  title          = "Do Automatically Generated Unit Tests Find Real Faults? An
+                    Empirical Study of Effectiveness and Challenges",
+  booktitle      = "International Conference on Automated Software Engineering
+                    (ASE 2015)",
+  year           = "2015, To Appear"
+}
+
+@inproceedings{Kinneer2015,
+  author         = "Kinneer, Cody and Kapfhammer, Gregory M. and Wright, Chris
+                    J. and McMinn, Phil",
+  title          = "Automatically Evaluating the Efficiency of Search-Based Test
+                    Data Generation for Relational Database Schemas",
+  booktitle      = "International Conference on Software Engineering and
+                    Knowledge Engineering (SEKE 2015)",
+  year           = "2015",
+  doi            = "10.18293/SEKE2015-205",
+  gsid           = "17711609864470633758",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2015-seke.pdf",
+  abstract       = "The characterization of an algorithm's worst-case time
+                    complexity is useful because it succinctly captures how its
+                    runtime will grow as the input size becomes arbitrarily
+                    large. However, for certain algorithms---such as those
+                    performing search-based test data generation---a theoretical
+                    analysis to determine worst-case time complexity is
+                    difficult to generalize and thus not often reported in the
+                    literature. This paper introduces a framework that
+                    empirically determines an algorithm's worst-case time
+                    complexity by doubling the size of the input and observing
+                    the change in runtime. Since the relational database is a
+                    centerpiece of modern software and the database's schema is
+                    frequently untested, we apply the doubling technique to the
+                    domain of data generation for relational database schemas, a
+                    field where worst-case time complexities are often unknown.
+                    In addition to demonstrating the feasibility of suggesting
+                    the worst-case runtimes of the chosen algorithms and
+                    configurations, the results of our study reveal performance
+                    tradeoffs in testing strategies for relational database
+                    schemas"
+}
+
+@inproceedings{Kinneer2015b,
+  author         = "Kinneer, Cody and Kapfhammer, Gregory M. and Wright, Chris
+                    J. and McMinn, Phil",
+  title          = "EXPOSE: Inferring Worst-case Time Complexity by Automatic
+                    Empirical Study",
+  booktitle      = "International Conference on Software Engineering and
+                    Knowledge Engineering (SEKE 2015)",
+  year           = "2015",
+  doi            = "10.18293/SEKE2015-254",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2015-seke2.pdf"
+}
+
+@inproceedings{Shamshiri2015,
+  author         = "Shamshiri, Sina and Rojas, Jos\'{e} Miguel and Fraser,
+                    Gordon and McMinn, Phil",
+  title          = "Random or Genetic Algorithm Search for Object-Oriented Test
+                    Suite Generation?",
+  booktitle      = "Genetic and Evolutionary Computation Conference (GECCO 2015)",
+  pages          = "1367--1374",
+  year           = "2015",
+  publisher      = "ACM",
+  doi            = "10.1145/2739480.2754696",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2015-gecco.pdf",
+  abstract       = "Achieving high structural coverage is an important aim in
+                    software testing. Several search-based techniques have
+                    proved successful at automatically generating tests that
+                    achieve high coverage. However, despite the well-established
+                    arguments behind using evolutionary search algorithms (e.g.,
+                    genetic algorithms) in preference to random search, it
+                    remains an open question whether the benefits can actually
+                    be observed in practice when generating unit test suites for
+                    object-oriented classes. In this paper, we report an
+                    empirical study on the effects of using a genetic algorithm
+                    (GA) to generate test suites over generating test suites
+                    incrementally with random search, by applying the EvoSuite
+                    unit test suite generator to 1,000 classes randomly selected
+                    from the SF110 corpus of open source projects. Surprisingly,
+                    the results show little difference between the coverage
+                    achieved by test suites generated with evolutionary search
+                    compared to those generated using random search. A detailed
+                    analysis reveals that the genetic algorithm covers more
+                    branches of the type where standard fitness functions
+                    provide guidance. In practice, however, we observed that the
+                    vast majority of branches in the analyzed projects provide
+                    no such guidance.",
+  comment        = "Winner of best paper award for the SBSE-SS track"
+}
+
+@article{Kempka2015,
+  author         = "Kempka, Joseph and McMinn, Phil and Sudholt, Dirk",
+  title          = "Design and Analysis of Different Alternating Variable
+                    Searches for Search-Based Software Testing",
+  journal        = "Theoretical Computer Science",
+  year           = "To Appear",
+  doi            = "10.1016/j.tcs.2014.12.009",
+  gsid           = "13874827904077954800",
+  url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2015-tcs.pdf",
+  abstract       = "Manual software testing is a notoriously expensive part of
+                    the software development process, and its automation is of
+                    high concern. One aspect of the testing process is the
+                    automatic generation of test inputs. This paper studies the
+                    Alternating Variable Method (AVM) approach to search-based
+                    test input generation. The AVM has been shown to be an
+                    effective and efficient means of generating branch-covering
+                    inputs for procedural programs. However, there has been
+                    little work that has sought to analyse the technique and
+                    further improve its performance. This paper proposes two
+                    different local searches that may be used in conjunction
+                    with the AVM, Geometric and Lattice Search. A theoretical
+                    runtime analysis proves that under certain conditions, the
+                    use of these searches results in better performance compared
+                    to the original AVM. These theoretical results are confirmed
+                    by an empirical study with five programs, which shows that
+                    increases of speed of over 50% are possible in practice."
+}
+
 @article{Barr2015,
   author         = "Barr, Earl T. and Harman, Mark and McMinn, Phil and Shahbaz,
                     Muzammil and Yoo, Shin",
   title          = "The Oracle Problem in Software Testing: A Survey",
   journal        = "IEEE Transactions on Software Engineering",
-  year           = "To Appear",
+  volume         = "41",
+  pages          = "507--525",
+  year           = "2015",
   doi            = "10.1109/TSE.2014.2372785",
+  gsid           = "10167804317265679975",
   url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2015-tse.pdf",
-  abstract       = "The generation of unit-level test cases for structural code
-                    coverage is a task well-suited to Genetic Algorithms. Method
-                    call sequences must be created that construct objects, put
-                    them into the right state and then execute uncovered code.
-                    However, the generation of primitive values, such as
-                    integers and doubles, characters that appear in strings, and
-                    arrays of primitive values, are not so straightforward.
-                    Often, small local changes are required to drive the value
-                    towards the one needed to execute some target structure.
-                    However, global searches like Genetic Algorithms tend to
-                    make larger changes that are not concentrated on any
-                    particular aspect of a test case. In this paper, we extend
-                    the Genetic Algorithm behind the EvoSuite test generation
-                    tool into a Memetic Algorithm, by equipping it with several
-                    local search operators. These operators are designed to
-                    efficiently optimize primitive values and other aspects of a
-                    test suite that allow the search for test cases to function
-                    more effectively. We evaluate our operators using a rigorous
-                    experimental methodology on over 12,000 Java classes,
-                    comprising open source classes of various different kinds,
-                    including numerical applications and text processors. Our
-                    study shows that increases in branch coverage of up to 53%
-                    are possible for an individual class in practice."
+  abstract       = "Testing involves examining the behaviour of a system in
+                    order to discover potential faults. Given an input for a
+                    system, the challenge of distinguishing the corresponding
+                    desired, correct behaviour from potentially incorrect
+                    behavior is called the “test oracle problem”. Test oracle
+                    automation is important to remove a current bottleneck that
+                    inhibits greater overall test automation. Without test
+                    oracle automation, the human has to determine whether
+                    observed behaviour is correct. The literature on test
+                    oracles has introduced techniques for oracle automation,
+                    including modelling, specifications, contract-driven
+                    development and metamorphic testing. When none of these is
+                    completely adequate, the final source of test oracle
+                    information remains the human, who may be aware of informal
+                    specifications, expectations, norms and domain specific
+                    information that provide informal oracle guidance. All forms
+                    of test oracles, even the humble human, involve challenges
+                    of reducing cost and increasing benefit. This paper provides
+                    a comprehensive survey of current approaches to the test
+                    oracle problem and an analysis of trends in this important
+                    area of software testing research and practice."
 }
 
 @article{Fraser2015,
@@ -39,6 +168,7 @@
   editor         = "Harman, Mark and Pezz\`{e}, Mauro",
   journal        = "ACM Transactions on Software Engineering Methodology",
   year           = "To Appear",
+  gsid           = "7268509769181718592",
   url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2015-tosem.pdf",
   abstract       = "Work on automated test generation has produced several tools
                     capable of generating test data which achieves high
@@ -71,32 +201,35 @@
   author         = "Fraser, Gordon and Arcuri, Andrea and McMinn, Phil",
   title          = "A Memetic Algorithm for Whole Test Suite Generation",
   journal        = "Journal of Systems and Software",
-  year           = "To Appear",
+  volume         = "103",
+  pages          = "311--327",
+  year           = "2015",
   doi            = "10.1016/j.jss.2014.05.032",
   gsid           = "6535049122850899903",
-  gscites        = "1",
   url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2015-jss.pdf",
-  abstract       = "Testing involves examining the behaviour of a system in
-                    order to discover potential faults. Given an input for a
-                    system, the challenge of distinguishing the corresponding
-                    desired, correct behaviour from potentially incorrect
-                    behavior is called the “test oracle problem”. Test oracle
-                    automation is important to remove a current bottleneck that
-                    inhibits greater overall test automation. Without test
-                    oracle automation, the human has to determine whether
-                    observed behaviour is correct. The literature on test
-                    oracles has introduced techniques for oracle automation,
-                    including modelling, specifications, contract-driven
-                    development and metamorphic testing. When none of these is
-                    completely adequate, the final source of test oracle
-                    information remains the human, who may be aware of informal
-                    specifications, expectations, norms and domain specific
-                    information that provide informal oracle guidance. All forms
-                    of test oracles, even the humble human, involve challenges
-                    of reducing cost and increasing benefit. This paper provides
-                    a comprehensive survey of current approaches to the test
-                    oracle problem and an analysis of trends in this important
-                    area of software testing research and practice."
+  abstract       = "The generation of unit-level test cases for structural code
+                    coverage is a task well-suited to Genetic Algorithms. Method
+                    call sequences must be created that construct objects, put
+                    them into the right state and then execute uncovered code.
+                    However, the generation of primitive values, such as
+                    integers and doubles, characters that appear in strings, and
+                    arrays of primitive values, are not so straightforward.
+                    Often, small local changes are required to drive the value
+                    towards the one needed to execute some target structure.
+                    However, global searches like Genetic Algorithms tend to
+                    make larger changes that are not concentrated on any
+                    particular aspect of a test case. In this paper, we extend
+                    the Genetic Algorithm behind the EvoSuite test generation
+                    tool into a Memetic Algorithm, by equipping it with several
+                    local search operators. These operators are designed to
+                    efficiently optimize primitive values and other aspects of a
+                    test suite that allow the search for test cases to function
+                    more effectively. We evaluate our operators using a rigorous
+                    experimental methodology on over 12,000 Java classes,
+                    comprising open source classes of various different kinds,
+                    including numerical applications and text processors. Our
+                    study shows that increases in branch coverage of up to 53%
+                    are possible for an individual class in practice."
 }
 
 @article{Shahbaz2015,
@@ -111,7 +244,6 @@
   year           = "2015",
   doi            = "10.1016/j.scico.2014.04.008",
   gsid           = "12751904691317958917",
-  gscites        = "2",
   url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2015-scp.pdf",
   abstract       = "Classic approaches to automatic input data generation are
                     usually driven by the goal of obtaining program coverage and
@@ -152,8 +284,11 @@
   title          = "The Impact Of Equivalent, Redundant And Quasi Mutants On
                     Database Schema Mutation Analysis",
   booktitle      = "International Conference on Quality Software (QSIC 2014)",
+  pages          = "57--66",
   year           = "2014",
   publisher      = "IEEE Computer Society",
+  doi            = "10.1109/QSIC.2014.26",
+  gsid           = "15389271808089949862",
   url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2014-qsic.pdf",
   abstract       = "Since the relational database is an important component of
                     real-world software and the schema plays a major role in
@@ -191,6 +326,7 @@
   year           = "2014",
   publisher      = "IEEE Computer Society",
   doi            = "10.1109/ICSME.2014.75",
+  gsid           = "14506243461975572712",
   url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2014-icsme.pdf",
   abstract       = "Current software remodularisation tools only operate on
                     abstractions of a software system. In this paper, we inves-
@@ -217,7 +353,6 @@
   year           = "2013",
   institution    = "University of Sheffield, Department of Computer Science",
   gsid           = "1901883250950186162",
-  gscites        = "22",
   url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2013-techreport.pdf",
   journalversion = "Barr2015",
   abstract       = "Testing involves examining the behaviour of a system in
@@ -252,8 +387,7 @@
   year           = "2013",
   publisher      = "ACM",
   doi            = "10.1145/2483760.2483774",
-  gsid           = "4146562079611253526",
-  gscites        = "11",
+  gsid           = "4397680857604283833",
   url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2013-issta.pdf",
   journalversion = "Fraser2015",
   abstract       = "Automated test generation techniques can efficiently produce
@@ -290,7 +424,9 @@
   year           = "2013",
   publisher      = "ACM",
   doi            = "10.1145/2463372.2463549",
+  gsid           = "6274291487760303234",
   url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2013-gecco.pdf",
+  journalversion = "Kempka2015",
   abstract       = "The Alternating Variable Method (AVM) has been shown to be a
                     surprisingly effective and efficient means of generating
                     branch- covering inputs for procedural programs. However,
@@ -315,7 +451,6 @@
   publisher      = "ACM",
   doi            = "10.1145/2463372.2463548",
   gsid           = "4397680857604283833",
-  gscites        = "7",
   url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2013-gecco2.pdf",
   journalversion = "Fraser2015b",
   abstract       = "Genetic Algorithms have been successfully applied to the
@@ -351,6 +486,7 @@
   year           = "2013",
   publisher      = "Springer",
   doi            = "10.1007/978-3-642-38859-0_11",
+  gsid           = "5750732480349205505",
   url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2013-mabspostproc.pdf",
   abstract       = "Testing a multi-agent based model is a tedious process that
                     involves generating very many simulation runs, for example
@@ -385,7 +521,6 @@
   publisher      = "IEEE",
   doi            = "10.1109/ICSTW.2013.51",
   gsid           = "17662666305881917950",
-  gscites        = "1",
   url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2013-regression.pdf",
   abstract       = "Over the lifetime of software programs, developers make
                     changes by adding, removing, enhancing functionality or by
@@ -423,8 +558,7 @@
   month          = "aug",
   year           = "2013",
   doi            = "10.1016/j.jss.2013.02.061",
-  gsid           = "3511904947539311742",
-  gscites        = "10",
+  gsid           = "12654577515499039369",
   abstract       = "Test case generation is among the most labour-intensive
                     tasks in software testing. It also has a strong impact on
                     the effectiveness and efficiency of software testing. For
@@ -460,7 +594,6 @@
   publisher      = "IEEE",
   doi            = "10.1109/ICSTW.2013.15",
   gsid           = "11511976546368721292",
-  gscites        = "3",
   url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2013-mutation.pdf",
   abstract       = "Mutation analysis is an effective way to assess the quality
                     of input values and test oracles. Yet, since this technique
@@ -499,7 +632,6 @@
   publisher      = "IEEE",
   doi            = "10.1109/ICST.2013.11",
   gsid           = "17101202194362039024",
-  gscites        = "9",
   url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2013-icst.pdf",
   abstract       = "The frequent non-availability of an automated oracle means
                     that, in practice, checking software behaviour is frequently
@@ -538,7 +670,6 @@
   publisher      = "IEEE",
   doi            = "10.1109/ICST.2013.47",
   gsid           = "14714555778184478486",
-  gscites        = "9",
   url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2013-icst2.pdf",
   abstract       = "There has been much attention to testing applications that
                     interact with database management systems, and the testing
@@ -578,7 +709,6 @@
   year           = "2013",
   doi            = "10.1016/j.infsof.2012.03.010",
   gsid           = "5850151503098737647",
-  gscites        = "7",
   url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2013-ist.pdf",
   abstract       = "Context: Genetic Algorithms are a popular search-based
                     optimisation technique for automatically generating test
@@ -618,7 +748,6 @@
   publisher      = "IEEE",
   doi            = "10.1109/ICSM.2012.6405309",
   gsid           = "14591210584263094600",
-  gscites        = "10",
   url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2012-icsm.pdf",
   abstract       = "This paper is concerned with the challenge of reorganising a
                     software system into modules that both obey sound design
@@ -653,7 +782,6 @@
   year           = "2012",
   doi            = "10.1039/C1IB00042J",
   gsid           = "781513648088795830",
-  gscites        = "25",
   abstract       = "Many of the complex systems found in biology are comprised
                     of numerous components, where interactions between
                     individual agents result in the emergence of structures and
@@ -680,7 +808,6 @@
   year           = "2012",
   doi            = "10.1109/TSE.2011.18",
   gsid           = "11406913725908588103",
-  gscites        = "26",
   url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2012-tse.pdf",
   abstract       = "Search-Based Test Data Generation reformulates testing goals
                     as fitness functions so that test input generation can be
@@ -718,7 +845,6 @@
   publisher      = "IEEE",
   doi            = "10.1109/ICST.2012.94",
   gsid           = "4998143129042647329",
-  gscites        = "26",
   url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2012-icst.pdf",
   abstract       = "Generating realistic, branch-covering string inputs is a
                     challenging problem, due to the diverse and complex types of
@@ -758,7 +884,6 @@
   publisher      = "IEEE",
   doi            = "10.1109/QSIC.2012.15",
   gsid           = "11910624869729036732",
-  gscites        = "5",
   url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2012-qsic.pdf",
   journalversion = "Shahbaz2015",
   abstract       = "Classic approaches to test input generation -- such as
@@ -868,7 +993,6 @@
   publisher      = "IEEE",
   doi            = "10.1109/ASE.2011.6100119",
   gsid           = "7467923558459545772",
-  gscites        = "27",
   url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2011-ase.pdf",
   abstract       = "We present an algorithm for constructing fitness functions
                     that improve the efficiency of search-based testing when
@@ -903,7 +1027,6 @@
   publisher      = "Springer",
   doi            = "10.1007/978-3-642-25231-0_1",
   gsid           = "17797710725715639546",
-  gscites        = "59",
   url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2011-lncs.pdf",
   abstract       = "The aim of Search Based Software Engineering (SBSE) research
                     is to move software engineering problems from human-based
@@ -936,7 +1059,6 @@
   publisher      = "IEEE",
   doi            = "10.1109/ICSTW.2011.100",
   gsid           = "18354841911838065773",
-  gscites        = "61",
   url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2011-sbst.pdf",
   abstract       = "Search-Based Software Testing is the use of a meta-heuristic
                     optimizing search technique, such as a Genetic Algorithm, to
@@ -966,7 +1088,6 @@
   publisher      = "IEEE",
   doi            = "10.1109/ICSTW.2010.9",
   gsid           = "10732357679451550129",
-  gscites        = "7",
   url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2010-mutation.pdf",
   abstract       = "This short paper argues that agent-based models are an
                     independent class of software application with their own
@@ -988,7 +1109,6 @@
   year           = "2010",
   institution    = "University of Sheffield, Department of Computer Science",
   gsid           = "9692798076030307368",
-  gscites        = "2",
   url            = "http://www.dcs.shef.ac.uk/intranet/research/public/resmes/CS1001.pdf",
   abstract       = "Program execution traces record the sequences of events or
                     functions that are encountered during a program execution.
@@ -1020,7 +1140,6 @@
   publisher      = "ACM",
   doi            = "10.1145/1830483.1830736",
   gsid           = "6886466573900417768",
-  gscites        = "2",
   url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2010-gecco.pdf",
   abstract       = "State machines are a popular method of representing a system
                     at a high level of abstraction that enables developers to
@@ -1053,7 +1172,6 @@
   year           = "2010",
   doi            = "10.1109/TSE.2009.71",
   gsid           = "16678916924423704440",
-  gscites        = "154",
   url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2010-tse.pdf",
   abstract       = "Search-based optimization techniques have been applied to
                     structural software test data generation since 1992, with a
@@ -1091,7 +1209,6 @@
   publisher      = "IEEE",
   doi            = "10.1109/ICSTW.2010.31",
   gsid           = "3841656042734218621",
-  gscites        = "41",
   url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2010-sbst.pdf",
   abstract       = "Previous approaches to search based test data generation
                     tend to focus on coverage, rather than oracle cost. While
@@ -1125,7 +1242,6 @@
   year           = "2010",
   doi            = "10.1016/j.jss.2010.07.026",
   gsid           = "14257434786005880445",
-  gscites        = "37",
   url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2010-jss.pdf",
   abstract       = "Automated test data generation has remained a topic of
                     considerable interest for several decades because it lies at
@@ -1162,7 +1278,6 @@
   publisher      = "IEEE",
   doi            = "10.1109/SSBSE.2010.11",
   gsid           = "5273647585278581057",
-  gscites        = "4",
   url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2010-ssbse.pdf",
   journalversion = "McMinn2013",
   abstract       = "Recent results in Search-Based Testing show that the
@@ -1200,7 +1315,6 @@
   publisher      = "ACM",
   doi            = "10.1145/1868048.1868049",
   gsid           = "18420770473476660637",
-  gscites        = "20",
   url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2010-stov.pdf",
   abstract       = "Due to the frequent non-existence of an automated oracle,
                     test cases are often evaluated manually in practice.
@@ -1234,7 +1348,6 @@
   publisher      = "ACM",
   doi            = "10.1145/1868321.1868323",
   gsid           = "16160396590292213585",
-  gscites        = "13",
   url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2010-woda.pdf",
   abstract       = "Several software maintenance tasks such as debugging,
                     phase-identification, or simply the high-level exploration
@@ -1270,7 +1383,6 @@
   publisher      = "IEEE",
   doi            = "10.1109/TAICPART.2009.15",
   gsid           = "6900386515662571285",
-  gscites        = "42",
   url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2009-taicpart.pdf",
   abstract       = "Whilst there is much evidence that both concolic and search
                     based testing can outperform random testing, there has been
@@ -1303,7 +1415,6 @@
   year           = "2009",
   doi            = "10.1145/1525880.1525884",
   gsid           = "6664288051039417389",
-  gscites        = "44",
   url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2009-tosem.pdf",
   abstract       = "Evolutionary testing is an approach to automating test data
                     generation that uses an evolutionary algorithm to search a
@@ -1334,7 +1445,6 @@
   publisher      = "ACM Press",
   doi            = "10.1145/1569901.1570127",
   gsid           = "11414429136108319501",
-  gscites        = "17",
   url            = "http://philmcminn.staff.shef.ac.uk/publications/pdfs/2009-gecco.pdf",
   abstract       = "Testability transformations are source-to-source program
                     transformations that are designed to improve the testability
@@ -1364,7 +1474,7 @@
 }
 
 @incollection{Harman2008,
-  author         = "Harman, Mark and Baresel, Andr'{e} and Binkley, David and
+  author         = "Harman, Mark and Baresel, Andr\'{e} and Binkley, David and
                     Hierons, Rob and Hu, Lin and Korel, Bogdan and McMinn, Phil
                     and Roper, Marc",
   title          = "Testability Transformation -- Program Transformation to
@@ -1918,7 +2028,7 @@
                     Encouraging results were obtained with the hybrid approach
                     for seven programs known to originally cause problems for
                     ET.",
-  comment        = "Winner of best SBSE track paper award"
+  comment        = "Winner of best paper award for the SBSE track"
 }
 
 @inproceedings{McMinn2003,
