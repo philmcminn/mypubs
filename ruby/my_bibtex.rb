@@ -56,7 +56,7 @@ def format_field_value(value, wrap_at, indent_width)
   value.gsub(/\n/, "\n".ljust(indent_width))
 end
 
-def format_pub(pub, fields=nil, wrap_at=60)
+def format_pub(pub, fields=nil, wrap_at=120)
   fields = pub.field_names if fields.nil?
 
   max_field_len = 0

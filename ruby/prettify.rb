@@ -22,7 +22,7 @@ fields = %w(
   gsid
   gscites
   url
-  journalversion
+  jv
   abstract
   comment
 )
