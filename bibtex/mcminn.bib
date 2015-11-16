@@ -62,6 +62,34 @@
                  simulation of the execution environment to detect faults that are dependent on external factors such as date and time."
 }
 
+@techreport{tr4,
+  author      = "McMinn, Phil and Wright, Chris J. and Kapfhammer, Gregory M.",
+  title       = "An Analysis of the Effectiveness of Different Coverage Criteria for Testing Relational Database Schema Intergrity Constraints",
+  number      = "CS-15-01",
+  year        = "2015",
+  institution = "Department of Computer Science, University of Sheffield",
+  gsid        = "13721906433566134344",
+  jv          = "j18",
+  abstract    = "Despite industry advice to the contrary, there has been little work that has sought to test that a relational
+                 database's schema has correctly specified integrity constraints. These critically important constraints ensure
+                 the coherence of data in a database, defending it from manipulations that could violate requirements such as
+                 ``usernames must be unique'' or ``the host name cannot be missing or unknown''. This paper is the first to propose
+                 coverage criteria, derived from logic coverage criteria, that establish different levels of testing for the
+                 formulation of integrity constraints in a database schema. These range from simple criteria that mandate the
+                 testing of successful and unsuccessful INSERT statements into tables to more advanced criteria that test the
+                 formulation of complex integrity constraints such as multi-column PRIMARY KEYs and arbitrary CHECK constraints.
+                 Due to different vendor interpretations of the structured query language (SQL) specification with regard to how
+                 integrity constraints should actually function in practice, our criteria crucially account for the underlying
+                 semantics of the database management system (DBMS).  After formally defining these coverage criteria and relating
+                 them in a subsumption hierarchy, we present two approaches to automatically generating tests that satisfy the
+                 criteria.  We then describe the results of an empirical study that uses mutation analysis to investigate the
+                 fault-finding capability of data generated when our coverage criteria are applied to a wide variety of relational
+                 schemas hosted by three well-known and representative DBMSs --- HyperSQL, PostgreSQL and SQLite.  In addition
+                 to revealing the complementary fault-finding capabilities of the presented criteria, the results show that
+                 mutation scores range from as low as just 12% of mutants being killed with the simplest of criteria to 96%
+                 with the most advanced."
+}
+
 @inproceedings{c37,
   author      = "Kinneer, Cody and Kapfhammer, Gregory M. and Wright, Chris J. and McMinn, Phil",
   title       = "Automatically Evaluating the Efficiency of Search-Based Test Data Generation for Relational Database Schemas",
@@ -116,8 +144,9 @@
   author      = "Kempka, Joseph and McMinn, Phil and Sudholt, Dirk",
   title       = "Design and Analysis of Different Alternating Variable Searches for Search-Based Software Testing",
   journal     = "Theoretical Computer Science",
-  year        = "To Appear",
-  yearonline  = "2015",
+  volume      = "605",
+  pages       = "1--20",
+  year        = "2015",
   doi         = "10.1016/j.tcs.2014.12.009",
   gsid        = "13874827904077954800",
   abstract    = "Manual software testing is a notoriously expensive part of the software development process, and its automation is of
