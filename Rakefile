@@ -27,6 +27,7 @@ task :prettify do
     jv
     abstract
     comment
+    sponsor
   )
   prettify(BIB_FILE, MOD_BIB_FILE, WRAP_AT, fields)
 end
