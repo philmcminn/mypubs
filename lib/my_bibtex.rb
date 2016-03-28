@@ -94,20 +94,26 @@ def prettify(bib_in, bib_out, wrap_at=120, fields=nil)
   File.open(bib_out, "w") {|f| f.write(bib_data) }
 end
 
-def to_html(value)
-  HTMLEntities.new.encode(value.convert(:latex))
-end
+def get_venues(bib_in)
+  pubs = BibTeX.open(bib_in)
+  venues = []
 
-def html_tag_wrap(tag, value)
-  "<#{tag}>" + to_html(value) + "</#{tag}>"
-end
+  pubs.each do |pub|
+    if pub.type.to_s == 'inproceedings'
+      if pub.field? 'booktitle'
+        venues << pub['booktitle'].strip
+      else
+        abort "#{pub.id} is a conference publication without a 'booktitle' field"
+      end
+    elsif pub.type.to_s == 'article'
+      if pub.field? 'journal'
+        venues << pub['journal'].strip
+      else
+        abort "#{pub.id} is a journal publication without a 'journal' field"
+      end
+    end
+  end
 
-def format_pub_html(pub)
-
-  html =
-    html_tag_wrap("h1", pub.title) + "\n" +
-    html_tag_wrap("h2", pub.authors) + "\n" +
-    html_tag_wrap("p", pub.abstract)
-
-  puts html
+  venues = venues.uniq
+  venues.sort
 end
