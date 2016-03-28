@@ -1,5 +1,4 @@
 require 'bibtex'
-require 'htmlentities'
 require 'net/http'
 require 'uri'
 
@@ -84,12 +83,12 @@ def format_pub(pub, fields=nil, wrap_at=120)
   return str
 end
 
-def prettify(bib_in, bib_out, fields=nil)
+def prettify(bib_in, bib_out, wrap_at=120, fields=nil)
   pubs = BibTeX.open(bib_in)
 
   bib_data = ""
   pubs.each do |pub|
-    bib_data += format_pub(pub, fields)
+    bib_data += format_pub(pub, fields, wrap_at)
   end
 
   File.open(bib_out, "w") {|f| f.write(bib_data) }
