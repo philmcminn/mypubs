@@ -117,3 +117,25 @@ def get_venues(bib_in)
   venues = venues.uniq
   venues.sort
 end
+
+def count(bib_in)
+  pubs = BibTeX.open(bib_in)
+  types = Hash.new
+
+  pubs.each do |pub|
+    type = pub.type.to_s
+    types[type] = 0 unless types.key? type
+    types[type] += 1
+  end
+
+  puts "Publication statistics"
+  puts "----------------------"
+  total = 0
+  types.keys.sort.each do |type|
+    count = types[type]
+    puts "#{type}: #{count}"
+    total += count
+  end
+  puts "----------------------"
+  puts "Total: #{total}"
+end

@@ -41,3 +41,7 @@ task :output_venues do
     puts venue
   end
 end
+
+task :count do
+  count(BIB_FILE)
+end
