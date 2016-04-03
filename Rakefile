@@ -3,6 +3,7 @@ require_relative 'lib/my_bibtex'
 BIB_FILE = 'mcminn.bib'
 MOD_BIB_FILE = 'mcminn.mod.bib'
 WRAP_AT = 80
+REPOS_DIR = File.dirname(__FILE__) + '/../'
 
 task :prettify do
   fields = %w(
@@ -44,4 +45,15 @@ end
 
 task :count do
   count(BIB_FILE)
+end
+
+task :update_repos do
+  Dir.entries(REPOS_DIR).each do |entry|
+    fully_qualifed = REPOS_DIR + entry
+    if File.directory?(fully_qualifed) && entry != '.' && entry != '..'
+      puts "Updating #{fully_qualifed}"
+      `cd #{fully_qualifed}`
+      `git pull`
+    end
+  end
 end
