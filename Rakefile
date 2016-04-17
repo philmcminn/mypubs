@@ -52,8 +52,7 @@ task :update_repos do
     fully_qualifed = REPOS_DIR + entry
     if File.directory?(fully_qualifed) && entry != '.' && entry != '..'
       puts "Updating #{fully_qualifed}"
-      `cd #{fully_qualifed}`
-      `git pull`
+      `rpl "#{fully_qualifed}"`
     end
   end
 end
