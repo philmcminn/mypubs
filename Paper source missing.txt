@@ -1,9 +1,9 @@
 Paper source missing
 ====================
-c9 -- Kiran
+c6, c9 -- Kiran
 c12, tr2 -- Neil W
 c20 -- Sheeva
 j10 -- Mike
 j5 -- Mariam? Also final version of the CEC paper.
-j4 -- Email or contact Sun Tao.
+j3,j4 -- Check through email or contact Sun Tao.
 
