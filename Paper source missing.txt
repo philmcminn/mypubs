@@ -6,4 +6,6 @@ c20 -- Sheeva
 j10 -- Mike
 j5 -- Mariam? Also final version of the CEC paper.
 j3,j4 -- Check through email or contact Sun Tao.
+j1, c1, c2 -- Check old CDs?
 
+Also TODO --- update build.sh so that PS files are also build.
