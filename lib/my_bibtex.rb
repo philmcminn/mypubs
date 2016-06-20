@@ -139,3 +139,14 @@ def count(bib_in)
   puts "----------------------"
   puts "Total: #{total}"
 end
+
+def get_keys(bib_in) 
+  pubs = BibTeX.open(bib_in)
+  keys = Array.new
+
+  pubs.each do |pub|
+    keys << pub.id
+  end
+
+  return keys
+end

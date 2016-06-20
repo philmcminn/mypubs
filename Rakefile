@@ -56,3 +56,13 @@ task :update_repos do
     end
   end
 end
+
+task :checkout_repos do
+  get_keys(BIB_FILE).each do |key|
+    fully_qualifed = REPOS_DIR + key
+    unless File.directory?(fully_qualifed)
+      puts "Checking out #{key}"
+      `git clone git@bitbucket.org:philmcminn-personal/#{key}.git`
+    end
+  end 
+end
