@@ -1,9 +1,9 @@
 require_relative 'lib/my_bibtex'
 
-BIB_FILE = 'mcminn.bib'
-MOD_BIB_FILE = 'mcminn.mod.bib'
-WRAP_AT = 80
 REPOS_DIR = File.dirname(__FILE__) + '/../'
+BIB_FILE = REPOS_DIR + 'bibtex/mcminn.bib'
+MOD_BIB_FILE = REPOS_DIR + 'bibtex/mcminn.mod.bib'
+WRAP_AT = 80
 
 task :prettify do
   fields = %w(
@@ -58,11 +58,14 @@ task :update_repos do
 end
 
 task :checkout_repos do
+  Dir.chdir(REPOS_DIR)
   get_keys(BIB_FILE).each do |key|
     fully_qualifed = REPOS_DIR + key
     unless File.directory?(fully_qualifed)
-      puts "Checking out #{key}"
+      puts "Attempting to check out Git repository: #{key}"
       `git clone git@bitbucket.org:philmcminn-personal/#{key}.git`
+      puts "Attempting to check out Mercurial repository: #{key}"
+      `hg clone ssh://hg@bitbucket.org/philmcminn-personal/#{key}`
     end
   end 
 end
