@@ -4,6 +4,7 @@ REPOS_DIR = File.dirname(__FILE__) + '/../'
 BIB_FILE = REPOS_DIR + 'bibtex/mcminn.bib'
 MOD_BIB_FILE = REPOS_DIR + 'bibtex/mcminn.mod.bib'
 WRAP_AT = 80
+GS_SCHOLAR_ID = 'll6Fc7gAAAAJ'
 
 task :prettify do
   fields = %w(
@@ -68,4 +69,15 @@ task :checkout_repos do
       `hg clone ssh://hg@bitbucket.org/philmcminn-personal/#{key}`
     end
   end 
+end
+
+task :cites_to_csv do
+  refs = scrape_google_scholar_cites(GS_SCHOLAR_ID)
+  csv = ''
+  refs.each do |ref| 
+    csv += "#{ref[0]},#{ref[1]}\n"
+  end
+  date_time_now = Time.now.strftime("%Y-%m-%d %H:%M")
+  file_name = "./cites/#{date_time_now}.csv"
+  File.write(file_name, csv)
 end

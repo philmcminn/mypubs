@@ -2,44 +2,14 @@ require 'bibtex'
 require 'net/http'
 require 'uri'
 
-def scrape_google_scholar_info(paper_title)
-  enc_uri = URI.escape '/scholar?q="'+paper_title+'"&num=1'
-
-  Net::HTTP.start('scholar.google.com') do |http|
-    req = Net::HTTP::Get.new(enc_uri)
-    s = http.request(req).body
-    pos1 = s.index('Cited by ')
-    if pos1
-      pos2 = s.index('</a>', pos1+9)
-      citation_num = Integer(s[pos1+9, pos2-pos1-9])
-      pos3 = s.rindex('cites', pos1)
-      pos4 = s.index('amp', pos3)
-      citation_id = s[pos3+6, pos4-pos3-7]
-
-      {gsid: citation_id, gscites: citation_num}
-    end
+def scrape_google_scholar_cites(user, page_size=1000) 
+  url = "https://scholar.google.co.uk/citations?user=#{user}&pagesize=#{page_size}"
+  page_content = Net::HTTP.get(URI.parse(url))  
+  refs = []
+  page_content.scan(/\<a .*?cites=(.*?)" class="gsc_a_ac"\>(.*?)\<\/a\>/) do |ref|
+    refs << ref
   end
-end
-
-def update_google_scholar_info(pub)
-  info = scrape_google_scholar_info(pub.title)
-  unless info.nil?
-    pub['gsid'] = info[:gsid]
-    pub['gscites'] = info[:gscites]
-  end
-end
-
-def update_google_scholar_info_for_bib(bib, verbose=true)
-  bib.each do |pub|
-    print "#{pub.title}... "  if verbose
-    info = scrape_google_scholar_info(pub.title)
-    if info.nil?
-      puts "NO DATA" if verbose
-    else
-      puts "cites: #{info[:gscites]}" if verbose
-    end
-    sleep(5)
-  end
+  refs
 end
 
 def word_wrap(text, line_width)
