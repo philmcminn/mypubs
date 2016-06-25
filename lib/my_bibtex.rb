@@ -1,15 +1,11 @@
-require 'bibtex'
+require 'my_bibtex'
 require 'net/http'
 require 'uri'
 
-def scrape_google_scholar_cites(user, page_size=1000) 
+def scrape_google_scholar_cites(user, page_size=1000)
   url = "https://scholar.google.co.uk/citations?user=#{user}&pagesize=#{page_size}"
-  page_content = Net::HTTP.get(URI.parse(url))  
-  refs = []
-  page_content.scan(/\<a .*?cites=(.*?)" class="gsc_a_ac"\>(.*?)\<\/a\>/) do |ref|
-    refs << ref
-  end
-  refs
+  page_content = Net::HTTP.get(URI.parse(url))
+  page_content.scan(/\<a .*?cites=(.*?)" class="gsc_a_ac"\>(.*?)\<\/a\>/)
 end
 
 def word_wrap(text, line_width)
@@ -110,7 +106,7 @@ def count(bib_in)
   puts "Total: #{total}"
 end
 
-def get_keys(bib_in) 
+def get_keys(bib_in)
   pubs = BibTeX.open(bib_in)
   keys = Array.new
 

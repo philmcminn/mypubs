@@ -68,16 +68,16 @@ task :checkout_repos do
       puts "Attempting to check out Mercurial repository: #{key}"
       `hg clone ssh://hg@bitbucket.org/philmcminn-personal/#{key}`
     end
-  end 
+  end
 end
 
 task :cites_to_csv do
   refs = scrape_google_scholar_cites(GS_SCHOLAR_ID)
   csv = ''
-  refs.each do |ref| 
+  refs.each do |ref|
     csv += "#{ref[0]},#{ref[1]}\n"
   end
-  date_time_now = Time.now.strftime("%Y-%m-%d %H:%M")
+  date_time_now = Time.now.strftime("%Y-%m-%d %H-%M")
   file_name = "./cites/#{date_time_now}.csv"
   File.write(file_name, csv)
 end
