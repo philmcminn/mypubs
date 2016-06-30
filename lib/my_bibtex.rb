@@ -1,4 +1,3 @@
-require 'my_bibtex'
 require 'net/http'
 require 'uri'
 

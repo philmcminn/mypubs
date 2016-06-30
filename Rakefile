@@ -1,4 +1,4 @@
-require_relative 'lib/my_bibtex'
+require_relative './lib/my_bibtex'
 
 REPOS_DIR = File.dirname(__FILE__) + '/../'
 BIB_FILE = REPOS_DIR + 'bibtex/mcminn.bib'
