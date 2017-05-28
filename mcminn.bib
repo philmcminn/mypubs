@@ -18,7 +18,7 @@ inproceedings{c51,
                  failures may go undetected in a page’s layout when rendered for different viewport sizes.
                  A central problem is the difficulty in providing an automated ``oracle'' to validate RWD
                  layouts against, meaning that checking for failures is largely a manual process in practice,
-                 which results in layout failures in many live responsive web sites.  is paper presents an
+                 which results in layout failures in many live responsive web sites. This paper presents an
                  automated failure detection technique that checks the consistency of a responsive page’s
                  layout across a range of viewport widths, obviating the need for an explicit oracle. In an
                  empirical study, this method found failures in 16 of 26 real-world production pages studied,
@@ -31,6 +31,16 @@ inproceedings{c51,
   title       = "{ReDeCheck}: An Automatic Layout Failure Checking Tool for Responsively Designed Web Pages",
   booktitle   = "International Conference on Software Testing and Analysis (ISSTA 2017)",
   year        = "2017",
+  abstract    = "Since people frequently access websites with a wide variety of devices (e.g., mobile phones,
+                 laptops, and desktops), developers need frameworks and tools for creating layouts that are
+                 useful at many viewport widths. While responsive web design (RWD) principles and frameworks
+                 facilitate the development of such sites, there is a lack of tools supporting the detection
+                 of failures in their layout. Since the quality assurance process for responsively designed
+                 websites is often manual, time-consuming, and error-prone, this paper presents ReDeCheck, an
+                 automated layout checking tool that alerts developers to both potential unintended regressions
+                 in responsive layout and common types of layout failure. In addition to summarizing ReDeCheck’s
+                 benefits, this paper explores two different usage scenarios for this tool that is publicly
+                 available on GitHub.",
   doi         = "10.1145/3092703.3098221"
 }
 
@@ -56,6 +66,13 @@ inproceedings{c51,
   title       = "{XFix}: Automated Tool for Repair of Layout Cross Browser Issues",
   booktitle   = "International Conference on Software Testing and Analysis (ISSTA 2017)",
   year        = "2017",
+  abstract    = "Differences in the rendering of a website across different browsers can cause inconsistencies
+                 in its appearance and usability, resulting in Layout Cross Browser Issues (XBIs). Such XBIs can
+                 negatively impact the functionality of a website as well as users' impressions of its trustworthiness
+                 and reliability. Existing techniques can only detect XBIs, and therefore require developers to
+                 manually perform the labor intensive task of repair. In this demo paper we introduce our tool,
+                 XFix, that automatically repairs layout XBIs in web applications. To the best of our knowledge,
+                 XFix is the first automated technique for generating XBI repairs.",
   doi         = "10.1145/3092703.3098223"
 }
 
