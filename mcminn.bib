@@ -1,24 +1,46 @@
 @article{j19,
+  author      = "McMinn, Phil and Wright, Chris J. and McCurdy, Colton J. and Kapfhammer, Gregory M.",
+  title       = "Automatic Detection and Removal of Ineffective Mutants for the Mutation Analysis of Relational Database Schemas",
+  journal     = "IEEE Transactions on Software Engineering (To Appear)",
+  year        = "2018",
+  abstract    = "Data is one of an organization’s most valuable and strategic assets. Testing the relational
+                 database schema, which protects the integrity of this data, is of paramount importance. Mutation
+                 analysis is a means of estimating the fault-finding ``strength'' of a test suite. As with program
+                 mutation, however, relational database schema mutation results in many ``ineffective'' mutants that
+                 both degrade test suite quality estimates and make mutation analysis more time consuming. This
+                 paper presents a taxonomy of ineffective mutants for relational database schemas, summarizing
+                 the root causes of ineffectiveness with a series of key patterns evident in database schemas.
+                 On the basis of these, we introduce algorithms that automatically detect and remove ineffective
+                 mutants. In an experimental study involving the mutation analysis of 34 schemas used with three
+                 popular relational database management systems—HyperSQL, PostgreSQL, and SQLite—the results show
+                 that our algorithms can identify and discard large numbers of ineffective mutants that can account
+                 for up to 24% of mutants, leading to a change in mutation score for 33 out of 34 schemas. The tests
+                 for seven schemas were found to achieve 100% scores, indicating that they were capable of detecting
+                 and killing all non-equivalent mutants. The results also reveal that the execution cost of mutation
+                 analysis may be significantly reduced, especially with ``heavyweight'' DBMSs like PostgreSQL."
+}
+
+@article{j19,
   author      = "Hall, Mathew and Walkinshaw, Neil and McMinn, Phil",
   title       = "Effectively Incorporating Expert Knowledge in Automated Software Remodularisation",
   journal     = "IEEE Transactions on Software Engineering (To Appear)",
   year        = "2018",
-  abstract    = "Remodularising the components of a software system is challenging: sound design 
-                 principles (e.g., coupling and cohesion) need to be balanced against developer intuition 
-                 of which entities conceptually belong together. Despite this, automated approaches to 
-                 remodularisation tend to ignore domain knowledge, leading to results that can be nonsensical 
-                 to developers. Nevertheless, suppling such knowledge is a potentially burdensome task to 
-                 perform manually. A lot information may need to be specified, particularly for large systems. 
-                 Addressing these concerns, we propose the SUMO (SUpervised reMOdularisation) approach. SUMO 
-                 is a technique that aims to leverage a small subset of domain knowledge about a system 
-                 to produce a remodularisation that will be acceptable to a developer. With SUMO, developers 
-                 refine a modularisation by iteratively supplying corrections. These corrections constrain 
-                 the type of remodularisation eventually required, enabling SUMO to dramatically reduce the 
-                 solution space. This in turn reduces the amount of feedback the developer needs to supply. 
-                 We perform a comprehensive systematic evaluation using 100 real world subject systems. Our 
-                 results show that SUMO guarantees convergence on a target remodularisation with a tractable 
+  abstract    = "Remodularising the components of a software system is challenging: sound design
+                 principles (e.g., coupling and cohesion) need to be balanced against developer intuition
+                 of which entities conceptually belong together. Despite this, automated approaches to
+                 remodularisation tend to ignore domain knowledge, leading to results that can be nonsensical
+                 to developers. Nevertheless, suppling such knowledge is a potentially burdensome task to
+                 perform manually. A lot information may need to be specified, particularly for large systems.
+                 Addressing these concerns, we propose the SUMO (SUpervised reMOdularisation) approach. SUMO
+                 is a technique that aims to leverage a small subset of domain knowledge about a system
+                 to produce a remodularisation that will be acceptable to a developer. With SUMO, developers
+                 refine a modularisation by iteratively supplying corrections. These corrections constrain
+                 the type of remodularisation eventually required, enabling SUMO to dramatically reduce the
+                 solution space. This in turn reduces the amount of feedback the developer needs to supply.
+                 We perform a comprehensive systematic evaluation using 100 real world subject systems. Our
+                 results show that SUMO guarantees convergence on a target remodularisation with a tractable
                  amount of user interaction.",
-  sponsor     = "epsrc-regi"                 
+  sponsor     = "epsrc-regi"
 }
 
 @inproceedings{c51,
@@ -28,14 +50,14 @@
   pages       = "143--149",
   year        = "2017",
   doi         = "10.1007/978-3-319-66299-2_12",
-  abstract    = "We present CAVM (pronounced ``ka-boom''), a new search-based test data generation tool 
-                 for C. CAVM is developed to augment an existing commercial tool, CodeScroll, which uses 
-                 static analysis and input partitioning to generate test data. Unlike the current 
-                 state-of-the-art search-based test data generation tool for C, Austin, CAVM handles 
-                 dynamic data structures using purely search-based techniques. We compare CAVM against 
-                 CodeScroll and Austin using 49 C functions, ranging from small anti-pattern case studies 
-                 to real world open source code and commercial code. The results show that CAVM can cover 
-                 branches that neither CodeScroll nor Austin can, while also exclusively achieving the 
+  abstract    = "We present CAVM (pronounced ``ka-boom''), a new search-based test data generation tool
+                 for C. CAVM is developed to augment an existing commercial tool, CodeScroll, which uses
+                 static analysis and input partitioning to generate test data. Unlike the current
+                 state-of-the-art search-based test data generation tool for C, Austin, CAVM handles
+                 dynamic data structures using purely search-based techniques. We compare CAVM against
+                 CodeScroll and Austin using 49 C functions, ranging from small anti-pattern case studies
+                 to real world open source code and commercial code. The results show that CAVM can cover
+                 branches that neither CodeScroll nor Austin can, while also exclusively achieving the
                  highest branch coverage for 20 of the studied functions."
 }
 
