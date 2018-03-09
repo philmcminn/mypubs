@@ -1,15 +1,35 @@
+@inproceedings{c56,
+  author      = "Paterson, David and Kapfhammer, Gregory M. and Fraser, Gordon and McMinn, Phil",
+  title       = "Using Controlled Numbers of Real Faults and Mutants to Empirically Evaluate Coverage-Based
+                 Test Case Prioritization",
+  booktitle   = "International Workshop on Automated Software Test (AST 2018) (To Appear)",
+  year        = "2018",
+  abstract    = "Used to establish confidence in the correctness of evolving software, regression testing is an
+                 important, yet costly, task. Test case prioritization enables the rapid detection of faults
+                 during regression testing by reordering the test suite so that effective tests are run as early
+                 as is possible. However, a distinct lack of information about the regression faults found in
+                 complex real-world software forced prior experimental studies of these methods to use artificial
+                 faults called mutants. Using the Defects4J database of real faults, this paper presents the
+                 results of experiments evaluating the effectiveness of four representative test prioritization
+                 techniques. Since this paper’s results show that prioritization is susceptible to high amounts
+                 of variance when only one fault is present, our experiments also control the number of real
+                 faults and mutants in the program subject to regression testing. Our findings are that, in
+                 comparison to mutants, real faults are harder for reordered test suites to quickly detect,
+                 suggesting that mutants are not a surrogate for real faults."
+}
+
 @inproceedings{c55,
   author      = "You, Byeonghyeon and Kim, Junhwi and Kwon, Minhyuk and McMinn, Phil and Yoo, Shin",
   title       = "Evaluation of {CAVM}, {Austin}, and {CodeScroll} for Test Data Generation for {C}",
-  booktitle   = "Proceedings of the 20th Korea Conference on Software Engineering (KCSE 2018)",
+  booktitle   = "Korea Conference on Software Engineering (KCSE 2018)",
   year        = "2018",
-  abstract    = "This paper presents CAVM, a new search-based C language test data generation tool. 
-                 CAVM was developed to improve the data tool, CodeScroll. CodeScroll uses static analysis and 
-                 input partitioning techniques to generate test data. Unlike Austin, the current state-of-the-art 
-                 automated test data generation tool for C, CAVM generates dynamic data structure data 
-                 using purely search-based techniques. We present a study in which CAVM was compared with 
-                 Austin and CodeScroll using 49 experimental functions, involving small-scale 
-                 anti-pattern case studies, actual product-level open source code, and commercial code. 
+  abstract    = "This paper presents CAVM, a new search-based C language test data generation tool.
+                 CAVM was developed to improve the data tool, CodeScroll. CodeScroll uses static analysis and
+                 input partitioning techniques to generate test data. Unlike Austin, the current state-of-the-art
+                 automated test data generation tool for C, CAVM generates dynamic data structure data
+                 using purely search-based techniques. We present a study in which CAVM was compared with
+                 Austin and CodeScroll using 49 experimental functions, involving small-scale
+                 anti-pattern case studies, actual product-level open source code, and commercial code.
                  CAVM was able to cover branches that CodeScroll and Austin could not cover, gaining higher
                  coverage."
 }
@@ -44,15 +64,15 @@
   title       = "Automated Repair of Internationalization Failures Using Style Similarity Clustering and Search-Based Techniques",
   booktitle   = "International Conference on Software Testing, Validation and Verification (ICST 2018) (To Appear)",
   year        = "2018",
-  abstract    = "Internationalization enables companies to reach a global audience by adapting their websites to locale 
-                 specific language and content. However, such translations can often introduce Internationalization 
+  abstract    = "Internationalization enables companies to reach a global audience by adapting their websites to locale
+                 specific language and content. However, such translations can often introduce Internationalization
                  Presentation Failures (IPFs) --- distortions in the intended appearance of a website. It is challenging for
-                 developers to design websites that can inherently adapt to varying lengths of text from different languages. Debugging and repairing IPFs is complicated by the large number of HTML elements and CSS properties that 
-                 define a web page’s appearance. Tool support is also limited as existing techniques can only detect IPFs, 
+                 developers to design websites that can inherently adapt to varying lengths of text from different languages. Debugging and repairing IPFs is complicated by the large number of HTML elements and CSS properties that
+                 define a web page’s appearance. Tool support is also limited as existing techniques can only detect IPFs,
                  with the repair remaining a labor intensive manual task. To address this problem, we propose a search-based
-                 technique for automatically repairing IPFs in web applications. Our empirical evaluation showed that 
-                 our approach was able to successfully resolve 98% of the reported IPFs for 23 real-world web pages. 
-                 In a user study, participants rated the visual quality of our fixes significantly higher than the unfixed 
+                 technique for automatically repairing IPFs in web applications. Our empirical evaluation showed that
+                 our approach was able to successfully resolve 98% of the reported IPFs for 23 real-world web pages.
+                 In a user study, participants rated the visual quality of our fixes significantly higher than the unfixed
                  versions."
 }
 
@@ -78,7 +98,7 @@
                  branches do not provide any guidance to the search. These results suggest that, although evolutionary
                  algorithms are more effective at covering complex branches, a random search may suffice to achieve high
                  coverage of most object-oriented classes.",
-  sponsor     = "epsrc-greatest"                 
+  sponsor     = "epsrc-greatest"
 }
 
 @inproceedings{c52,
@@ -86,14 +106,14 @@
   title       = "Automated Repair of Mobile Friendly Problems in Web Pages",
   booktitle   = "International Conference on Software Engineering (ICSE 2018) (To Appear)",
   year        = "2018",
-  abstract    = "Mobile devices have become a primary means of accessing the Internet. Unfortunately, many 
-                 websites are not designed to be mobile friendly. This results in problems such as unreadable text, 
-                 cluttered navigation, and content over owing a device’s viewport; all of which can lead to a frustrating 
-                 and poor user experience. Existing techniques are limited in helping developers repair these mobile friendly 
-                 problems. To address this limitation of prior work, we designed a novel automated approach for repairing 
-                 mobile friendly problems in web pages. Our empirical evaluation showed that our approach was able to 
-                 successfully resolve mobile friendly problems in 95% of the evaluation subjects. In a user study, 
-                 participants preferred our repaired versions of the subjects and also considered the repaired pages to be 
+  abstract    = "Mobile devices have become a primary means of accessing the Internet. Unfortunately, many
+                 websites are not designed to be mobile friendly. This results in problems such as unreadable text,
+                 cluttered navigation, and content over owing a device’s viewport; all of which can lead to a frustrating
+                 and poor user experience. Existing techniques are limited in helping developers repair these mobile friendly
+                 problems. To address this limitation of prior work, we designed a novel automated approach for repairing
+                 mobile friendly problems in web pages. Our empirical evaluation showed that our approach was able to
+                 successfully resolve mobile friendly problems in 95% of the evaluation subjects. In a user study,
+                 participants preferred our repaired versions of the subjects and also considered the repaired pages to be
                  more readable than the originals."
 }
 
