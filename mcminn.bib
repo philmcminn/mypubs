@@ -18,7 +18,7 @@
                  complex real-world software forced prior experimental studies of these methods to use artificial
                  faults called mutants. Using the Defects4J database of real faults, this paper presents the
                  results of experiments evaluating the effectiveness of four representative test prioritization
-                 techniques. Since this paper’s results show that prioritization is susceptible to high amounts
+                 techniques. Since this paper's results show that prioritization is susceptible to high amounts
                  of variance when only one fault is present, our experiments also control the number of real
                  faults and mutants in the program subject to regression testing. Our findings are that, in
                  comparison to mutants, real faults are harder for reordered test suites to quickly detect,
@@ -78,8 +78,9 @@
   abstract    = "Internationalization enables companies to reach a global audience by adapting their websites to locale
                  specific language and content. However, such translations can often introduce Internationalization
                  Presentation Failures (IPFs) --- distortions in the intended appearance of a website. It is challenging for
-                 developers to design websites that can inherently adapt to varying lengths of text from different languages. Debugging and repairing IPFs is complicated by the large number of HTML elements and CSS properties that
-                 define a web page’s appearance. Tool support is also limited as existing techniques can only detect IPFs,
+                 developers to design websites that can inherently adapt to varying lengths of text from different languages.
+                 Debugging and repairing IPFs is complicated by the large number of HTML elements and CSS properties that
+                 define a web page's appearance. Tool support is also limited as existing techniques can only detect IPFs,
                  with the repair remaining a labor intensive manual task. To address this problem, we propose a search-based
                  technique for automatically repairing IPFs in web applications. Our empirical evaluation showed that
                  our approach was able to successfully resolve 98% of the reported IPFs for 23 real-world web pages.
@@ -139,7 +140,7 @@
   journal     = "IEEE Transactions on Software Engineering (To Appear)",
   year        = "2018",
   doi         = "10.1109/TSE.2017.2786286",
-  abstract    = "Data is one of an organization’s most valuable and strategic assets. Testing the relational
+  abstract    = "Data is one of an organization's most valuable and strategic assets. Testing the relational
                  database schema, which protects the integrity of this data, is of paramount importance. Mutation
                  analysis is a means of estimating the fault-finding ``strength'' of a test suite. As with program
                  mutation, however, relational database schema mutation results in many ``ineffective'' mutants that
@@ -148,7 +149,7 @@
                  the root causes of ineffectiveness with a series of key patterns evident in database schemas.
                  On the basis of these, we introduce algorithms that automatically detect and remove ineffective
                  mutants. In an experimental study involving the mutation analysis of 34 schemas used with three
-                 popular relational database management systems—HyperSQL, PostgreSQL, and SQLite—the results show
+                 popular relational database management systems---HyperSQL, PostgreSQL, and SQLite---the results show
                  that our algorithms can identify and discard large numbers of ineffective mutants that can account
                  for up to 24% of mutants, leading to a change in mutation score for 33 out of 34 schemas. The tests
                  for seven schemas were found to achieve 100% scores, indicating that they were capable of detecting
@@ -210,11 +211,11 @@
                  used to browse it, is an important and challenging task. When developers adopt responsive
                  web design (RWD) techniques, web pages modify their appearance to accommodate a device's
                  display constraints. However, a current lack of automated support means that presentation
-                 failures may go undetected in a page’s layout when rendered for different viewport sizes.
+                 failures may go undetected in a page's layout when rendered for different viewport sizes.
                  A central problem is the difficulty in providing an automated ``oracle'' to validate RWD
                  layouts against, meaning that checking for failures is largely a manual process in practice,
                  which results in layout failures in many live responsive web sites. This paper presents an
-                 automated failure detection technique that checks the consistency of a responsive page’s
+                 automated failure detection technique that checks the consistency of a responsive page's
                  layout across a range of viewport widths, obviating the need for an explicit oracle. In an
                  empirical study, this method found failures in 16 of 26 real-world production pages studied,
                  detecting 33 distinct failures in total."
@@ -234,7 +235,7 @@
                  of failures in their layout. Since the quality assurance process for responsively designed
                  websites is often manual, time-consuming, and error-prone, this paper presents ReDeCheck, an
                  automated layout checking tool that alerts developers to both potential unintended regressions
-                 in responsive layout and common types of layout failure. In addition to summarizing ReDeCheck’s
+                 in responsive layout and common types of layout failure. In addition to summarizing ReDeCheck's
                  benefits, this paper explores two different usage scenarios for this tool that is publicly
                  available on GitHub."
 }
@@ -664,7 +665,7 @@
   abstract    = "Testing involves examining the behaviour of a system in order to discover
                  potential faults. Given an input for a system, the challenge of distinguishing
                  the corresponding desired, correct behaviour from potentially incorrect behavior
-                 is called the “test oracle problem”. Test oracle automation is important to
+                 is called the ``test oracle problem''. Test oracle automation is important to
                  remove a current bottleneck that inhibits greater overall test automation.
                  Without test oracle automation, the human has to determine whether observed
                  behaviour is correct. The literature on test oracles has introduced techniques
