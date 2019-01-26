@@ -11,6 +11,21 @@
   title       = "Automatic Visual Verification of Layout Failures in Responsively Designed Web Pages",
   booktitle   = "International Conference on Software Testing, Verification and Validation (ICST 2019) (To Appear)",
   year        = "2019",
+  abstract    = "Responsively designed web pages adjust their layout according to the viewport width of the
+                 device in use. Although tools exist to help developers test the layout of a responsive web page,
+                 they often rely on humans to flag problems. Yet, the considerable number of web-enabled devices
+                 with unique viewport widths makes this manual process both time-consuming and error-prone. Capable
+                 of detecting some common responsive layout failures, the REDECHECK tool partially automates this
+                 process. Since REDECHECK focuses on a web page’s document object model (DOM), some of the issues
+                 it finds are not observable by humans. This paper presents a tool, called VISER, that renders a
+                 REDECHECK-reported layout issue in a browser, adjusting the opacity of certain elements and checking
+                 for a visible difference. Unless VISER classifies an issue as a human-observable layout failure, a
+                 web developer can ignore it. This paper’s experiments reveal the benefit of using VISER to support
+                 automated visual verification of layout failures in responsively designed web pages. VISER
+                 automatically classified all of the 117 layout failures that REDECHECK reported for 20 web pages,
+                 each of which had to be manually analyzed in a prior study. VISER’s automated manipulation of element
+                 opacity also highlighted manual classification's subjectivity: it categorized 28 issues differently
+                 to manual analysis, including three correctly reclassified as false positives.",
   authorship  = "joint"
 }
 
