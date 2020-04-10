@@ -1,3 +1,48 @@
+@inproceedings{c64,
+  author      = "Alsharif, Abdullah and Kapfhammer, Gregory M. and McMinn, Phil",
+  title       = "Hybrid Methods for Reducing Database Schema Test Suites: Experimental Insights from 
+                 Computational and Human Studies",
+  booktitle   = "International Conference on Automated Software Test (AST 2020)",
+  year        = "2020",
+  abstract    = "Given that a relational database is a critical component of many software applications, 
+                 it is important to thoroughly test the integrity constraints of a database’s schema, because 
+                 they protect the data. Although automated test data generation techniques ameliorate the 
+                 otherwise manual task of database schema testing, they often create test suites that contain 
+                 many, sometimes redundant, tests. Since prior work presented a hybridized test suite 
+                 reduction technique, called STICCER, that beneficially combined Greedy test suite reduction 
+                 with a test merging method customized for database schemas, this paper experimentally evaluates 
+                 a different hybridization. Motivated by prior results showing that test suite reduction with 
+                 the Harrold-Gupta-Soffa (HGS) method can be more effective than Greedy at reducing database 
+                 schema test suites, this paper eval- uates an HGS-driven STICCER variant with both a computational 
+                 and a human study. Using 34 database schemas and tests created by two test data generators, the 
+                 results from the computational study reveal that, while STICCER is equally efficient and 
+                 effective when combined with either Greedy or HGS, it is always better than the isolated 
+                 use of either Greedy or HGS. Involving 27 participants, the human study shows that, when 
+                 compared to test suites reduced by HGS, those reduced by a STICCER-HGS hybrid allow humans 
+                 to inspect test cases faster, but not always more accurately.",
+  authorship  = "joint"
+}
+
+@inproceedings{c63,
+  author      = "Parry, Owain and Hilton, Michael and Kapfhammer, Gregory M. and McMinn, Phil",
+  title       = "Flake It 'Till You Make It: Using Automated Repair to Induce and Fix Latent Test Flakiness",
+  booktitle   = "International Workshop on Automated Program Repair (APR 2020)",
+  year        = "2020",
+  abstract    = "Since flaky tests pass or fail nondeterministically, without any code changes, they are 
+                 an unreliable indicator of program quality. Developers may quarantine or delete flaky tests 
+                 because it is often too time consuming to repair them. Yet, since decommissioning too many 
+                 tests may ultimately degrade a test suite’s effectiveness, devel- opers may eventually want 
+                 to fix them, a process that is challenging because the nondeterminism may have been introduced 
+                 previously. We contend that the best time to discover and repair a flaky test is when a developer 
+                 first creates and best understands it. We refer to tests that are not currently flaky, but that 
+                 could become so, as having latent flakiness. We further argue that efforts to expose and repair 
+                 latent flakiness are valuable in ensuring the future-reliability of the test suite, and that the 
+                 testing cost is greater if latent flaki- ness is left to manifest itself later. Using concrete 
+                 examples from a real-world program, this paper posits that automated program repair techniques 
+                 will prove useful for surfacing latent flakiness.",
+  authorship  = "joint"
+}
+
 @inproceedings{c62,
   author      = "Alsharif, Abdullah and Kapfhammer, Gregory M. and McMinn, Phil",
   title       = "{STICCER}: Fast and Effective Database Test Suite Reduction Through Merging of Similar Test Cases",
