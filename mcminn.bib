@@ -1,24 +1,33 @@
+@article{j22,
+  author      = "Mahajan, Sonal and Alameer, Abdulmajeed and McMinn, Phil and Halfond, William G.J.",
+  title       = "Effective Automated Repair of Internationalization Presentation Failures in Web Applications
+                 Using Style Similarity Clustering and Search-Based Techniques",
+  journal     = "Software Testing, Verification and Reliability",
+  year        = "To Appear",
+  authorship  = "joint"
+}
+
 @inproceedings{c64,
   author      = "Alsharif, Abdullah and Kapfhammer, Gregory M. and McMinn, Phil",
-  title       = "Hybrid Methods for Reducing Database Schema Test Suites: Experimental Insights from 
+  title       = "Hybrid Methods for Reducing Database Schema Test Suites: Experimental Insights from
                  Computational and Human Studies",
   booktitle   = "International Conference on Automated Software Test (AST 2020)",
   year        = "2020",
-  abstract    = "Given that a relational database is a critical component of many software applications, 
-                 it is important to thoroughly test the integrity constraints of a database’s schema, because 
-                 they protect the data. Although automated test data generation techniques ameliorate the 
-                 otherwise manual task of database schema testing, they often create test suites that contain 
-                 many, sometimes redundant, tests. Since prior work presented a hybridized test suite 
-                 reduction technique, called STICCER, that beneficially combined Greedy test suite reduction 
-                 with a test merging method customized for database schemas, this paper experimentally evaluates 
-                 a different hybridization. Motivated by prior results showing that test suite reduction with 
-                 the Harrold-Gupta-Soffa (HGS) method can be more effective than Greedy at reducing database 
-                 schema test suites, this paper eval- uates an HGS-driven STICCER variant with both a computational 
-                 and a human study. Using 34 database schemas and tests created by two test data generators, the 
-                 results from the computational study reveal that, while STICCER is equally efficient and 
-                 effective when combined with either Greedy or HGS, it is always better than the isolated 
-                 use of either Greedy or HGS. Involving 27 participants, the human study shows that, when 
-                 compared to test suites reduced by HGS, those reduced by a STICCER-HGS hybrid allow humans 
+  abstract    = "Given that a relational database is a critical component of many software applications,
+                 it is important to thoroughly test the integrity constraints of a database’s schema, because
+                 they protect the data. Although automated test data generation techniques ameliorate the
+                 otherwise manual task of database schema testing, they often create test suites that contain
+                 many, sometimes redundant, tests. Since prior work presented a hybridized test suite
+                 reduction technique, called STICCER, that beneficially combined Greedy test suite reduction
+                 with a test merging method customized for database schemas, this paper experimentally evaluates
+                 a different hybridization. Motivated by prior results showing that test suite reduction with
+                 the Harrold-Gupta-Soffa (HGS) method can be more effective than Greedy at reducing database
+                 schema test suites, this paper eval- uates an HGS-driven STICCER variant with both a computational
+                 and a human study. Using 34 database schemas and tests created by two test data generators, the
+                 results from the computational study reveal that, while STICCER is equally efficient and
+                 effective when combined with either Greedy or HGS, it is always better than the isolated
+                 use of either Greedy or HGS. Involving 27 participants, the human study shows that, when
+                 compared to test suites reduced by HGS, those reduced by a STICCER-HGS hybrid allow humans
                  to inspect test cases faster, but not always more accurately.",
   authorship  = "joint"
 }
@@ -28,17 +37,17 @@
   title       = "Flake It 'Till You Make It: Using Automated Repair to Induce and Fix Latent Test Flakiness",
   booktitle   = "International Workshop on Automated Program Repair (APR 2020)",
   year        = "2020",
-  abstract    = "Since flaky tests pass or fail nondeterministically, without any code changes, they are 
-                 an unreliable indicator of program quality. Developers may quarantine or delete flaky tests 
-                 because it is often too time consuming to repair them. Yet, since decommissioning too many 
-                 tests may ultimately degrade a test suite’s effectiveness, devel- opers may eventually want 
-                 to fix them, a process that is challenging because the nondeterminism may have been introduced 
-                 previously. We contend that the best time to discover and repair a flaky test is when a developer 
-                 first creates and best understands it. We refer to tests that are not currently flaky, but that 
-                 could become so, as having latent flakiness. We further argue that efforts to expose and repair 
-                 latent flakiness are valuable in ensuring the future-reliability of the test suite, and that the 
-                 testing cost is greater if latent flaki- ness is left to manifest itself later. Using concrete 
-                 examples from a real-world program, this paper posits that automated program repair techniques 
+  abstract    = "Since flaky tests pass or fail nondeterministically, without any code changes, they are
+                 an unreliable indicator of program quality. Developers may quarantine or delete flaky tests
+                 because it is often too time consuming to repair them. Yet, since decommissioning too many
+                 tests may ultimately degrade a test suite’s effectiveness, devel- opers may eventually want
+                 to fix them, a process that is challenging because the nondeterminism may have been introduced
+                 previously. We contend that the best time to discover and repair a flaky test is when a developer
+                 first creates and best understands it. We refer to tests that are not currently flaky, but that
+                 could become so, as having latent flakiness. We further argue that efforts to expose and repair
+                 latent flakiness are valuable in ensuring the future-reliability of the test suite, and that the
+                 testing cost is greater if latent flaki- ness is left to manifest itself later. Using concrete
+                 examples from a real-world program, this paper posits that automated program repair techniques
                  will prove useful for surfacing latent flakiness.",
   authorship  = "joint"
 }
@@ -48,21 +57,21 @@
   title       = "{STICCER}: Fast and Effective Database Test Suite Reduction Through Merging of Similar Test Cases",
   booktitle   = "International Conference on Software Testing, Verification and Validation (ICST 2020)",
   year        = "2020",
-  abstract    = "Since relational databases support many software applications, industry professionals recommend 
-                 testing both database queries and the underlying database schema that contains complex integrity 
-                 constraints. These constraints, which include primary and foreign keys, NOT NULL, and arbitrary 
-                 CHECK constraints, are important because they protect the consistency and coherency of data in 
-                 the relational database. Since testing integrity constraints is potentially an arduous task, human 
-                 testers can use new tools to automatically generate test suites that effectively find schema faults. 
-                 However, these tool-generated test suites often contain many lengthy tests that may both increase the 
-                 time overhead of regression testing and limit the ability of human testers to understand them. Aiming 
-                 to reduce the size of automatically generated test suites for database schemas, this paper introduces 
-                 STICCER, a technique that finds overlaps between test cases, merging database interactions from similar 
-                 tests and removing others. By systematically discarding and merging redundant tests, STICCER creates a 
-                 reduced test suite that is guaranteed to have the same coverage as the original one. Using thirty-four 
-                 relational database schemas, we experimentally compared STICCER to two greedy test suite reduction techniques 
-                 and a random method. The results show that, compared to the greedy and random methods, STICCER is the most 
-                 effective at reducing the number of test cases and database interactions while maintaining test effectiveness 
+  abstract    = "Since relational databases support many software applications, industry professionals recommend
+                 testing both database queries and the underlying database schema that contains complex integrity
+                 constraints. These constraints, which include primary and foreign keys, NOT NULL, and arbitrary
+                 CHECK constraints, are important because they protect the consistency and coherency of data in
+                 the relational database. Since testing integrity constraints is potentially an arduous task, human
+                 testers can use new tools to automatically generate test suites that effectively find schema faults.
+                 However, these tool-generated test suites often contain many lengthy tests that may both increase the
+                 time overhead of regression testing and limit the ability of human testers to understand them. Aiming
+                 to reduce the size of automatically generated test suites for database schemas, this paper introduces
+                 STICCER, a technique that finds overlaps between test cases, merging database interactions from similar
+                 tests and removing others. By systematically discarding and merging redundant tests, STICCER creates a
+                 reduced test suite that is guaranteed to have the same coverage as the original one. Using thirty-four
+                 relational database schemas, we experimentally compared STICCER to two greedy test suite reduction techniques
+                 and a random method. The results show that, compared to the greedy and random methods, STICCER is the most
+                 effective at reducing the number of test cases and database interactions while maintaining test effectiveness
                  as measured by the mutation score.",
   authorship  = "joint"
 }
@@ -74,20 +83,20 @@
   pages       = "437--448",
   year        = "2019",
   doi         = "10.1109/ICSME.2019.00076",
-  abstract    = "Since relational databases are a key component of software systems ranging from small mobile to large enterprise 
-                 applications, there are well-studied methods that automatically generate test cases for database-related 
-                 functionality. Yet, there has been no research to analyze how well testers --- who must often serve as an 
-                 ``oracle'' --- both understand tests involving SQL and decide if they reveal flaws. This paper reports on a 
-                 human study of test comprehension in the context of automatically generated tests that assess the correct 
-                 specification of the integrity constraints in a relational database schema. In this domain, a tool generates 
-                 INSERT statements with data values designed to either satisfy (i.e., be accepted into the database) or violate 
-                 the schema (i.e., be rejected from the database). The study reveals two key findings. First, the choice of 
-                 data values in INSERTs influences human understandability: the use of default values for elements not involved 
-                 in the test (but necessary for adhering to SQL's syntax rules) aided participants, allowing them to easily 
-                 identify and understand the important test values. Yet, negative numbers and ``garbage'' strings hindered 
-                 this process. The second finding is more far reaching: humans found the outcome of test cases very difficult 
-                 to predict when NULL was used in conjunction with foreign keys and CHECK constraints. This suggests that, 
-                 while including NULLs can surface the confusing semantics of database schemas, their use makes tests less 
+  abstract    = "Since relational databases are a key component of software systems ranging from small mobile to large enterprise
+                 applications, there are well-studied methods that automatically generate test cases for database-related
+                 functionality. Yet, there has been no research to analyze how well testers --- who must often serve as an
+                 ``oracle'' --- both understand tests involving SQL and decide if they reveal flaws. This paper reports on a
+                 human study of test comprehension in the context of automatically generated tests that assess the correct
+                 specification of the integrity constraints in a relational database schema. In this domain, a tool generates
+                 INSERT statements with data values designed to either satisfy (i.e., be accepted into the database) or violate
+                 the schema (i.e., be rejected from the database). The study reveals two key findings. First, the choice of
+                 data values in INSERTs influences human understandability: the use of default values for elements not involved
+                 in the test (but necessary for adhering to SQL's syntax rules) aided participants, allowing them to easily
+                 identify and understand the important test values. Yet, negative numbers and ``garbage'' strings hindered
+                 this process. The second finding is more far reaching: humans found the outcome of test cases very difficult
+                 to predict when NULL was used in conjunction with foreign keys and CHECK constraints. This suggests that,
+                 while including NULLs can surface the confusing semantics of database schemas, their use makes tests less
                  understandable for humans.",
   authorship  = "joint"
 }
