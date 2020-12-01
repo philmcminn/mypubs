@@ -7,7 +7,7 @@ The repository should be used as a git submodule of
 another repository. To do this, type the following command:
 
 ```shell
-git submodule add -b master https://github.com/philmcminn/mypubs.git mypubs
+git submodule add https://github.com/philmcminn/mypubs.git mypubs
 ```
 
 where the final parameter ("bibtex") is the name of the directory that you wish to install the repository. Following
