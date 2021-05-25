@@ -1,50 +1,74 @@
 @inproceedings{c68,
-  author      = "Clegg, Ben and Villa-Uriol, Maria-Cruz and McMinn, Phil and Fraser, Gordon",
+  author      = "Clegg, Ben and Villa-Uriol, Maria-Cruz and McMinn, Phil and
+                 Fraser, Gordon",
   title       = "Gradeer: An Open-Source Modular Hybrid Grader",
-  booktitle   = "International Conference on Software Engineering (ICSE) --- Joint Track on Software Engineering Education and Training (JSEET)",
+  booktitle   = "International Conference on Software Engineering (ICSE) ---
+                 Joint Track on Software Engineering Education and Training (JSEET)",
   year        = "2021",
+  abstract    = "Automated assessment has been shown to greatly simplify the
+                 process of assessing students' programs. However, manual
+                 assessment still offers benefits to both students and tutors.
+                 We introduce Gradeer, a hybrid assessment tool, which allows
+                 tutors to leverage the advantages of both automated and manual
+                 assessment. The tool features a modular design, allowing new
+                 grading functionality to be added. Gradeer directly assists
+                 manual grading, by automatically loading code inspectors,
+                 running students' programs, and allowing grading to be stopped
+                 and resumed in place at a later time. We used Gradeer to assess
+                 an end of year assignment for an introductory Java programming
+                 course, and found that its hybrid approach offers several
+                 benefits.",
   authorship  = "joint"
 }
 
 @article{j24,
   author      = "Althomali, Ibrahim and Kapfhammer, Gregory M. and McMinn, Phil",
-  title       = "Automated Visual Classification of DOM-based Presentation Failure Reports for Responsive Web Pages",
+  title       = "Automated Visual Classification of DOM-based Presentation
+                 Failure Reports for Responsive Web Pages",
   journal     = "Software Testing, Verification and Reliability",
   volume      = "31",
   number      = "4",
   year        = "2021",
   doi         = "10.1002/stvr.1756",
   abstract    = "Since it is common for the users of a web page to access it
-                 through a wide variety of devices --- including desktops, laptops, tablets, and
-                 phones --- web developers rely on responsive web design (RWD) principles and
-                 frameworks to create sites that are useful on all devices. A correctly
-                 implemented responsive web page adjusts its layout according to the viewport
-                 width of the device in use, thereby ensuring its design suitably features the
-                 content. Since the use of complex RWD frameworks often leads to web pages with
-                 hard-to- detect responsive layout failures (RLFs), developers employ testing
-                 tools that generate reports of potential RLFs. Since testing tools for
-                 responsive web pages, like REDECHECK, analyze a web page representation called
-                 the document object model (DOM), they may inadvertently flag concerns that are
-                 not human visible, thereby requiring developers to manually confirm and
-                 classify each potential RLF as a true positive (TP), false positive (FP), or
-                 non-observable issue (NOI) --- a process that is time consuming and error prone.
-                 The conference version of this paper presented VISER, a tool that
-                 automatically classified three types of RLFs reported by REDECHECK. Since
-                 VISER was not designed to automatically confirm and classify two types of RLFs
-                 that REDECHECK's DOM-based analysis could surface, this paper introduces
-                 VERVE, a tool that automatically classifies all RLF types reported by
-                 REDECHECK. Along with manipulating the opacity of HTML elements in a web page,
-                 as does VISER, the VERVE tool also uses histogram-based image comparison to
-                 classify RLFs in web pages. Incorporating both the 25 web pages used in prior
-                 experiments and 20 new pages not previously considered, this paper's empirical
-                 study reveals that VERVE's classification of all five types of RLFs frequently
-                 agrees with classifications produced manually by humans. The experiments also
-                 reveal that VERVE took on average about 4 seconds to classify any of the RLFs
-                 among the 469 reported by REDECHECK. Since this paper demonstrates that
-                 classifying an RLF as a TP, FP, or NOI with VERVE, a publicly available tool,
-                 is less subjective and error-prone than the same manual process done by a
-                 human web developer, we argue that it is well-suited for supporting the
-                 testing of complex responsive web pages.",
+                 through a wide variety of devices --- including desktops,
+                 laptops, tablets, and phones --- web developers rely on
+                 responsive web design (RWD) principles and frameworks to create
+                 sites that are useful on all devices. A correctly implemented
+                 responsive web page adjusts its layout according to the
+                 viewport width of the device in use, thereby ensuring its
+                 design suitably features the content. Since the use of complex
+                 RWD frameworks often leads to web pages with hard-to- detect
+                 responsive layout failures (RLFs), developers employ testing
+                 tools that generate reports of potential RLFs. Since testing
+                 tools for responsive web pages, like REDECHECK, analyze a web
+                 page representation called the document object model (DOM),
+                 they may inadvertently flag concerns that are not human
+                 visible, thereby requiring developers to manually confirm and
+                 classify each potential RLF as a true positive (TP), false
+                 positive (FP), or non-observable issue (NOI) --- a process that
+                 is time consuming and error prone. The conference version of
+                 this paper presented VISER, a tool that automatically
+                 classified three types of RLFs reported by REDECHECK. Since
+                 VISER was not designed to automatically confirm and classify
+                 two types of RLFs that REDECHECK's DOM-based analysis could
+                 surface, this paper introduces VERVE, a tool that automatically
+                 classifies all RLF types reported by REDECHECK. Along with
+                 manipulating the opacity of HTML elements in a web page, as
+                 does VISER, the VERVE tool also uses histogram-based image
+                 comparison to classify RLFs in web pages. Incorporating both
+                 the 25 web pages used in prior experiments and 20 new pages not
+                 previously considered, this paper's empirical study reveals
+                 that VERVE's classification of all five types of RLFs
+                 frequently agrees with classifications produced manually by
+                 humans. The experiments also reveal that VERVE took on average
+                 about 4 seconds to classify any of the RLFs among the 469
+                 reported by REDECHECK. Since this paper demonstrates that
+                 classifying an RLF as a TP, FP, or NOI with VERVE, a publicly
+                 available tool, is less subjective and error-prone than the
+                 same manual process done by a human web developer, we argue
+                 that it is well-suited for supporting the testing of complex
+                 responsive web pages.",                 
   authorship  = "joint"
 }
 
@@ -58,34 +82,62 @@
   year        = "2021",
   doi         = "10.1002/stvr.1746",
   abstract    = "Companies often employ internationalization (i18n) frameworks
-                 to provide translated text and localized media content on their websites in
-                 order to effectively communicate with a global audience. However, the varying
-                 lengths of text from different languages can cause undesired distortions in
-                 the layout of a web page. Such distortions, called Internationalization
-                 Presentation Failures (IPFs), can negatively affect the aesthetics or
-                 usability of the website. Most of the existing automated techniques developed
-                 for assisting repair of IPFs either produce fixes that are likely to
-                 significantly reduce the legibility and attractiveness of the pages, or are
-                 limited to only detecting IPFs, with the actual repair itself remaining a
-                 labor intensive manual task. To address this problem, we propose a
-                 search-based technique for automatically repairing IPFs in web applications,
-                 while ensuring a legible and attractive page. The empirical evaluation of our
-                 approach reported that our approach was able to successfully resolve 94% of
-                 the detected IPFs for 46 real-world web pages. In a user study, participants
-                 rated the visual quality of our fixes significantly higher than the unfixed
-                 versions, and also considered the repairs generated by our approach to be
-                 notably more legible and visually appealing than the repairs generated by
-                 existing techniques.",
+                 to provide translated text and localized media content on their
+                 websites in order to effectively communicate with a global
+                 audience. However, the varying lengths of text from different
+                 languages can cause undesired distortions in the layout of a
+                 web page. Such distortions, called Internationalization
+                 Presentation Failures (IPFs), can negatively affect the
+                 aesthetics or usability of the website. Most of the existing
+                 automated techniques developed for assisting repair of IPFs
+                 either produce fixes that are likely to significantly reduce
+                 the legibility and attractiveness of the pages, or are limited
+                 to only detecting IPFs, with the actual repair itself remaining
+                 a labor intensive manual task. To address this problem, we
+                 propose a search-based technique for automatically repairing
+                 IPFs in web applications, while ensuring a legible and
+                 attractive page. The empirical evaluation of our approach
+                 reported that our approach was able to successfully resolve 94%
+                 of the detected IPFs for 46 real-world web pages. In a user
+                 study, participants rated the visual quality of our fixes
+                 significantly higher than the unfixed versions, and also
+                 considered the repairs generated by our approach to be notably
+                 more legible and visually appealing than the repairs generated
+                 by existing techniques.",
   authorship  = "joint"
 }
 
 @inproceedings{c67,
   author      = "Clegg, Ben and McMinn, Phil and Fraser, Gordon",
-  title       = "An Empirical Study to Determine if Mutants Can Effectively Simulate Students' Programming Mistakes to Increase Tutors' Confidence in Autograding",
+  title       = "An Empirical Study to Determine if Mutants Can Effectively
+                 Simulate Students' Programming Mistakes to Increase Tutors'
+                 Confidence in Autograding",
   booktitle   = "ACM SIGCSE Technical Symposium on Computer Science Education (SIGCSE 2021)",
   pages       = "1055--1061",
   year        = "2021",
   doi         = "10.1145/3408877.3432411",
+  abstract    = "Automated grading is used to assess large numbers of students'
+                 programs in software engineering courses, often utilising test
+                 suites to evaluate the correctness of these programs. However,
+                 test suites can vary in how they evaluate a program. In this
+                 paper, we investigate how much different suites influence
+                 generated grades, and how their properties contribute to this
+                 influence. We conduct a modified replication study of existing
+                 work, using students' faulty solution programs and test suites
+                 that we constructed using a sampling approach. We find that
+                 differing test suites generate greatly varying grades, with the
+                 standard deviation of grades for each solution typically
+                 representing 63\% of the maximum change in grades. We also show
+                 that different properties of test suites influence the grades
+                 that they produce, including size, the ability to detect other
+                 students' faults and artificial faults, and various
+                 coverage-based metrics. We use our findings to offer tutors
+                 with suggestions on how to build test suites that evaluate
+                 students' software in a fair and consistent manner. Our
+                 suggestions include constructing test suites with high
+                 coverage, writing unique and diverse tests which evaluate
+                 solutions' correctness in different ways, and to run the tests
+                 against artificial faults to determine their quality.",
   authorship  = "joint"
 }
 
@@ -94,25 +146,31 @@
   title       = "An Investigation into the Effect of Control and Data Dependence Chain Length on Predicate Testability",
   booktitle   = "International Working Conference on Source Code Analysis \& Manipulation (SCAM 2020)",
   year        = "2020",
-  abstract    = "The squeeziness of a sequence of program statements captures the loss of
-                information (loss of entropy) caused by its execution. This information loss
-                leads to problems such as failed error propagation. Intuitively, longer more
-                complex statement sequences (more formally, longer paths of dependencies) bring
-                greater squeeze. Using the cost of meta-heuristic search as a measure of lost
-                information, we Following Voas and Miller we use Using the cost of search-based
-                test data generation as a measure of lost information, we investigate this
-                intuition. Unexpectedly, we find virtually no correlation between dependence
-                path length and information loss. Thus our study represents an (unexpected)
-                negative result. Moreover, looking through the literature, this finding is in
-                agreement with recent work of Masri and Podgurski. % (who also express some
-                level of surprise). As such, our work replicates a negative result. More
-                precisely, it provides a conceptual, generalization and extension replication.
-                The replication falls into the category of a conceptual replication in that
-                different methods are used to address a common problem, and into the category of
-                generalization and extension in that we sample a different population of
-                subjects and more rigorously consider the resulting data. Specifically, while
-                Masri and Podgurski only informally observed the lack of a connection, we
-                rigorously assess it using a range of statistical models.",
+  abstract    = "The squeeziness of a sequence of program statements captures
+                 the loss of information (loss of entropy) caused by its
+                 execution. This information loss leads to problems such as
+                 failed error propagation. Intuitively, longer more complex
+                 statement sequences (more formally, longer paths of
+                 dependencies) bring greater squeeze. Using the cost of
+                 meta-heuristic search as a measure of lost information, we
+                 Following Voas and Miller we use Using the cost of search-based
+                 test data generation as a measure of lost information, we
+                 investigate this intuition. Unexpectedly, we find virtually no
+                 correlation between dependence path length and information
+                 loss. Thus our study represents an (unexpected) negative
+                 result. Moreover, looking through the literature, this finding
+                 is in agreement with recent work of Masri and Podgurski. % (who
+                 also express some level of surprise). As such, our work
+                 replicates a negative result. More precisely, it provides a
+                 conceptual, generalization and extension replication. The
+                 replication falls into the category of a conceptual replication
+                 in that different methods are used to address a common problem,
+                 and into the category of generalization and extension in that
+                 we sample a different population of subjects and more
+                 rigorously consider the resulting data. Specifically, while
+                 Masri and Podgurski only informally observed the lack of a
+                 connection, we rigorously assess it using a range of
+                 statistical models.",
   authorship  = "joint"
 }
 
@@ -2643,4 +2701,3 @@
                  simple initial experiment are reported.",
   authorship  = "principal"
 }
-
